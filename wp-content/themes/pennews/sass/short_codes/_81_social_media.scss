@@ -1,0 +1,57 @@
+.penci-social-media-shortcode  {
+
+	&.align-center {
+		text-align: center;
+	}
+
+	&.align-right {
+		text-align: right;
+	}
+
+	&.align-left {
+		text-align: left;
+	}
+
+	.penci-social-media-inner {
+		display: inline-block;
+		vertical-align: top;
+	}
+
+	.social-media-item {
+		font-size:  24px;
+		display: inline-block;
+		float: left;
+		margin-right: 30px;
+		line-height: 1;
+		transition: all 0.3s;
+
+		&:last-child {
+			margin-right: 0 !important;
+		}
+	}
+
+	&.penci-social-media-sc-circle,
+	&.penci-social-media-sc-square {
+
+		.social-media-item {
+			height: 44px;
+			width: 44px;
+			line-height: 42px;
+			text-align: center;
+			border: 1px solid;
+		}
+	}
+
+	&.penci-social-media-sc-circle {
+		.social-media-item {
+			border-radius: 50%;
+		}
+
+	}
+	&.penci-social-media-sc-default {
+		.social-media-item {
+			background: none !important;
+			border: none !important;
+		}
+	}
+}

@@ -1,0 +1,157 @@
+.penci-fancy-heading {
+	&.penci-block-vc {
+		background-color: transparent;
+	}
+
+	&.penci-heading-text-center {
+		text-align: center;
+
+		.penci-heading-subtitle,
+		.penci-heading-content {
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+	}
+	&.penci-heading-text-right {
+		text-align: right;
+
+		.penci-heading-subtitle,
+		.penci-heading-content {
+			float: right;
+		}
+
+		li {
+			text-align: right;
+			list-style-position: inside;
+		}
+	}
+	&.penci-heading-text-left {
+		text-align: left;
+	}
+
+	.penci-heading-title {
+		font-size: 36px;
+		color: $color__dark;
+		margin-top: 0;
+		margin-bottom: 15px;
+	}
+
+	.penci-heading-subtitle{
+		margin-bottom: 10px;
+	}
+
+	.penci-heading-title + .penci-heading-subtitle {
+		margin-top: 10px;
+	}
+
+	.penci-heading-subtitle,
+	.penci-heading-content {
+		font-size: 16px;
+	}
+
+	.penci-heading-content {
+		margin-top: 10px;
+		clear: both;
+	}
+
+	.penci-separator {
+		margin-bottom: 15px;
+	}
+}
+
+.penci-separator {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 60px;
+
+	&.penci-separator-align-center {
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.penci-separator-align-right {
+		float: right;
+
+		.penci-heading-icon {
+			margin-right: 0;
+		}
+	}
+
+	&.penci-separator-align-left .penci-heading-icon {
+		margin-left: 0;
+	}
+
+	&.penci-separator-align-left .penci-sep_holder_l,
+	&.penci-separator-align-right .penci-sep_holder_r {
+		display: none;
+	}
+
+	.penci-sep_holder {
+		height: 1px;
+		position: relative;
+		-webkit-box-flex: 1;
+		-webkit-flex: 1 1 auto;
+		-ms-flex: 1 1 auto;
+		flex: 1 1 auto;
+		min-width: 10%;
+	}
+
+	.penci-sep_line {
+		height: 1px;
+		border-top: 1px solid #dedede;
+		display: block;
+		position: relative;
+		top: 1px;
+		width: 100%;
+	}
+
+	.penci-heading-icon {
+		margin: 10px 15px;
+		font-size: 20px;
+		color: $color__blue;
+	}
+
+	&.penci-separator-double {
+		position: relative;
+		height: 6px;
+
+
+		.penci-sep_holder {
+			display: none;
+		}
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			border-top: 1px solid #dedede;
+		}
+
+		&:before {
+			top: 0;
+			width: 100%;
+
+		}
+
+		&:after {
+			bottom: 0;
+			width: 80%;
+			left: 50%;
+			transform: translateX( -50% );
+		}
+	}
+}

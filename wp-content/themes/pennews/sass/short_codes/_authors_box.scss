@@ -1,0 +1,93 @@
+.penci-authors-box {
+
+	.penci-author-post-comment {
+		overflow: hidden;
+
+		span {
+			float: left;
+			background: $color__dark;
+			@include font-size(1);
+			font-weight: 500;
+			text-align: left;
+			padding: 0 5px;
+			height: 16px;
+			line-height: 16px;
+			margin-right: 3px;
+			margin-bottom: 3px;
+			transition: all 0.3s;
+			color: $color__white;
+		}
+	}
+
+	.penci-author-post-comment + .penci-author-social {
+		margin-top: 9px;
+	}
+
+	.author-description {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		line-height: 1.71;
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}
+
+.penci-authors-box_2 {
+
+	.penci-author-item {
+		padding: 20px;
+		border: 1px solid $color__border;
+		margin-bottom: 20px;
+		text-align: center;
+
+		img {
+			border-radius: 50%;
+		}
+
+		.penci-author-content h5 {
+			margin-top: 10px;
+		}
+
+		.button {
+			line-height: 26px;
+			height: 26px;
+			display: inline-block;
+			margin-top: 9px;
+			text-transform: none;
+			font-size: 13px;
+		}
+	}
+
+	.penci-author-content .author-description {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		line-height: 1.71;
+	}
+
+	.penci-author-content .author-social {
+		font-size: 16px;
+		margin-right: 15px;
+	}
+
+	&.columns-2 {
+		.penci-author-col-item:nth-child( 2n+ 1 ) {
+			clear: both;
+		}
+	}
+
+	&.columns-3 {
+		.penci-author-col-item:nth-child( 3n+ 1 ) {
+			clear: both;
+		}
+	}
+
+	&.columns-4 {
+		.penci-author-col-item:nth-child( 4n+ 1 ) {
+			clear: both;
+		}
+	}
+
+}

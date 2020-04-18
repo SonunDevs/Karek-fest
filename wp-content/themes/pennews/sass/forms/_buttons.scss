@@ -1,0 +1,64 @@
+button,
+.button,
+.entry-content a.button,
+.site-main .wpfepp-form .wpfepp-button,
+.site-main .wpfepp-form .wpfepp-button:hover,
+.site-main .wpfepp-form .wpfepp-button:active,
+.site-main .wpfepp-form .wpfepp-button:focus {
+	border: 1px solid $color__black;
+	border-radius: 0;
+	background: $color__black;
+	color: $color__white;
+	line-height: 36px;
+	padding: 0 15px 0;
+	text-align: center;
+	transition: all 0.25s;
+	@include font-size( 1.4 );
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover {
+		border-color: $color__blue;
+		background: $color__blue;
+		color: $color__white;
+	}
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 0;
+	border-radius: 0;
+	background: $color__black;
+	color: $color__white;
+	line-height: 36px;
+	padding: 0 15px 0;
+	text-align: center;
+	transition: all 0.25s;
+	@include font-size( 1.4 );
+	text-transform: uppercase;
+	cursor: pointer;
+
+	&:hover {
+		background: $color__blue;
+		color: $color__white;
+	}
+}
+
+a.button,
+.entry-content a.button {
+	display: inline-block;
+}
+
+a.pencisc-button.button {
+	border: none;
+}
+
+.pencisc-button {
+	margin-bottom: 17px;
+}
+
+.pencisc-button-margin-right {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}

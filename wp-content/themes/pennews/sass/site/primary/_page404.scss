@@ -1,0 +1,80 @@
+.error404 {
+	.site-content {
+		margin-top: 120px;
+	}
+
+	.not-found {
+		width: 100%;
+		margin-bottom: 60px;
+		overflow: hidden;
+		border-top: 6px solid $color__blue;
+		text-align: center;
+		padding: 80px 20px;
+		background: $color__white;
+	}
+
+	.error-404__image {
+		text-align: center;
+	}
+
+	.page-title {
+		font-family: $font__oswald;
+		font-weight: 600;
+		line-height: 1;
+		color: $color__dark;
+		@include font-size(6);
+		margin-top: 34px;
+		margin-bottom: 29px;
+	}
+
+	.page-content {
+		text-align: center;
+
+		@include font-size(1.8);
+		line-height: 1.67;
+		color: $color__text-main;
+
+		a {
+			font-weight: 700;
+			color: $color__blue;
+
+			&:hover {
+				color: $color__dark;
+			}
+		}
+
+		.search-form {
+			margin-top: 41px;
+			margin-bottom: 48px;
+			width: 300px;
+			max-width: 100%;
+			@include center-block;
+			position: relative;
+
+			.search-field {
+				width: 100%;
+			}
+
+			.search-submit {
+				position: absolute;
+				right: 0;
+				top: 0;
+				background: transparent;
+				border: 0;
+				transition: all 0.3s;
+				min-height: 40px;
+				color: $color__dark;
+
+				&:hover {
+					color: $color__blue;
+				}
+			}
+		}
+	}
+
+
+
+	.error-404-latest-news {
+		display: none;
+	}
+}

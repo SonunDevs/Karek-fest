@@ -1,0 +1,202 @@
+.penci-block_23 {
+
+	.penci-block_content__items {
+		overflow: hidden;
+	}
+
+	.penci-block-wrapper-item {
+		margin-top: 20px;
+
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+
+	.block23_first_item,
+	.block23_items {
+		width: 100%;
+		float: left;
+	}
+
+	.block23_first_item {
+		margin-bottom: 20px;
+
+		.penci__post-title {
+			@include font-size(2);
+			line-height: 1.2;
+			margin-top: 10px;
+			margin-bottom: 1px;
+		}
+
+		.penci_post-meta {
+			margin-top: 5px;
+		}
+
+		.penci-post-excerpt {
+			margin-top: 9px;
+		}
+
+		.penci-post-excerpt {
+			@include font-size(1.4);
+			line-height: 1.71;
+			color: $color__text-main;
+
+			.penci-pmore-link {
+				display: none;
+			}
+		}
+	}
+
+	.block23_items {
+		float: right;
+
+		.penci-post-item {
+			width: 50%;
+			float: left;
+			margin-top: 20px;
+			margin-bottom: 0;
+
+			&:nth-child( 2n + 1 ) {
+				clear: both;
+				padding-right: 10px;
+			}
+
+			&:nth-child( 2n ) {
+				padding-left: 10px;
+			}
+
+			&:nth-child( 1 ),
+			&:nth-child( 2 ){
+				margin-top: 0;
+			}
+
+		}
+		.penci__post-title {
+			@include font-size(1.4);
+			font-weight: 600;
+			line-height: 1.29;
+			margin-top: 12px;
+			margin-bottom: 2px;
+		}
+	}
+
+}
+
+.penci-container-width-1080 .penci-content-main.penci-col-4 .penci-block_23,
+.wpb_wrapper > .penci-block_23.penci-vc-column-1,
+.widget-area .penci-block_23 {
+
+	.block23_first_item,
+	.block23_items {
+		width: 100%;
+	}
+
+	.block23_first_item {
+		padding-right: 0;
+		margin-bottom: 20px;
+	}
+
+	.block23_items {
+		padding-left: 0;
+
+		.penci-post-item {
+			&:nth-child( 2n + 1 ) {
+				padding-right: 5px;
+			}
+
+			&:nth-child( 2n ) {
+				padding-left: 5px;
+			}
+		}
+	}
+
+}
+
+.penci-container-width-1400 .penci-content-main.penci-col-4 .penci-block_23 {
+	.penci-post-cat {
+		display: none;
+	}
+
+	.block23_first_item,
+	.block23_items {
+		width: 100%;
+	}
+
+	.block23_items {
+		margin-top: 20px;
+		padding-left: 0;
+	}
+
+	.block23_first_item{
+		padding-right: 0;
+	}
+}
+
+.penci-container-width-1080 .penci-content-main.penci-col-6 .penci-block_23 {
+	.penci-post-cat {
+		display: none;
+	}
+
+	.block23_first_item .penci__post-title {
+		font-size: 16px !important;
+	}
+
+	.block23_items .penci__post-title {
+		font-size: 12px !important;
+	}
+}
+
+.penci-hbg-content .penci-block_23 .block23_first_item,
+.penci-hbg-content .penci-block_23 .block23_items {
+	width: 100%;  margin-left: 0;  margin-right: 0;  padding-left: 0;  padding-right: 0;
+}
+
+@media screen and (min-width: 992px) {
+	.penci-block_23 {
+
+		.block23_first_item,
+		.block23_items {
+			width: 50%;
+		}
+
+		.block23_first_item {
+			padding-right: 10px;
+			margin-bottom: 0;
+		}
+
+		.block23_items {
+			padding-left: 10px;
+		}
+
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.penci-block_23 {
+
+		.block23_first_item,
+		.block23_items {
+			width: 100%;
+		}
+
+		.block23_first_item {
+			padding-right: 0;
+			margin-bottom: 20px;
+		}
+
+		.block23_items {
+			padding-left: 0;
+
+			.penci-post-item {
+				&:nth-child( 2n + 1 ) {
+					padding-right: 5px;
+				}
+
+				&:nth-child( 2n ) {
+					padding-left: 5px;
+				}
+			}
+		}
+	}
+}

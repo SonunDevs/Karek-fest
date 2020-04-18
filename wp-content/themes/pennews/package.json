@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "css": "node-sass --source-map true sass/style.scss -o .",
+    "autoprefix": "postcss --use autoprefixer style.css -o style.css --autoprefixer.browsers=\"last 2 versions, ie >= 9\"",
+    "watch": "node-sass --source-map true -w sass -r -o .",
+    "start": "npm run css && npm run cssslider",
+    "mincss": "uglifycss style.css > style.min.css",
+    "js": "uglifyjs js/on-screen.umd.min.js js/TweenMax.min.js js/wow.min.js js/jarallax.min.js js/jarallax-video.min.js js/velocity.min.js js/fitvids.js js/theia-sticky-sidebar.js js/jquery.sticky.js js/smoothscroll.js js/jquery.infinitescroll.min.js js/jquery.mCustomScrollbar.min.js js/jquery.video.js js/owl.carousel.min.js js/flexmenu.min.js js/jquery.inview.min.js js/imagesloaded.pkgd.min.js js/magnific-popup.min.js js/jquery.lazy.min.js js/isotope.pkgd.min.js js/jquery.justifiedGallery.min.js js/script.js > js/script.min.js"
+  },
+  "dependencies": {
+    "node-sass": "^4.7.2",
+    "npm": "^6.9.0"
+  }
+}

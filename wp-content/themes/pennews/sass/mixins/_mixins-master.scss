@@ -1,0 +1,31 @@
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1) {
+  font-size: ($sizeValue * 10 ) * 1px;
+  font-size: $sizeValue * 1rem;
+}
+// Center block
+@mixin center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+// Clearfix
+@mixin clearfix() {
+
+}
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+// Fontawesome style
+@mixin fa-icon() {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome; // shortening font declaration
+  font-size: inherit; // can't have font-size inherit on line above, so need to override
+  text-rendering: auto; // optimizelegibility throws things off #1094
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

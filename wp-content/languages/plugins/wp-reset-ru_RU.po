@@ -1,0 +1,449 @@
+# Translation of Plugins - WP Reset &#8211; Best WordPress Reset Plugin - Stable (latest release) in Russian
+# This file is distributed under the same license as the Plugins - WP Reset &#8211; Best WordPress Reset Plugin - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2019-07-18 01:04:28+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: ru\n"
+"Project-Id-Version: Plugins - WP Reset &#8211; Best WordPress Reset Plugin - Stable (latest release)\n"
+
+#: wp-reset.php:1416
+msgid "; if needed use the <a href=\"#delete-themes\" class=\"change-tab\" data-tab=\"1\">Delete Themes</a> &amp; <a href=\"#delete-plugins\" class=\"change-tab\" data-tab=\"1\">Delete Plugins</a> tools"
+msgstr "; если необходимо, используйте инструменты <a href=\"#delete-themes\" class=\"change-tab\" data-tab=\"1\">Удаление тем</a> и <a href=\"#delete-plugins\" class=\"change-tab\" data-tab=\"1\">Удаление плагинов</a>"
+
+#: wp-reset.php:1414
+msgid "; use the <a href=\"#clean-uploads-folder\" data-tab=\"1\" class=\"change-tab\">Clean Uploads Folder</a> tool to remove media files"
+msgstr "; используйте инструмент <a href=\"#clean-uploads-folder\" data-tab=\"1\" class=\"change-tab\">Очищение директории загрузок</a> для удаления медиа-файлов"
+
+#: wp-reset.php:1598
+msgid "No need for donations or anything like that :) If you can give us a <a href=\"https://wordpress.org/support/plugin/wp-reset/reviews/#new-post\" target=\"_blank\">five star rating</a> you'll help out more than you can imagine. A public mention <a href=\"https://twitter.com/webfactoryltd\" target=\"_blank\">@webfactoryltd</a> also does wonders. Thank you!"
+msgstr "Не нужно пожертвований или чего-то такого :) Если вы можете поставить нам <a href=\"https://wordpress.org/support/plugin/wp-reset/reviews/#new-post\" target=\"_blank\">пять звёзд</a>, то выручите нас больше, чем можете себе представить. Публичное упоминание <a href=\"https://twitter.com/webfactoryltd\" target=\"_blank\">@webfactoryltd</a> также творит чудеса. Спасибо!"
+
+#: wp-reset.php:1583
+msgid "All tools and functions are explained in detail in <a href=\""
+msgstr "Все инструменты и функции подробно описаны в <a href=\""
+
+#: wp-reset.php:1582
+msgid "Documentation"
+msgstr "Документация"
+
+#: wp-reset.php:1569
+msgid "We are working hard on building collections as we speak and plan to have a beta version done by late May. Want to be the first to try the beta? Or tell us to code faster? :) Give us a shout <a href=\"https://twitter.com/webfactoryltd\" target=\"_blank\">@webfactoryltd</a>."
+msgstr "Мы усердно работаем над созданием коллекций, пока говорим, и планируем выпустить бета-версию к концу мая. Хотите первыми попробовать бета-версию? Или сказать нам, чтобы код быстрее? :) Сообщите нам (<a href=\"https://twitter.com/webfactoryltd\" target=\"_blank\">@webfactoryltd</a>)."
+
+#: wp-reset.php:1568
+msgid "So where do I click?!"
+msgstr "Так, куда я щёлкаю?!"
+
+#: wp-reset.php:1564
+msgid "Another tools that will save your precious time! Have a set of plugins and themes that you install and activate after every reset? Or on every fresh WP installation? Well, no more clicking install/active for five minutes! Build the collection once and install it with one click the next time you need it. Collections are stored in the cloud so they're accessible on every site."
+msgstr "Ещё один инструмент, который сэкономит ваше драгоценное время! Есть набор плагинов и тем, которые вы устанавливаете и активируете после каждого сброса? Или на каждой новой установке WP? Что же, больше не нужно щёлкать на «Установить» и «Активировать» в течение пяти минут! Создайте один раз коллекцию и установите её одним щелчком мыши тогда, когда она вам понадобится. Коллекции хранятся в облаке, поэтому они доступны на всех сайтах."
+
+#: wp-reset.php:1500
+msgid "All options (mods) for all themes will be reset; not just for the active theme. The tool works only for themes that use the <a href=\"https://codex.wordpress.org/Theme_Modification_API\" target=\"_blank\">WordPress theme modification API</a>. If options are saved in some other, custom way they won't be reset.<br><b>There is NO UNDO. WP Reset does not make any backups.</b>"
+msgstr "Все настройки (модули) будут сброшены для всех тем (не только для активной темы). Этот инструмент работает только для тем, в которых используется <a href=\"https://codex.wordpress.org/API_%D0%BC%D0%BE%D0%B4%D0%B8%D1%84%D0%B8%D0%BA%D0%B0%D1%86%D0%B8%D0%B8_%D1%82%D0%B5%D0%BC\" target=\"_blank\">API модификации тем WordPress</a>. Если настройки сохранены каким-либо другим способом, то они не будут сброшены.<br><b>НЕТ ОТМЕНЫ. WP Reset не делает никаких резервных копий.</b>"
+
+#: wp-reset.php:1563
+msgid "What are Plugin &amp; Theme Collections"
+msgstr "Что такое коллекции плагинов и тем?"
+
+#: wp-reset.php:1499
+msgid "Reset Theme Options"
+msgstr "Сброс настроек темы"
+
+#: wp-reset.php:1284
+msgid "Collections"
+msgstr "Коллекции"
+
+#: wp-reset.php:1451
+msgid "Reactivate WP Webhooks plugin"
+msgstr "Реактивировать плагин WP Webhooks"
+
+#: wp-reset.php:1434
+msgid "WP Webhooks Support"
+msgstr "Поддержка WP Webhooks"
+
+#: wp-reset.php:1544
+msgid "Delete .htaccess File"
+msgstr "Удаление файла .htaccess"
+
+#: wp-reset.php:1545
+msgid "This action deletes the .htaccess file located in <code>"
+msgstr "Это действие удаляет файл .htaccess, расположенный в <code>"
+
+#: wp-reset.php:242
+msgid "Notice is already dismissed."
+msgstr "Уведомление уже отклонено."
+
+#: wp-reset.php:237 wp-reset.php:880
+msgid "You are not allowed to run this action."
+msgstr "Вам не разрешено выполнять это действие."
+
+#: wp-reset.php:1535
+msgid "There are no custom tables. There's nothing for this tool to empty or delete."
+msgstr "Нет пользовательских таблиц. Нет ничего, что можно очистить или удалить этим инструментом."
+
+#: wp-reset.php:1525
+msgid "The following "
+msgstr "Следующее "
+
+#: wp-reset.php:1523
+msgid "This action affects only custom tables with <code>"
+msgstr "Это действие влияет только на пользовательские таблицы с <code>"
+
+#: wp-reset.php:1522
+msgid "Empty or Delete Custom Tables"
+msgstr "Очистка или удаление пользовательских таблиц"
+
+#: wp-reset.php:1514
+msgid "All plugins will be deleted except for WP Reset which will remain active.<br><b>There is NO UNDO. WP Reset does not make any backups.</b>"
+msgstr "Будут удалены все плагины, кроме WP Reset, который останется активным.<br><b>НЕТ ОТМЕНЫ. WP Reset не делает никаких резервных копий.</b>"
+
+#: wp-reset.php:1513
+msgid "Delete Plugins"
+msgstr "Удаление плагинов"
+
+#: wp-reset.php:1508
+msgid "All themes will be deleted. Including the currently active theme - "
+msgstr "Будут удалены все темы, включая текущую активную — "
+
+#: wp-reset.php:1507
+msgid "Delete Themes"
+msgstr "Удаление тем"
+
+#: wp-reset.php:1490
+msgid "All files in <code>"
+msgstr "Все файлы в <code>"
+
+#: wp-reset.php:1480
+msgid "Delete Transients"
+msgstr "Удаление транзиентов"
+
+#: wp-reset.php:1132
+msgid "Open WP Reset Tools"
+msgstr "Открыть инструменты WP Reset"
+
+#: wp-reset.php:1489
+msgid "Clean Uploads Folder"
+msgstr "Очистка директории загрузок"
+
+#: wp-reset.php:1156
+msgid "Rate the plugin ★★★★★"
+msgstr "Поставьте плагину ★★★★★"
+
+#: wp-reset.php:1652
+msgid "Saved Snapshots"
+msgstr "Сохранённые скриншоты"
+
+#: wp-reset.php:1651
+msgid "Create new"
+msgstr "Создать новый"
+
+#: wp-reset.php:1615
+msgid "Database Snapshots"
+msgstr "Снимки базы данных"
+
+#: wp-reset.php:1597
+msgid "Care to help out?"
+msgstr "Хотите помочь?"
+
+#: wp-reset.php:1283
+msgid "DB Snapshots"
+msgstr "Снимки БД"
+
+#: wp-reset.php:1249
+msgid "WP Reset is not compatible with multisite!"
+msgstr "WP Reset не совместим с сетью сайтов!"
+
+#: wp-reset.php:1156
+msgid "Rate the plugin"
+msgstr "Оценить плагин"
+
+#: wp-reset.php:325
+msgid "An error has occurred."
+msgstr "Произошла ошибка."
+
+#: wp-reset.php:1463
+msgid "Type <b>reset</b> in the confirmation field to confirm the reset and then click the \"Reset WordPress\" button. <b>There is NO UNDO. No backups are made by WP Reset.</b>"
+msgstr "Введите <b>reset</b> в поле подтверждения, чтобы подтвердить сброс, а затем щёлкните по кнопке «Сбросить WordPress». <b>ОТМЕНЫ НЕТ. WP Reset не делает никаких резервных копий.</b>"
+
+#: wp-reset.php:1282
+msgid "Tools"
+msgstr "Инструменты"
+
+#: wp-reset.php:1278
+msgid "=\""
+msgstr "=\""
+
+#: wp-reset.php:1592
+msgid "Private contact"
+msgstr "Обратная связь"
+
+#: wp-reset.php:1587
+msgid "Public support forum"
+msgstr "Общий форум поддержки"
+
+#: wp-reset.php:1481
+msgid "All transient related database entries will be deleted. Including expired and non-expired transients, and orphaned transient timeout entries.<br><b>There is NO UNDO. WP Reset does not make any backups.</b>"
+msgstr "Будут удалены все транзиенты, включая просроченные и не просроченные, и их записи в базе данных, а также потерянные транзиенты временных записей.<br><b>WP Reset не делает никаких резервных копий.</b>"
+
+#: wp-reset.php:951
+msgid "Unknown tool."
+msgstr "Неизвестный инструмент."
+
+#: wp-reset.php:1593
+msgid "If there's a need to contact us privately send emails to <a href=\"mailto:wpreset@webfactoryltd.com\">wpreset@webfactoryltd.com</a>. Please know that although we'll gladly have a look at issues you are having with any site, we can't promise we'll fix them. Thank you for understanding."
+msgstr "Если вам нужно с нами связаться, отправьте электронное письмо на <a href=\"mailto:wpreset@webfactoryltd.com\">wpreset@webfactoryltd.com</a>. Пожалуйста, знайте, что, хотя мы с удовольствием рассмотрим проблемы, которые у вас возникают с любым сайтом, мы не можем обещать, что их исправим. Спасибо за понимание."
+
+#: wp-reset.php:1588
+msgid "We are very active on the <a href=\"https://wordpress.org/support/plugin/wp-reset\" target=\"_blank\">official WP Reset support forum</a>. If you found a bug, have a feature idea or just want to say hi - please drop by. We love to hear back from our users."
+msgstr "Мы очень активны на <a href=\"https://wordpress.org/support/plugin/wp-reset\" target=\"_blank\">официальном форуме поддержки WP Reset</a>. Если вы нашли ошибку, у вас есть идея или просто хотите сказать «привет» — заходите, пожалуйста. Мы любим получать отзывы от наших пользователей."
+
+#: wp-reset.php:1453
+msgid "Reactivate all currently active plugins"
+msgstr "Реактивировать все активные плагины"
+
+#: wp-reset.php:1449
+msgid "Reactivate WP Reset plugin"
+msgstr "Реактивировать плагин WP Reset"
+
+#: wp-reset.php:1448
+msgid "Reactivate current theme"
+msgstr "Реактивировать текущую тему"
+
+#: wp-reset.php:1427
+msgid "WP Reset plugin will be reactivated if that option is chosen in the <a href=\"#card-post-reset\">post-reset options</a>"
+msgstr "Плагин WP Reset будет реактивирован, если это выбрано в <a href=\"#card-post-reset\">настройках после сброса</a>"
+
+#: wp-reset.php:1447
+msgid "Post-reset actions"
+msgstr "Действия после сброса"
+
+#: wp-reset.php:1402 wp-reset.php:1446 wp-reset.php:1614
+msgid "Collapse / expand box"
+msgstr "Свернуть/развернуть"
+
+#: wp-reset.php:1271
+msgid "Since 2013 Tidy Repo has been reviewing the best and most reliable WordPress plugins. <b>Submitting a plugin is free</b>, so you have nothing to lose and a lot of exposure to gain when it gets reviewed."
+msgstr "С 2013 года Tidy Repo ищет лучшие и самые надёжные плагины для WordPress. <b>Отправка плагина бесплатна</b>, так что вам нечего терять, и вы получите много пользы, когда он будет проверен."
+
+#: wp-reset.php:1259
+msgid "Please help us keep the plugin free &amp; up-to-date"
+msgstr "Помогите, пожалуйста, до сих пор оставить плагин бесплатным"
+
+#: wp-reset.php:1250
+msgid "Please be careful when using WP Reset with multisite enabled. It's not recommended to reset the main site. Sub-sites should be OK. We're working on making it fully compatible with WP-MU. <b>Till then please be careful.</b> Thank you for understanding."
+msgstr "Пожалуйста, будьте осторожны при использовании WP Reset с включённой сетью сайтов. Не рекомендуется сбрасывать основной сайт. Подсайты должны быть в порядке. Мы работаем над тем, чтобы сделать его полностью совместимым с сетью сайтов. <b>До этого, пожалуйста, будьте осторожны.</b> Спасибо за понимание."
+
+#: wp-reset.php:1272
+msgid "Let Tidy Repo know you have a great plugin"
+msgstr "Сообщите Tidy Repo, что у вас есть отличный плагин"
+
+#: wp-reset.php:1270
+msgid "Are you a plugin author? Get your plugin reviewed on Tidy Repo"
+msgstr "Вы автор плагина? Получите отзыв о вашем плагине на Tidy Repo"
+
+#: wp-reset.php:1272
+msgid "Thanks, I'm not interested"
+msgstr "Спасибо, мне не интересно"
+
+#. Plugin URI of the plugin
+msgid "https://wpreset.com/"
+msgstr "https://wpreset.com/"
+
+#: wp-reset.php:1155
+msgid "Plugin Homepage"
+msgstr "Домашняя страница плагина"
+
+#: wp-reset.php:1154 wp-reset.php:1285
+msgid "Support"
+msgstr "Поддержка"
+
+#: wp-reset.php:1154
+msgid "Get help"
+msgstr "Справка"
+
+#: wp-reset.php:338
+msgid "Resetting in progress. Please wait."
+msgstr "Выполняется сброс. Подождите, пожалуйста."
+
+#: wp-reset.php:335
+msgid "Are you sure you want to proceed?"
+msgstr "Вы уверены, что хотите продолжить?"
+
+#: wp-reset.php:333
+msgid "OK"
+msgstr "OK"
+
+#: wp-reset.php:331
+msgid "Cancel"
+msgstr "Отмена"
+
+#: wp-reset.php:1430
+msgid "WP-CLI Support"
+msgstr "Поддержка WP-CLI"
+
+#: wp-reset.php:1432
+msgid "All actions have to be confirmed. If you want to skip confirmation use the standard %s option. Please be careful - there is NO UNDO."
+msgstr "Все действия должны быть подтверждены. Если вы хотите пропустить подтверждение, используйте стандартную настройку %s. Пожалуйста, будьте осторожны — НЕТ ОТМЕНЫ."
+
+#: wp-reset.php:1431
+msgid "All tools available via GUI are available in WP-CLI as well. To get the list of commands run %s. Instead of the active user, the first user with admin privileges found in the database will be restored. "
+msgstr "Все инструменты, доступные через GUI, также доступны в WP-CLI. Чтобы получить список команд, запустите %s. Вместо активного пользователя будет восстановлен первый пользователь с правами администратора, найденный в базе данных."
+
+#: wp-reset.php:1261
+msgid "I've already rated it"
+msgstr "Я уже оценил(а)"
+
+#: wp-reset.php:1261
+msgid "Help keep the plugin free - rate it!"
+msgstr "Помогите оставить плагин бесплатным — оцените его!"
+
+#: wp-reset.php:1261 wp-reset.php:1272
+msgid "Rate WP Reset"
+msgstr "Оценить WP Reset"
+
+#: wp-reset.php:1260
+msgid "If you use &amp; enjoy WP Reset, <b>please rate it on WordPress.org</b>. It only takes a second and helps us keep the plugin free and maintained. Thank you!"
+msgstr "Если вы используете и наслаждаетесь WP Reset, <b>оцените его, пожалуйста, на WordPress.org</b>. Это займёт всего секунду и поможет нам оставить плагин бесплатным и оказывать поддержку. Спасибо!"
+
+#: wp-reset.php:1239
+msgid "Sorry, you are not allowed to access this page."
+msgstr "Извините, вам не разрешено просматривать эту страницу."
+
+#: wp-reset.php:1222
+msgid "<b>Site has been reset</b> to default settings. User \"%s\" was restored with the password unchanged. Open <a href=\"%s\">WP Reset</a> to do another reset."
+msgstr "<b>Сайт был сброшен</b> до настроек по умолчанию. Пользователь «%s» был восстановлен без изменения пароля. Откройте <a href=\"%s\">WP Reset</a>, чтобы сделать ещё один сброс."
+
+#: wp-reset.php:330
+msgid "Invalid confirmation"
+msgstr "Неверное подтверждение"
+
+#: wp-reset.php:324
+msgid "An undocumented error has occurred. Please refresh the page and try again."
+msgstr "Произошла неизвестная ошибка. Пожалуйста, обновите страницу и попробуйте снова."
+
+#: wp-reset.php:29 wp-reset-cli.php:11
+msgid "Do not open this file directly."
+msgstr "Не открывайте этот файл напрямую."
+
+#: wp-reset.php:329
+msgid "Please type \"reset\" in the confirmation field."
+msgstr "Пожалуйста, введите «reset» в поле подтверждения."
+
+#: wp-reset.php:336
+msgid "Clicking \"Reset WordPress\" will reset your site to default values. All content will be lost. There is NO UNDO."
+msgstr "Щёлкнув «Сбросить WordPress», вы сбросите свой сайт до значений по умолчанию. Всё будет потеряно. ОТМЕНЫ НЕТ."
+
+#: wp-reset.php:1196
+msgid "Visit our site to get more great plugins"
+msgstr "Посетите наш сайт, чтобы увидеть больше отличных плагинов"
+
+#: wp-reset.php:1196
+msgid "Visit WP Reset page for more info"
+msgstr "Посетите страницу WP Reset для получения дополнительной информации"
+
+#: wp-reset.php:334 wp-reset.php:1467
+msgid "Reset WordPress"
+msgstr "Сбросить WordPress"
+
+#: wp-reset.php:1281 wp-reset.php:1462
+msgid "Reset"
+msgstr "Сброс"
+
+#: wp-reset.php:1466
+msgid "Type in \"reset\""
+msgstr "Введите «reset»"
+
+#. Author URI of the plugin
+msgid "https://www.webfactoryltd.com/"
+msgstr "https://www.webfactoryltd.com/"
+
+#. Author of the plugin
+msgid "WebFactory Ltd"
+msgstr "WebFactory Ltd"
+
+#. Description of the plugin
+msgid "Reset the site to default installation values without modifying any files. Deletes all customizations and content."
+msgstr "Сброс настроек сайта до стандартных без изменения файлов. Удаление всех настроек и содержимого."
+
+#. Plugin Name of the plugin
+#: wp-reset.php:223 wp-reset.php:326 wp-reset.php:1244
+msgid "WP Reset"
+msgstr "WP Reset"
+
+#: wp-reset.php:1426
+msgid "you will be logged out, automatically logged in and taken to the admin dashboard"
+msgstr "вы выйдете, автоматически войдёте и попадёте в консоль администратора"
+
+#: wp-reset.php:1425
+msgid "site title, WordPress address, site address, site language, search engine visibility and current user will be restored"
+msgstr "название сайта, адрес WordPress, адрес сайта, язык сайта, видимость поисковыми системами и текущий пользователь будут восстановлены"
+
+#: wp-reset.php:1424
+msgid "everything will be reset; see bullets above for details"
+msgstr "всё будет сброшено, подробности смотрите выше"
+
+#: wp-reset.php:1423
+msgid "you will have to confirm the action one more time because there is NO UNDO"
+msgstr "вам придётся подтвердить действие ещё раз, потому что ОТМЕНЫ НЕТ"
+
+#: wp-reset.php:1421
+msgid "What happens when I click the Reset button?"
+msgstr "Что произойдёт, когда я щёлкну по кнопке сброса?"
+
+#: wp-reset.php:1418
+msgid "logged in user \"%s\" will be restored with the current password"
+msgstr "вошедший пользователь «%s» будет восстановлен с текущим паролем"
+
+#: wp-reset.php:1417
+msgid "site title, WordPress address, site address, site language and search engine visibility settings"
+msgstr "название сайта, адрес WordPress, адрес сайта, язык сайта и настройки видимости поисковыми системами"
+
+#: wp-reset.php:1415
+msgid "no files are touched; plugins, themes, uploads - everything stays"
+msgstr "файлы не трогаются; плагины, темы, загрузки — остануться"
+
+#: wp-reset.php:1413
+msgid "media files - they'll remain in the <i>wp-uploads</i> folder but will no longer be listed under Media"
+msgstr "медиафайлы останутся в папке <i>wp-uploads</i>, но больше не будут в разделе «Медиафайлы»."
+
+#: wp-reset.php:1411
+msgid "Resetting will not delete:"
+msgstr "Сброс не удалит:"
+
+#: wp-reset.php:1408
+msgid "all custom database tables that have the same prefix \"%s\" as default tables in this installation"
+msgstr "все пользовательские таблицы базы данных с таким же префиксом «%s», что и стандартные таблицы в этой установке"
+
+#: wp-reset.php:1407
+msgid "all default WP database tables"
+msgstr "все стандартные WP-таблицы базы данных"
+
+#: wp-reset.php:1404
+msgid "Resetting will delete:"
+msgstr "Сброс удалит:"
+
+#: wp-reset.php:1403
+msgid "Please read carefully before proceeding. There is NO UNDO!"
+msgstr "Пожалуйста, внимательно прочитайте, прежде чем продолжить. ОТМЕНЫ НЕТ!"
+
+#: wp-reset.php:1098
+msgid "Something went wrong. Please refresh the page and try again."
+msgstr "Что-то пошло не так. Пожалуйста, обновите страницу и попробуйте снова."
+
+#: wp-reset.php:1104
+msgid "<b>Invalid confirmation code.</b> Please type \"reset\" in the confirmation field."
+msgstr "<b>Неверный код подтверждения.</b> Пожалуйста, введите «reset» в поле подтверждения."
+
+#: wp-reset.php:337
+msgid "Click \"Cancel\" to abort."
+msgstr "Щёлкните «Отмена» для отмены."
+
+#: wp-reset.php:1406
+msgid "all posts, pages, custom post types, comments, media entries, users"
+msgstr "все записи, страницы, пользовательские типы записей, комментарии, медиа-записи, пользователей"

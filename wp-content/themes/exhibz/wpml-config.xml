@@ -1,0 +1,8 @@
+<wpml-config>
+    <custom-types>
+        <custom-type translate="1">name-of-custom-post-type</custom-type>
+    </custom-types>
+    <taxonomies>
+        <taxonomy translate="1">name-of-custom-taxonomy</taxonomy>
+    </taxonomies>
+</wpml-config>

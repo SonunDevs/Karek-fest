@@ -1,0 +1,50 @@
+.penci-login_form {
+	.penci-user_logged_in {
+		.penci-login-header {
+			text-align: center;
+			margin-bottom: 15px;
+
+			img {
+				border-radius: 50%;
+				width: 85px;
+				height: 85px;
+			}
+
+			p{
+				margin-bottom: 15px;
+			}
+		}
+
+		.penci-user-action-links {
+
+			a{
+				display: inline-block;
+				text-decoration: none;
+				color: $color__white;
+				line-height: 26px;
+				height: 26px;
+				text-transform: none;
+				font-size: 13px;
+				float: left;
+				width: 48%;
+
+				&:first-child {
+					margin-right: 4%;
+				}
+			}
+		}
+
+		.penci-text-hello {
+			opacity: 0.75;
+		}
+
+		.penci-display_name {
+			font-weight: bold;
+		}
+
+	}
+}
+
+.penci-login_form:not( .penci-widget ) .penci-login-container {
+	margin-bottom: 14px;
+}

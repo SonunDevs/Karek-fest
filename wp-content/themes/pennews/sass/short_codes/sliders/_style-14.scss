@@ -1,0 +1,149 @@
+.penci-owl-featured-area.style-14 {
+
+	.penci-item-mag {
+		border-right: 0;
+	}
+	.penci-big_items {
+		.penci-item-mag {
+			&:hover:after {
+				opacity: 0.8;
+			}
+		}
+
+		.penci-image-holder:before {
+			padding-top: 50%;
+		}
+
+		h3,
+		.penci-slider__text {
+			text-align: center;
+		}
+	}
+
+	.penci-slider__meta {
+		i,a,span{
+			color: inherit;
+			font-size: inherit;
+		}
+
+		i {
+			margin-right: 5px;
+		}
+	}
+
+	.penci-small_items {
+		padding: 20px 0 15px 10px;
+		background: $color__white;
+
+		.penci-item-mag {
+			width: 240px;
+			height: auto;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+		h3 {
+			@include font-size(1.5);
+			line-height: 1.25;
+			margin-top: 13px;
+			margin-bottom: 2px;
+
+			a {
+				color: $color__black;
+
+				&:hover {
+					color: $color__blue;
+				}
+			}
+		}
+		.penci-slider__meta {
+			color: #999999;
+
+			a:hover {
+				color: $color__blue;
+			}
+		}
+
+		.penci-slider_post-date + .penci-slider__comments {
+			margin-left: 10px;
+		}
+
+		.owl-item.current {
+			.penci-cat-name {
+				background: $color__blue;
+			}
+
+			h3 a {
+				color: $color__blue;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.penci-owl-featured-area.style-14 {
+
+		.penci-slider__cat,
+		.entry-meta-item {
+			display: none;
+		}
+
+		.penci-big_items .penci-item-mag {
+			.entry-title{
+				font-size: 22px;
+			}
+		}
+
+		.penci-small_items {
+			padding: 10px 0 5px 5px;
+
+			.penci-item-mag {
+				width: 200px;
+				padding-left: 5px;
+				padding-right: 5px;
+
+				h3{
+					font-size: 14px;
+				}
+			}
+		}
+	}
+
+
+}
+
+@media screen and ( max-width: 768px ) and (min-width: 481px ) {
+	.penci-container-width-1400.penci-vc_sidebar-left,
+	.penci-container-width-1400.penci-vc_sidebar-right {
+		.penci-owl-featured-area.style-14 {
+
+			.penci-big_items .penci-item-mag .entry-title{
+				font-size: 22px;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 480px ) {
+	.penci-owl-featured-area.style-14 {
+		.penci-small_items {
+
+			.penci-item-mag {
+				width: 100px;
+				h3{
+					display: none;
+				}
+			}
+
+		}
+
+		.penci-big_items .penci-item-mag {
+			.penci-image-holder:before {
+				padding-top: 66.6667%;
+			}
+			.entry-title{
+				font-size: 18px;
+			}
+		}
+	}
+}

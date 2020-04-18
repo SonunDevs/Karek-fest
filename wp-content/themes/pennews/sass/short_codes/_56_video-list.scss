@@ -1,0 +1,475 @@
+.penci-videos-playlist {
+
+	&.style-video_list {
+		border-top:0;
+		padding-left: 0;
+		padding-right: 0;
+
+		.penci-block_content {
+		    margin-top: 0;
+			margin-bottom: 0;
+		}
+	}
+	.penci-block_content {
+		position: relative;
+	}
+	.fluid-width-video-wrapper {
+		padding-top: 56.25% !important; ;
+	}
+
+	.penci-video-play {
+		background-color: $color__dark;
+		position: relative;
+		width: 66%;
+		float: left;
+
+		.video-player-wrapper {
+			position: relative;
+			z-index: 2;
+		}
+
+		.loader-overlay {
+			z-index: 1;
+		}
+
+		.video-frame {
+			visibility: hidden;
+		}
+
+		iframe{
+			width: 100%;
+		}
+	}
+
+	.fluid-width-video-wrapper {
+		position: relative;
+		z-index: 2;
+	}
+
+	.penci-video-nav {
+		width: 34%;
+		height: 100%;
+		float: right;
+		position: absolute;
+		top:0;
+		right: 0;
+		overflow: hidden;
+		border-width: 0 1px 1px 0;
+
+		&:before,
+		&:after {
+			content: '';
+			position: absolute;
+			right: 0;
+			top: 0;
+			height: 100%;
+			width: 1px;
+			background: rgba(0, 0, 0, 0.05);
+		}
+
+		&:before {
+			width: 100%;
+			height: 1px;
+			bottom: 0;
+			top: auto;
+		}
+
+		.penci-playlist-title {
+			background: $color__blue;
+			color: $color__white;
+			height: 70px;
+			width: 100%;
+			padding: 0 15px;
+			line-height: 17px;
+			@include font-size(2);
+			z-index: 9;
+
+			.playlist-title-icon {
+				@include font-size(2.7);
+				float: left;
+				margin-right: 10px;
+				height: 70px;
+				line-height: 70px;
+				width: 40px;
+				text-align: center;
+				font-weight: normal;
+			}
+
+			a{
+				color: inherit;
+			}
+
+			.fa{
+				padding-right: 5px;
+			}
+
+			h2 {
+				padding-top: 14px;
+				@include font-size(1.8);
+				clear: none;
+			}
+
+			.penci-videos-number {
+				font-size: 11px;
+				display: block;
+				float: left;
+			}
+		}
+
+		.penci-video-playlist-nav {
+			position: relative;
+			float: left;
+			width: 100%;
+
+			&:not(.playlist-has-title) {
+
+				.penci-video-playlist-item:first-child{
+					border-top: 1px solid $color__border;
+				}
+
+				.penci-video-playlist-item:last-child{
+					border-bottom: 1px solid $color__border;
+				}
+			}
+
+			.is-mobile &{
+				overflow-y: auto;
+			}
+		}
+
+		.penci-custom-scroll .penci-video-playlist-item:last-of-type {
+			border-bottom: 0;
+		}
+
+		.penci-video-playlist-item {
+			padding: 12px 15px;
+			display: block;
+			overflow: hidden;
+			cursor: pointer;
+			border-bottom: 1px solid $color__border;
+			transition: 0.3s;
+
+			&:last-of-type {
+				border-bottom: 0;
+			}
+
+			.penci-video-paused-icon,
+			.penci-video-play-icon,
+			.penci-video-number {
+				float: left;
+				width: 20px;
+				text-align: left;
+				line-height: 60.75px;
+				@include font-size(1.3);
+				color: $color__dark;
+			}
+
+			.penci-video-play-icon {
+				display: none;
+				color: $color__blue;
+			}
+
+			.penci-video-paused-icon {
+				display: none;
+			}
+
+			.penci-video-thumbnail {
+				width: 108px;
+				height: 60.75px;
+				float: left;
+			}
+
+			.penci-video-info {
+				padding-left: 20px;
+				display: inline-block;
+			}
+
+			.penci-video-title {
+				@include font-size(1.3);
+				font-weight: normal;
+				line-height: 1.3;
+				font-family: inherit;
+				width: 100%;
+				display: block;
+				float: left;
+				margin-top: -2px;
+			}
+
+			.penci-video-duration {
+				float: left;
+				@include font-size(1.1);
+				color: #888;
+				margin-top: 5px;
+				line-height: 1;
+			}
+
+			&.is-playing {
+				background: #eeeeee;
+				color: $color__blue;
+
+				.penci-video-play-icon {
+					display: block;
+				}
+
+				.penci-video-number {
+					display: none;
+				}
+			}
+
+			&.is-paused {
+				.penci-video-paused-icon {
+					display: block;
+				}
+
+				.penci-video-number {
+					display: none;
+				}
+			}
+		}
+
+		.mCustomScrollBox > .mCSB_scrollTools {
+			right: 0;
+			left: auto;
+		}
+
+		.mCSB_inside > .mCSB_container {
+			margin-right: 0;
+		}
+
+		.mCSB_scrollTools {
+			width: 7px;
+		}
+
+		.penci_media_object {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.penci-container-width-1080 .penci-content-main,
+.penci-content-main.penci-col-6,
+.penci-vc_two-sidebar .penci-content-main {
+	.penci-videos-playlist{
+		.penci-video-play{
+			width: 60%;
+		}
+
+		.penci-video-nav {
+			width: 40%;
+
+			.penci-video-playlist-item .penci-video-thumbnail {
+				width: 90px;
+				height: 50.625px;
+			}
+		}
+	}
+}
+
+
+.penci-container-width-1080 .penci-content-main.penci-col-6 .penci-videos-playlist,
+.penci-container-width-1080 .penci-content-main.penci-col-4 .penci-videos-playlist,
+.penci-container-width-1400 .penci-content-main.penci-col-4 .penci-videos-playlist,
+.footer__sidebars .penci-videos-playlist,
+.widget-area .penci-videos-playlist {
+
+	&.style-video_list {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.penci-video-play {
+		 width: 100%;
+	}
+
+	 .penci-block_content {
+		 margin-left: -20px;
+		 margin-right: -20px;
+		 margin-bottom: 0;
+
+		 .penci_dis_padding_bw & {
+			 margin-left: 0;
+			 margin-right: 0;
+		 }
+	 }
+
+	 .penci-video-nav {
+		 width: 100%;
+		 max-height: 356px;
+		 border:0;
+		 position: relative;
+
+		 &::before {
+			 content: none;
+		 }
+
+		 .penci-video-playlist-nav:not(.playlist-has-title) .penci-video-playlist-item:last-child {
+			 border-bottom: 0;
+		 }
+
+		 .penci-video-playlist-nav {
+			 max-height: 356px !important;
+		 }
+
+		 .penci_media_object .penci_mobj__img {
+			 margin-right: 15px;
+			 display:flex;
+		 }
+
+		 .penci-video-playlist-item {
+			 border-right:0;
+
+			 .penci-video-title {
+				 @include font-size( 1.3 );
+				 margin-top: -2px;
+			 }
+
+			 .penci-video-thumbnail {
+				 width: 75px;
+				 height: 42.18px;
+			 }
+
+			 .penci-video-duration {
+				 @include font-size( 1.1 );
+			 }
+
+			 .penci-video-number,
+			 .penci-video-play-icon,
+			 .penci-video-paused-icon {
+				 position: absolute;
+				 bottom:0;
+				 left: 0;
+				 font-size: 10px;
+				 width: 20px;
+				 height: 20px;
+				 text-align: center;
+				 vertical-align: middle;
+				 line-height: 20px;
+				 z-index: 10;
+				 background: $color__blue;
+				 color :$color__white;
+			 }
+
+			 .penci_mobj__img {
+				 position: relative;
+			 }
+		 }
+	 }
+ }
+
+.widget.penci-videos-playlist {
+	padding-bottom: 0;
+
+	&.penci-empty-block-title {
+		padding-top: 0;
+	}
+
+}
+
+.penci-block-vc.penci-videos-playlist.penci-empty-block-title .penci-block_content.penci-block_content {
+	margin-top: 0;
+}
+
+.footer__sidebars .penci-videos-playlist {
+	.penci-video-nav .penci-video-playlist-nav:not(.playlist-has-title) .penci-video-playlist-item:first-child,
+	.penci-video-nav .penci-video-playlist-item {
+		 border-color: #313131;
+	}
+
+	.penci-block_content {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+
+@media screen and ( max-width: 767px ) {
+
+	.penci-container-width-1080 .penci-content-main,
+	.penci-content-main.penci-col-6,
+	.penci-vc_two-sidebar .penci-content-main {
+		.penci-videos-playlist{
+			.penci-video-play,
+			.penci-video-nav {
+				width: 100%;
+			}
+		}
+	}
+
+	.penci-videos-playlist {
+
+		&.style-video_list {
+			padding-left: 20px;
+			padding-right: 20px;
+		}
+
+		.penci-video-play {
+			width: 100%;
+		}
+
+		.penci-block_content {
+			margin-left: -20px;
+			margin-right: -20px;
+			margin-bottom: 0;
+
+			.penci_dis_padding_bw & {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+
+		.penci-video-nav {
+			width: 100%;
+			max-height: 356px;
+			border:0;
+			position: relative;
+
+			.penci-video-playlist-nav {
+				max-height: 356px !important;
+			}
+
+			.penci_media_object .penci_mobj__img {
+				margin-right: 15px;
+				display:flex;
+			}
+
+			.penci-video-playlist-item {
+				border-right:0;
+
+				.penci-video-title {
+					@include font-size( 1.3 );
+					margin-top: -2px;
+				}
+
+				.penci-video-thumbnail {
+					width: 75px;
+					height: 42.18px;
+				}
+
+				.penci-video-duration {
+					@include font-size( 1.1 );
+				}
+
+				.penci-video-number,
+				.penci-video-play-icon,
+				.penci-video-paused-icon {
+					position: absolute;
+					bottom:0;
+					left: 0;
+					font-size: 10px;
+					width: 20px;
+					height: 20px;
+					text-align: center;
+					vertical-align: middle;
+					line-height: 20px;
+					z-index: 10;
+					background: $color__blue;
+					color :$color__white;
+				}
+
+				.penci_mobj__img {
+					position: relative;
+				}
+			}
+		}
+	}
+}

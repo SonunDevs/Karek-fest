@@ -1,0 +1,126 @@
+.penci-block_9 {
+
+	.block9_first_item {
+		padding-bottom: 13px;
+
+		.penci__post-title {
+			@include font-size(2);
+			font-weight: 600;
+			line-height: 1.2;
+			color: $color__dark;
+			margin-top: 10px;
+			margin-bottom: 0;
+
+			&:hover {
+				color: $color__blue;
+			}
+		}
+
+		.penci_post-meta {
+			margin-top: 5px;
+		}
+
+		.penci-post-excerpt {
+			@include font-size(1.4);
+			line-height: 1.71;
+			color: $color__text-main;
+			margin-top: 9px;
+
+			.penci-pmore-link {
+				display: none;
+			}
+		}
+	}
+
+	.block9_first_item,
+	.penci-post-item {
+		border-bottom: 1px solid $color__border;
+		overflow: hidden;
+	}
+
+	.block9_items {
+		.penci-post-item:last-child {
+			border-bottom: 0;
+			padding-bottom: 0;
+			margin-bottom: 0;
+
+			.penci_media_object {
+				margin-bottom: 0;
+			}
+		}
+
+		.block9_item_loadmore:first-of-type {
+			border-top: 1px solid $color__border;
+			padding-top: 20px;
+		}
+
+		.penci-image-holder {
+			width: 108px;
+		}
+		.penci__post-title {
+			@include font-size(1.4);
+			font-weight: 600;
+			line-height: 1.29;
+			margin-bottom: 0;
+		}
+
+		.penci_post-meta {
+			margin-top: 6px;
+		}
+	}
+}
+.wpb_wrapper > .penci-block_9.penci-vc-column-1,
+.widget-area .penci-block_9 .block9_items{
+	.penci-comment-count {
+		display: none;
+	}
+}
+
+@media screen and ( min-width: 480px ) {
+	.penci-block_9.penci-vc-column-3,
+	.penci-block_9.penci-vc-column-2 {
+		.penci-post-item {
+			float: left;
+			&:nth-child( 2n + 1 ) {
+				clear: both;
+			}
+			&:nth-child( 2n + 2 ) {
+				margin-right: 0;
+			}
+
+			&:nth-last-child(2) {
+				border-bottom: 0;
+				margin-bottom: 0;
+
+				.penci_media_object {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.block9_first_item {
+			padding-bottom: 0;
+		}
+
+		.block9_first_item,
+		.penci-post-item {
+			border-bottom: 0;
+		}
+
+		.penci_media_object {
+			margin-bottom: 0;
+		}
+
+		.block9_item_loadmore:first-of-type {
+			border-top: 0;
+			padding-top: 0;
+		}
+	}
+}
+@media screen and ( max-width: 992px ) {
+	.penci-block_11.penci-vc-column-2 .block11_first_item + .block11_first_item,
+	.penci-block_9.penci-vc-column-2 .block9_first_item + .block9_first_item {
+		margin-top: 20px;
+	}
+}
+

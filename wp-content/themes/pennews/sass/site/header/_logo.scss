@@ -1,0 +1,79 @@
+.site-branding {
+	padding-left: 0;
+
+	.penci-container-fluid &,
+	.penci-container-1170 &,
+	.penci-container-1080 &{
+		padding-left: 0;
+	}
+
+	.header--s2 & {
+		padding-left: 0;
+		display: inline-block;
+		max-width: 500px;
+	}
+
+	.site-title {
+		font-family: $font__teko;
+		@include font-size(4.8);
+		font-weight: 700;
+		line-height: 60px;
+		color: $color__blue;
+		padding: 0;
+		margin: 0;
+		height: 100%;
+
+		position: relative !important;
+
+		.header--s1 & {
+			display: flex;
+			align-items: center;
+		}
+
+		.header--s2 & {
+			@include font-size(7.2);
+			margin-top: 1px;
+			margin-bottom: -5px;
+		}
+	}
+
+	a {
+		color: $color__blue;
+		display: inline-block;
+		line-height: inherit;
+	}
+
+	.custom-logo-link {
+		display: block;
+	}
+
+	img,
+	.site-title {
+		vertical-align: top;
+	}
+}
+
+.site-description {
+	@include font-size(1.4);
+	font-weight: 700;
+	line-height: 1.71;
+	display: inline-block;
+	color: $color__dark;
+}
+
+.penci-owl-featured-area.style-13 .penci-small_items .owl-item.active .penci-item-mag:before,
+.site-header.header--s2:before,
+.site-header.header--s3:not(.header--s4):before,
+.site-header.header--s6:before,
+.penci_gallery.style-1 .penci-small-thumb:after,
+.penci-videos-playlist .penci-video-nav .penci-video-playlist-item.is-playing,
+.penci-videos-playlist .penci-video-nav .penci-video-playlist-item:hover,
+#site-navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts .penci-mega-post:before,
+#site-navigation .penci-megamenu .penci-content-megamenu .penci-mega-latest-posts .penci-mega-post:after,
+blockquote:before, q:before, blockquote:after,
+q:after, button, .button,
+.site-main #buddypress .dir-search input[type=submit],
+.site-main #buddypress .groups-members-search input[type=submit],
+input[type="button"], input[type="reset"], input[type="submit"]{
+
+}

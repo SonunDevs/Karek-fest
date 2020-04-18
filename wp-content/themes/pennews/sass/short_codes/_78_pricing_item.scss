@@ -1,0 +1,110 @@
+.penci-pricing-item {
+
+	&.penci-pricing-s2 {
+		border-radius: 30px;
+
+		.penci-pricing__btn {
+			border-radius: 10px;
+		}
+	}
+
+	&.penci-pricing_featured {
+		padding-top: 60px;
+		padding-bottom: 60px;
+		transform: translateY( -30px );
+		position: relative;
+	}
+
+	color: #888888;
+	text-align: center;
+	padding: 30px;
+	font-size: 15px;
+	box-sizing: content-box;
+	overflow: hidden;
+
+	&:after {
+		content: '';
+		display: table;
+		width: 100%;
+	}
+
+	.penci-pricing-inner {
+		position: relative;
+	}
+
+	.penci-pricing__image {
+		width: 100%;
+		margin: 0 auto 20px;
+		overflow: hidden;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	.penci-pricing-header {
+		margin-bottom: 40px;
+	}
+
+	.penci-pricing__title {
+		font-size: 36px;
+		font-weight: bold;
+	}
+
+	.penci-pricing__subtitle {
+		color: #888888;
+		line-height: 1.3;
+	}
+
+	.penci-pricing__title,
+	.penci-price-unit {
+		color: $color__dark;
+	}
+
+	.penci-pricing__price {
+		font-size: 48px;
+		line-height: 1;
+	}
+	.penci-pricing__unit {
+		display: block;
+	}
+
+
+	.penci-pricing__featured {
+
+		margin-top: 40px;
+		margin-bottom: 30px;
+
+		ul {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin-left: 0;
+			list-style: none;
+			font-size: 15px;
+			margin-bottom: 12px;
+			line-height: 1.3;
+
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+
+	}
+
+	.penci-pricing__btn {
+		display: inline-block;
+		width: 100%;
+		font-size: 15px;
+		box-sizing: border-box;
+	}
+
+}
+
+@media ( max-width: 768px ) {
+	.penci-pricing-item.penci-pricing_featured {
+		transform: translateY(0);
+	}
+}

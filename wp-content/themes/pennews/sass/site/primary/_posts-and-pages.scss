@@ -1,0 +1,46 @@
+.sticky {
+	display: block;
+}
+
+.hentry {
+	margin: 0 0 20px;
+}
+
+.byline,
+.updated:not(.published) {
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.page-content,
+.entry-content,
+.entry-summary {
+	margin: 1.5em 0 0;
+
+	&.penci-entry-content-no-ptop {
+		margin-top: 0;
+	}
+}
+
+
+.page-links {
+	clear: both;
+	margin: 0 0 15px;
+	font-size: 17px;
+
+	a {
+		font-size: inherit;
+		text-decoration: none;
+
+		&.page-numbers:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+@import "pages";
+@import "page404";

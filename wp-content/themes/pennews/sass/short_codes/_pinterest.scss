@@ -1,0 +1,54 @@
+
+
+.penci-pinterest-widget-container {
+	margin: -5px -5px 0 -5px;
+}
+.penci-images-pin-widget:before,
+.penci-images-pin-widget:after {
+	display: table;
+	clear: both;
+	content: "";
+}
+.penci-pinterest-widget-container .penci-images-pin-widget a {
+	width: 33.3333%;
+	display: inline-block;
+	padding: 5px;
+	transition: opacity 0.3s ease;
+	position: relative;
+	float: left;
+	vertical-align: top;
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		bottom:5px;
+		right:5px;
+		background: #000;
+		opacity: 0;
+		z-index: 1;
+		transition: opacity 0.3s ease;
+	}
+}
+
+.penci-pinterest-widget-container .penci-images-pin-widget a:hover:after {
+	opacity: 0.3;
+}
+.penci-pinterest-widget-container .pin_link {
+	text-align: center;
+	margin-top: 10px;
+}
+.penci-pinterest-widget-container.penci-loading .pin_link {
+	clear: both;
+	display: block;
+}
+.penci-pinterest-widget-container .pin_link a {
+	font-style: italic;
+	color: #999999;
+	font-size: 16px;
+}
+
+.penci-pinterest-widget-container .penci-image-holder.rectangle-fix-size:before {
+	padding-top: 128%;
+}

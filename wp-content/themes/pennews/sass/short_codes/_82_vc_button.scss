@@ -1,0 +1,46 @@
+.penci-vcbtn-align-inline {
+	display: inline-block;
+}
+.penci-vcbtn-align-left {
+	text-align: left;
+}
+.penci-vcbtn-align-center {
+	text-align: center;
+}
+.penci-vcbtn-align-right {
+	text-align: right;
+}
+
+.penci-vc-btn-wapper {
+	.penci-vc-btn {
+		display: inline-block;
+		text-transform: none;
+
+		&.penci-vcbtn-fullwidth {
+			display: block;
+		}
+
+		&.penci-vcbtn-uppearcase {
+			text-transform: uppercase;
+		}
+
+		&.penci-vcbtn-trans {
+			background: transparent;
+			color:#111;
+
+			&:hover{
+				border-color: #3f51b5;
+				background: #3f51b5;
+				color: #ffffff;
+			}
+		}
+	}
+
+	.penci-vcbtn-ialignleft i{
+		margin-right: 5px;
+	}
+
+	.penci-vcbtn-ialignright i{
+		margin-left: 5px;
+	}
+}

@@ -1,0 +1,14 @@
+/* extension notice hide */
+.fw-brz-dismiss{
+   display:none;
+}
+#fw-extensions-list-wrapper .toggle-not-compat-ext-btn-wrapper,
+#fw-ext-brizy, .fw-brz-dismiss {
+   display: none;
+}
+.fw-extensions-list-item {
+   display: none!important;
+}
+#fw-ext-backups {
+   display: block!important;
+}

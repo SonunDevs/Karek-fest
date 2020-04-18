@@ -1,0 +1,37 @@
+.penci-advanced_carousel {
+	&.penci-block-vc {
+		background-color: transparent;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.owl-dots {
+		bottom: 0;
+	}
+
+	&.penci-placement-top,
+	&.penci-placement-middle,
+	&.penci-placement-bottom {
+		.owl-stage {
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+
+			-webkit-flex-wrap: wrap;
+			-ms-flex-wrap: wrap;
+			flex-wrap: wrap;
+		}
+	}
+
+	&.penci-placement-top .owl-stage{
+		align-items:flex-start;
+	}
+
+	&.penci-placement-middle .owl-stage{
+		align-items: center ;
+	}
+
+	&.penci-placement-bottom .owl-stage{
+		align-items:flex-end;
+	}
+}

@@ -1,0 +1,842 @@
+.penci-social-counter {
+
+	.penci-block_content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.penci-social__content {
+		width: 100%;
+		min-height: 40px;
+		border: 0;
+		line-height: 10px;
+		padding-left: 14px;
+		padding-right: 14px;
+		position: relative;
+		transition: all 0.3s;
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.penci-social__item {
+		overflow: hidden;
+		margin-bottom: 10px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:hover .penci-social__content {
+			opacity: 0.85;
+		}
+
+		i, span {
+			line-height: 40px;
+			display: inline-block;
+			z-index: 1;
+			position: relative;
+		}
+
+		.penci-social__info {
+			padding: 0 9px;
+			position: relative;
+			top: -12px;
+		}
+
+		.penci-social__name {
+			text-transform: uppercase;
+			z-index: 1;
+			position: relative;
+		}
+
+		i + .penci-social__name {
+			margin-left: 7px;
+		}
+
+		.penci-social__number,
+		.penci-social__info-text,
+		.penci-social__button {
+			@include font-size(1.2);
+			z-index: 1;
+			position: relative;
+
+		}
+
+		.penci-social__number {
+			padding-left: 9px;
+		}
+
+		.penci-social__info-text {
+			padding-left: 5px;
+		}
+
+		.penci-social__button {
+			float: right;
+			text-transform: uppercase;
+
+			.fa {
+				margin-right: 5px;
+			}
+
+			a {
+				&:hover {
+					color: inherit;
+				}
+
+				&:after {
+					content: "";
+					display: block;
+					height: 40px;
+					position: absolute;
+					right: 0;
+					top: 0;
+					width: 100%;
+				}
+			}
+		}
+
+		a {
+			display:block;
+			color: $color__white;
+			position: relative;
+			z-index: 2;
+
+			&:hover {
+				color: $color__white;
+				text-decoration: none;
+			}
+		}
+	}
+
+	.penci-social__instagram .penci-social__content {
+		position: relative;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			content: '';
+			transition: all 0.3s;
+		}
+	}
+
+	&.penci-social-counter--style-1 {
+		.penci-social__item {
+			width: 100%;
+		}
+	}
+
+	&.penci-social-counter--style-2 {
+		.penci-social__item {
+			width: 40px;
+			float: left;
+			padding-left: 0;
+			padding-right: 0;
+			margin-right: 3px;
+			margin-bottom: 3px;
+
+			.penci-social__content {
+				padding-left: 0;
+				padding-right: 0;
+			}
+
+			a {
+				width: 100%;
+				height: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			&:hover {
+				a {
+					color: $color__white;
+				}
+			}
+		}
+	}
+
+	&.penci-social-counter--style-1,
+	&.penci-social-counter--style-6{
+		.penci-social__instagram {
+			.penci-social__content:before {
+				background: radial-gradient(circle farthest-corner at 35% 90%, #ffa100, transparent 50%),
+				radial-gradient(circle farthest-corner at 0 140%, #efa11c, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 60% -20%, #8f44c7, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 100% 100%, #d43178, transparent),
+				linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+				transition: all 0.3s;
+			}
+
+		}
+	}
+
+	&.penci-social-counter--style-2,
+	&.penci-social-counter--style-3,
+	&.penci-social-counter--style-4,
+	&.penci-social-counter--style-5 {
+		.penci-social__instagram {
+			.penci-social__content:before {
+				background: radial-gradient(circle farthest-corner at 35% 90%, #ffa100, transparent 50%),
+				radial-gradient(circle farthest-corner at 0 140%, #efa11c, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 60% -20%, #8f44c7, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 100% 100%, #d43178, transparent),
+				linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+				opacity: 0;
+				transition: all 0.3s;
+			}
+
+			&:hover {
+				.penci-social__content:before {
+					opacity: 1;
+				}
+			}
+		}
+	}
+
+	&.penci-social-counter--style-2,
+	&.penci-social-counter--style-3 {
+		.penci-social__instagram .penci-social__content:before {
+			opacity: 1;
+		}
+	}
+
+	&.penci-social-counter--style-3,
+	&.penci-social-counter--style-4,
+	&.penci-social-counter--style-5 {
+
+		.penci-block_content {
+			margin-left: -2px;
+			margin-right: -2px;
+			margin-bottom: 16px;
+		}
+
+		.penci-social__content {
+			padding: 13px 5px 8px;
+			min-height: 84px;
+
+		}
+
+		.penci-social__item {
+			width: 33.33333%;
+			height: inherit;
+			float: left;
+			padding-left: 2px;
+			padding-right: 2px;
+			margin-right: 0;
+			margin-bottom: 4px;
+
+			a {
+				width: 100%;
+				height: 100%;
+				display: block;
+			}
+
+			.fa,
+			.penci-social__number,
+			.penci-social__info-text {
+				display: block;
+				line-height: 1;
+				padding-left: 0;
+				padding-right: 0;
+				text-align: center;
+			}
+
+			.penci-social__number {
+				@include font-size(1.4);
+				line-height: 1.14;
+				margin-bottom: 3px;
+			}
+
+			.penci-social__info-text {
+				@include font-size(1);
+				font-weight: 700;
+				line-height: 1.6;
+				text-align: center;
+				color: #ffffff;
+			}
+
+			.fa {
+				@include font-size(1.8);
+				line-height: 1.33;
+				padding-bottom: 6px;
+			}
+
+			&:hover {
+				a {
+					color: $color__white;
+				}
+			}
+		}
+	}
+
+	.penci-block_content {
+		font-weight: 700;
+		@include font-size(1.4);
+		color: $color__white;
+		.fa {
+			position: relative;
+		}
+	}
+
+	/************* Style 4  and style 5 *****************/
+	&.penci-social-counter--style-4,
+	&.penci-social-counter--style-5 {
+		.penci-social__facebook {
+			a, .penci-social__info-text {
+				color: #0d47a1;}
+
+			&:hover .penci-social__content {
+				background-color: #0d47a1;
+			}
+		}
+		.penci-social__rss {
+			a, .penci-social__info-text {
+				color: #ff6600;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #ff6600;
+			}
+		}
+		.penci-social__soundcloud {
+			a, .penci-social__info-text {
+				color: #f50;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #f50;
+			}
+		}
+		.penci-social__twitter {
+			a, .penci-social__info-text {
+				color: #40c4ff;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #40c4ff;
+			}
+		}
+		.penci-social__vimeo {
+			a, .penci-social__info-text {
+				color: #00ADEF;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #00ADEF;
+			}
+		}
+		.penci-social__youtube {
+			a, .penci-social__info-text {
+				color: #ff0000;
+			}
+			&:hover .penci-social__content {
+				background-color: #ff0000;
+			}
+		}
+		.penci-social__google {
+			a, .penci-social__info-text {
+				color: #eb4026;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #eb4026;
+			}
+		}
+		.penci-social__instagram {
+			a, .penci-social__info-text {
+				color: #417096;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #417096;
+			}
+		}
+
+		.penci-social__github {
+			a, .penci-social__info-text {
+				color: #3f91cb;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #3f91cb;
+			}
+		}
+
+		.penci-social__pinterest {
+
+			a, .penci-social__info-text {
+				color: #bd081c;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #bd081c;
+			}
+		}
+
+		.penci-social__linkedin {
+
+			a, .penci-social__info-text {
+				color: #0077B5;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #0077B5;
+			}
+		}
+		.penci-social__flickr {
+			a, .penci-social__info-text {
+				color: #ff0084;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #ff0084;
+			}
+		}
+		.penci-social__behance {
+
+			a, .penci-social__info-text {
+				color: #053eff;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #053eff;
+			}
+		}
+		.penci-social__tumblr {
+			a, .penci-social__info-text {
+				color: #34465d;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #34465d;
+			}
+		}
+
+		.penci-social__email_me {
+			a, .penci-social__info-text {
+				color: #0084ff;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #0084ff;
+			}
+		}
+		.penci-social__bloglovin {
+			a, .penci-social__info-text {
+				color: #40c4ff;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #40c4ff;
+			}
+		}
+		.penci-social__vimeo {
+			a, .penci-social__info-text {
+				color: #00ADEF;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #00ADEF;
+			}
+		}
+		.penci-social__vk  {
+			a, .penci-social__info-text {
+				color: #4c75a3;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #4c75a3;
+			}
+		}
+		.penci-social__vine {
+			a, .penci-social__info-text {
+				color: #00b489;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #00b489;
+			}
+		}
+
+		.penci-social__rss {
+			a, .penci-social__info-text {
+				color: #e19126;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #e19126;
+			}
+		}
+
+		.penci-social__snapchat {
+			a, .penci-social__info-text {
+				color: #FFEB3B;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #FFEB3B;
+			}
+		}
+		.penci-social__spotify {
+			a, .penci-social__info-text {
+				color: #00e461;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #00e461;
+			}
+		}
+		.penci-social__github {
+			a, .penci-social__info-text {
+				color: #3f91cb;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #3f91cb;
+			}
+		}
+		.penci-social__stack-overflow {
+			a, .penci-social__info-text {
+				color: #f48024;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #f48024;
+			}
+		}
+		.penci-social__twitch {
+			a, .penci-social__info-text {
+				color: #6441a4;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #6441a4;
+			}
+		}
+		.penci-social__steam {
+			a, .penci-social__info-text {
+				color: #c5c3c0;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #c5c3c0;
+			}
+		}
+		.penci-social__xing {
+			a, .penci-social__info-text {
+				color: #006567;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #006567;
+			}
+		}
+
+		.penci-social__line {
+			a, .penci-social__info-text {
+				color: #2ac42a;
+			}
+
+			&:hover .penci-social__content {
+				background-color: #2ac42a;
+			}
+		}
+
+		.penci-social__patreon {
+			a, .penci-social__info-text {
+				color: rgb(232, 91, 70);
+			}
+
+			&:hover .penci-social__content {
+				background-color: rgb(232, 91, 70);
+			}
+		}
+	}
+
+	/************* Style 4 *****************/
+	&.penci-social-counter--style-4 {
+		.penci-social__facebook,
+		.penci-social__rss,
+		.penci-social__soundcloud,
+		.penci-social__twitter,
+		.penci-social__vimeo,
+		.penci-social__youtube,
+		.penci-social__google,
+		.penci-social__github,
+		.penci-social__instagram,
+		.penci-social__github,
+		.penci-social__pinterest,
+		.penci-social__linkedin,
+		.penci-social__flickr,
+		.penci-social__behance,
+		.penci-social__tumblr,
+		.penci-social__youtube,
+		.penci-social__email_me,
+		.penci-social__bloglovin,
+		.penci-social__vimeo,
+		.penci-social__vk,
+		.penci-social__vine,
+		.penci-social__soundcloud,
+		.penci-social__rss,
+		.penci-social__snapchat,
+		.penci-social__spotify,
+		.penci-social__github,
+		.penci-social__stack-overflow,
+		.penci-social__twitch,
+		.penci-social__steam,
+		.penci-social__line,
+		.penci-social__patreon,
+		.penci-social__xing {
+			a, .penci-social__info-text {
+				transition: color 0.3s;
+			}
+
+			.penci-social__content {
+				background-color: #f5f5f5;;
+			}
+
+			&:hover {
+				a, .penci-social__info-text {
+					color: $color__white;
+				}
+			}
+		}
+
+
+		.penci-social__instagram {
+			transition: all 0.3s;
+
+			.penci-social__content:before {
+				opacity: 0;
+				background: radial-gradient(circle farthest-corner at 35% 90%, #ffa100, transparent 50%),
+				radial-gradient(circle farthest-corner at 0 140%, #efa11c, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 60% -20%, #8f44c7, transparent 50%),
+				radial-gradient(ellipse farthest-corner at 100% 100%, #d43178, transparent),
+				linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+			}
+
+			&:hover .penci-social__content:before {
+				opacity: 1;
+			}
+		}
+	}
+
+	/************* Style 5 *****************/
+	&.penci-social-counter--style-5 {
+
+		.penci-social__facebook,
+		.penci-social__rss,
+		.penci-social__soundcloud,
+		.penci-social__twitter,
+		.penci-social__vimeo,
+		.penci-social__youtube,
+		.penci-social__google,
+		.penci-social__github,
+		.penci-social__instagram,
+		.penci-social__github,
+		.penci-social__pinterest,
+		.penci-social__linkedin,
+		.penci-social__flickr,
+		.penci-social__behance,
+		.penci-social__tumblr,
+		.penci-social__youtube,
+		.penci-social__email_me,
+		.penci-social__bloglovin,
+		.penci-social__vimeo,
+		.penci-social__vk,
+		.penci-social__vine,
+		.penci-social__soundcloud,
+		.penci-social__rss,
+		.penci-social__snapchat,
+		.penci-social__spotify,
+		.penci-social__github,
+		.penci-social__stack-overflow,
+		.penci-social__twitch,
+		.penci-social__steam,
+		.penci-social__line,
+		.penci-social__patreon,
+		.penci-social__xing {
+			a, .penci-social__info-text {
+				transition: color 0.3s;
+				color: $color__white
+			}
+
+			.penci-social__content {
+				background-color: $color__dark;
+			}
+		}
+	}
+
+	&.penci-social-counter--style-6 {
+		.penci-block_content {
+			margin-left: -5px;
+			margin-right: -5px;
+			margin-bottom: 20px;
+		}
+
+		.penci-social__item {
+			width: 50%;
+			padding-left: 5px;
+			padding-right: 5px;
+			float: left;
+			margin-top: 10px;
+			margin-bottom: 0;
+
+			.penci-social__content {
+				padding-left: 0;
+				padding-right: 0;
+				height: auto;
+			}
+
+			a{
+				line-height: 40px;
+				height: 100%;
+				display: block;
+				padding-left: 15px;
+				overflow: hidden;
+			}
+
+			&:nth-child( 1 ),
+			&:nth-child( 2 ){
+				margin-top: 0;
+			}
+
+		}
+
+		.penci-social__name {
+			text-transform: uppercase;
+			@include font-size(1.2);
+		}
+
+	}
+
+	.penci-social__facebook .penci-social__content {
+		background-color: #0d47a1;
+	}
+	.penci-social__rss .penci-social__content {
+		background-color: #ff6600;
+	}
+	.penci-social__soundcloud .penci-social__content {
+		background-color: #f50;
+	}
+	.penci-social__twitter .penci-social__content {
+		background-color: #40c4ff;
+	}
+	.penci-social__vimeo .penci-social__content {
+		background-color: #00ADEF;
+	}
+	.penci-social__youtube .penci-social__content {
+		background-color: #ff0000;
+	}
+	.penci-social__google .penci-social__content {
+		background-color: #eb4026;
+	}
+	.penci-social__instagram .penci-social__content {
+		background-color: #417096;
+	}
+
+	.penci-social__github .penci-social__content {
+		background-color: #3f91cb;
+	}
+
+	.penci-social__pinterest .penci-social__content {
+		background-color: #bd081c;
+	}
+
+	.penci-social__linkedin .penci-social__content {
+		background-color: #0077B5;
+	}
+	.penci-social__flickr .penci-social__content {
+		background-color: #ff0084;
+	}
+	.penci-social__behance .penci-social__content {
+		background-color: #053eff;
+	}
+	.penci-social__tumblr .penci-social__content {
+		background-color: #34465d;
+	}
+	.penci-social__youtube .penci-social__content {
+		background-color: #ff0000;
+	}
+	.penci-social__email_me .penci-social__content {
+		background-color: #0084ff;
+	}
+	.penci-social__bloglovin .penci-social__content {
+		background-color: #40c4ff;
+	}
+	.penci-social__vimeo .penci-social__content {
+		background-color: #00ADEF;
+	}
+	.penci-social__vk .penci-social__content {
+		background-color: #4c75a3;
+	}
+	.penci-social__vine .penci-social__content {
+		background-color: #00b489;
+	}
+	.penci-social__soundcloud .penci-social__content {
+		background-color: #f50;
+	}
+	.penci-social__rss .penci-social__content {
+		background-color: #e19126;
+	}
+
+	.penci-social__snapchat .penci-social__content {
+		background-color: #FFEB3B;
+	}
+	.penci-social__spotify .penci-social__content {
+		background-color: #00e461;
+	}
+	.penci-social__github .penci-social__content {
+		background-color: #3f91cb;
+	}
+	.penci-social__stack-overflow .penci-social__content {
+		background-color: #f48024;
+	}
+	.penci-social__twitch .penci-social__content {
+		background-color: #6441a4;
+	}
+	.penci-social__steam .penci-social__content {
+		background-color: #c5c3c0;
+	}
+	.penci-social__xing .penci-social__content {
+		background-color: #006567;
+	}
+	.penci-social__line .penci-social__content {
+		background-color: #2ac42a;;
+	}
+	.penci-social__patreon .penci-social__content {
+		background-color: rgb(232, 91, 70);
+	}
+}
+
+.page:not( .penci_dis_padding_bw ) .penci-pb-row{
+	.penci-social-counter.penci-social-counter--style-1 .penci-block_content ,
+	.penci-social-counter.penci-social-counter--style-2 .penci-block_content {
+		margin-bottom: 20px;
+	}
+}
+
+.widget.penci-social-counter.penci-empty-block-title {
+	padding-top: 1px;
+}
+
+.penci-social-counter.penci-social-counter--style-3 .penci-social__empty a,
+.penci-social-counter.penci-social-counter--style-4 .penci-social__empty a,
+.penci-social-counter.penci-social-counter--style-5 .penci-social__empty a,
+.penci-social-counter.penci-social-counter--style-6 .penci-social__empty a{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

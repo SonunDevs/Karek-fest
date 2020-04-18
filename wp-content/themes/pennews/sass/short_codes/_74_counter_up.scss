@@ -1,0 +1,66 @@
+.penci-counter-up {
+	color: $color__dark;
+
+	.penci-cup_icon--icon {
+		font-size: 80px;
+		display: inline-block;
+		font-weight: 700;
+		text-align: center;
+		line-height: 1;
+	}
+
+	.penci-cup_iconn--i{
+		font-size: inherit;
+		-moz-box-sizing: content-box;
+		-webkit-box-sizing: content-box;
+		box-sizing: content-box;
+		min-width: 1.15em;
+		max-width: 100%;
+		min-height: 1.15em;
+		line-height: 1.15em;
+		display: inline-block;
+	}
+
+	.penci-cup-number-wrapper {
+		font-size: 50px;
+		line-height: 50px;
+		margin-bottom: 5px;
+		vertical-align: middle;
+		color: $color__dark;
+	}
+
+	.penci-cup-label {
+		font-size: 70%;
+		line-height: 100%;
+	}
+
+	.penci-cup-title {
+		font-family: $font__muktavaani;
+		font-size: 24px;
+	}
+
+	.penci-cup-btn {
+		margin-top: 15px;
+		border: none;
+	}
+
+	&.penci-counter-up-s1{
+		text-align: center;
+
+		.penci-cup_icon {
+			margin-bottom: 15px;
+		}
+	}
+
+	&.penci-counter-up-s2{
+
+		.penci-counter-up_inner {
+			display: flex;
+			align-items: center;
+		}
+
+		.penci-cup_icon {
+			margin-right: 20px;
+		}
+	}
+}

@@ -1,0 +1,56 @@
+.penci-owl-featured-area.style-1 {
+	.penci-item-mag {
+		height: auto;
+
+		&.penci-item-mag-desk img{
+			width: auto;
+			height: 400px;
+		}
+	}
+
+	.penci-image-holder:before {
+		padding-top: 134%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.penci-owl-featured-area.style-1 {
+		.penci_slider__title {
+			font-size: 18px !important;
+		}
+
+		.penci-item-mag {
+			&.penci-item-mag-desk img{
+				height: 250px;
+			}
+
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.penci-owl-featured-area.style-1 {
+		.penci_slider__title {
+			font-size: 18px !important;
+			text-align: center;
+		}
+
+		.penci-slider__cat,
+		.penci_post-meta {
+			display: none;
+		}
+
+		.penci-item-mag {
+			&.penci-item-mag-desk img{
+				height: auto;
+				width: 100%;
+			}
+
+		}
+
+		.penci-image-holder:before {
+			padding-top: 66.6667%;
+		}
+	}
+}

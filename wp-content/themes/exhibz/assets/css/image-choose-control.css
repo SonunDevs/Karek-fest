@@ -1,0 +1,52 @@
+.elementor-image-choices{
+margin: 0 0 -2px 0;
+}
+.elementor-image-choices:after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.image-choose-label-block{
+    float: left;
+    margin: 0 0 2px 0;
+}
+.image-choose-label-block .imagesmall{
+    width: 100%;
+    height: auto;
+    display: block;
+    cursor: pointer;
+}
+.image-choose-label-block .imagelarge{
+    position: absolute;
+    bottom: 100%;
+    margin-bottom: 5px;
+    display: block;
+    max-width: 215px;
+    max-height: 120px;
+    box-shadow: 1px 1px 1px #999;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 200ms linear; 
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.image-choose-label-block:hover .imagelarge{
+    visibility: visible;
+    opacity: 1;
+}
+
+.image-choose-label-block input{
+    display: none!important;
+}
+.elementor-image-choices-label{
+    display: block;
+}
+.elementor-image-choices .elementor-image-choices-label{
+    border: 3px solid transparent;
+    padding: 2px;
+}
+.elementor-image-choices input.checked+.elementor-image-choices-label{
+    border: 3px solid #a4afb7;
+}

@@ -1,0 +1,374 @@
+.penci-block-vc.penci_block_weather {
+	color:#111;
+
+    .penci_dark_layout &{
+        color: inherit;
+    }
+
+    .penci-block_content {
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    &.widget {
+        padding-bottom: 0;
+    }
+}
+
+.penci-weather-header {
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.penci-weather-city {
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 7px
+}
+
+.penci-weather-condition {
+    font-size: 14px;
+    line-height: 1;
+    text-transform: capitalize;
+    opacity: .8
+}
+
+.penci-location-icon {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 22px;
+    opacity: .6;
+    z-index: 1
+}
+
+.penci-location-icon:hover {
+    cursor: pointer;
+    opacity: .9
+}
+
+.penci-weather-temperature {
+    
+    padding: 3px 0;
+    display: inline-block;
+    width: 100%;
+    float: left;
+    text-align: center
+}
+
+@media screen and (max-width: 1018px) {
+    .penci-weather-temperature {
+        margin-bottom:-6px;
+        padding: 0
+    }
+}
+
+.penci-weather-temp-wrap {
+    display: inline-block
+}
+
+.penci-weather-now {
+    float: left;
+    text-align: center;
+    line-height: 1;
+    padding: 32px 16px;
+    font-weight: 300;
+    max-width: 145px;
+    width: 50%;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+@media screen and (max-width: 1018px) {
+    .penci-weather-now {
+        padding:28px 0;
+        position: relative;
+        left: -10px;
+        width: 90px;
+        margin-left: 12px
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width:1018px) {
+    .penci-weather-now {
+        margin-left:0
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .penci-weather-now {
+        width:100px
+    }
+}
+
+.penci-weather-now .penci-big-degrees {
+    font-size: 40px
+}
+
+@media screen and (max-width: 1018px) {
+    .penci-weather-now .penci-big-degrees {
+        font-size:32px
+    }
+}
+
+.penci-weather-now .penci-circle {
+    font-size: 30px;
+    position: relative;
+    top: -6px;
+    opacity: .6;
+    line-height: 1;
+    vertical-align: top
+}
+
+.penci-weather-now .penci-weather-unit {
+    font-size: 16px;
+    position: relative;
+    top: -4px;
+    font-weight: 400;
+    opacity: .6;
+    left: -2px;
+    line-height: 1;
+    vertical-align: top
+}
+
+.penci-weather-now:hover {
+    cursor: pointer
+}
+
+.penci-weather-lo-hi {
+    float: left;
+    text-align: left;
+}
+
+.penci-weather-lo-hi__content{
+    padding: 15px 0;
+
+    .penci-circle {
+        padding-left: 3px;
+    }
+}
+
+.penci-weather-degrees-wrap {
+    padding: 15px 20px;
+    text-align: right;
+}
+.penci-weather-degrees-wrap:before,
+.penci-weather-degrees-wrap:after{
+    content:'';
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 1018px) {
+    .penci-weather-degrees-wrap {
+        padding:10px;
+    }
+}
+
+.penci-weather-degrees-wrap i {
+    position: relative;
+    top: 1px;
+    font-size: 16px;
+    color: #b3b3b3;
+    right: 5px;
+}
+
+.penci-weather-degrees-wrap .penci-small-degrees {
+    font-size: 12px
+}
+
+.penci-weather-degrees-wrap .penci-circle {
+    font-size: 18px;
+    position: relative;
+    right: 3px;
+    top: 3px
+}
+
+.penci-weather-information {
+   
+    font-size: 12px;
+    position: relative;
+    padding: 5px 0;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    opacity: .6;
+    margin-top: 19px;
+    border-top: 1px solid $color__border;
+    border-bottom: 1px solid $color__border;
+}
+
+.penci-weather-information i {
+    font-size: 16px;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+}
+
+.penci-weather-section {
+    float: left;
+    width: 33%
+}
+
+.penci_humidty {
+    text-align: right;
+    padding-right: 10px
+}
+
+.penci_wind {
+    text-align: center
+}
+
+.penci_clouds {
+    text-align: left;
+    padding-left: 10px
+}
+
+.penci-weather-week {
+    padding: 15px 8px;
+    width: 100%;
+    text-align: center;
+    line-height: 1;
+    position: relative;
+    display: block;
+    margin-bottom: -5px;
+    clear: both;
+    overflow: hidden;
+}
+
+.penci-weather-week:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #3f51b5;
+    opacity: .07;
+}
+
+.penci-weather-days {
+    width: 20%;
+    float: left;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1
+}
+
+.penci-weather-days .penci-day{
+    margin-bottom: 8px;
+    font-size: 11px;
+    opacity: .5
+}
+
+.penci-weather-days .penci-day-degrees {
+    font-size: 20px;
+    position: relative;
+    left: 4px;
+    line-height: 14px;
+    opacity: .7
+}
+
+.penci-weather-days .penci-circle {
+    position: relative;
+    right: 5px
+}
+
+.penci-weather-days .penci-day {
+    margin-top: 8px;
+    font-size: 11px;
+    opacity: .5;
+}
+
+
+
+.penci-weather-set-location {
+    display: none;
+    position: absolute;
+    top: 0
+}
+
+.penci-weather-set-location .penci-location-set-input {
+    height: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+  
+    border: 0;
+    padding: 0 10px
+}
+
+.penci-weather-set-location .penci-location-set-input:focus ~ label {
+    top: -20px;
+    font-size: 11px;
+    opacity: .5
+}
+
+.penci-show-location {
+    display: block!important
+}
+
+.penci-show-location label {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    font-size: 13px;
+    opacity: .6;
+    pointer-events: none;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease
+}
+
+
+.penci-weather-animated-icon {
+    float: left;
+    text-align: right;
+    position: relative;
+}
+
+.penci-weather-animated-icon i{
+    width: 70px;
+    font-size:70px;
+    opacity: 0.4;
+    top: 15px;
+    left: 0;
+    right: auto;
+}
+
+.footer__sidebars {
+    .penci-block-vc.penci_block_weather {
+        color :#fff;
+
+        .penci-block_content {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .penci-weather-degrees-wrap,
+        .penci-weather-header {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+}
+
+.penci-block-error {
+    padding:0 20px 20px;
+}
+
+.penci-block-error span{
+    background-color: #e20909;
+    color: #fff;
+    padding: 2px 10px 3px;
+    font-size: 11px;
+    margin-right: 10px;
+}

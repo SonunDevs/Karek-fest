@@ -1,0 +1,58 @@
+.site-content {
+	margin-top: 40px;
+	margin-bottom: 40px;
+
+	.page-template-bank-page &,
+	.page-template-full-width &,
+	.page-template-container-fluid & {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+}
+
+.page-template-full-width.penci-block-pagination {
+	.site-content {
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	.penci_breadcrumbs {
+		padding-bottom: 0;
+	    margin-bottom: 20px;
+		border: 0;
+	}
+}
+
+.penci-page__content {
+	word-break: break-word;
+}
+
+.page-template-default {
+	.penci-page__content {
+		background: $color__white;
+		padding: 20px;
+
+	}
+
+	.entry-content {
+		.penci-block-vc,
+		.penci-container-fluid {
+			padding-left: 0;
+			padding-right: 0;
+			width: 100%;
+			word-break: break-word;
+		}
+
+		.penci-container__content {
+			display: block;
+		}
+	}
+
+	&.two-sidebar {
+		.entry-content {
+			.widget-area {
+				width: 50%;
+			}
+		}
+	}
+}

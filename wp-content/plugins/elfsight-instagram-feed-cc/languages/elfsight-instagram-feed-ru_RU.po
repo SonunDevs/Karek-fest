@@ -1,0 +1,664 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-05-23T13:47:08+00:00\n"
+"PO-Revision-Date: 2019-05-23 16:58+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: ru_RU\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : 2);\n"
+
+#: includes/widgets-api.php:17
+msgid "Widget with the specified id doesnt exist."
+msgstr "Виджет с указанным id не существует."
+
+#: includes/widgets-api.php:18
+msgid "Parameter \"id\" is required."
+msgstr "Параметр “id” обязателен."
+
+#: includes/widgets-api.php:19
+msgid "Incoming data is invalid."
+msgstr "Входящие данные неверны."
+
+#: includes/widgets-api.php:169
+msgid "An MySQL error occurred while adding new widget."
+msgstr "Произошла ошибка MySQL при добавлении нового виджета."
+
+#: includes/vc-element.php:49
+msgid "Select a widget "
+msgstr "Выбрать виджет "
+
+#: includes/templates/page-activation.php:7
+msgid "Activation"
+msgstr "Активация"
+
+#: includes/templates/page-activation.php:14
+msgid "CodeCanyon License"
+msgstr "Лицензия CodeCanyon"
+
+#: includes/templates/page-activation.php:24
+msgid "Please, enter your plugin's CodeCanyon purchase code"
+msgstr "Пожалуйста, введите код покупки CodeCanyon вашего плагина"
+
+#: includes/templates/page-activation.php:28
+msgid "Purchase code"
+msgstr "Код покупки"
+
+#: includes/templates/page-activation.php:34
+#: includes/templates/page-support.php:35
+#: includes/templates/menu-actions.php:10
+msgid "Activate License"
+msgstr "Активировать лицензию"
+
+#: includes/templates/page-activation.php:37
+msgid "Deactivate License"
+msgstr "Дезактивировать лицензию"
+
+#: includes/templates/page-activation.php:40
+msgid "Are you sure you want to deactivate the plugin?"
+msgstr "Вы уверены, что хотите деактивировать плагин?"
+
+#: includes/templates/page-activation.php:42
+msgid "No"
+msgstr "Нет"
+
+#: includes/templates/page-activation.php:44
+msgid "Yes"
+msgstr "Да"
+
+#: includes/templates/page-activation.php:49
+msgid "The plugin is successfuly activated"
+msgstr "Плагин успешно активирован"
+
+#: includes/templates/page-activation.php:50
+msgid "Your purchase code is not valid"
+msgstr "Ваш код покупки недействителен"
+
+#: includes/templates/page-activation.php:51
+msgid ""
+"Error occurred while checking your purchase code. Please, contact our "
+"support team via <a href=\"mailto:support@elfsight.com\">support@elfsight."
+"com</a>. We apologize for inconveniences."
+msgstr ""
+"Произошла ошибка при проверке кода покупки. Пожалуйста, свяжитесь с нашей "
+"службой поддержки через <a href=“mailto:support@elfsight."
+"com”>support@elfsight.com</a>. Приносим свои извинения за доставленные "
+"неудобства."
+
+#: includes/templates/page-activation.php:58
+msgid "FAQ"
+msgstr "FAQ"
+
+#: includes/templates/page-activation.php:62
+msgid "How do I benefit from activating the license in the plugin?"
+msgstr "Что даст активации лицензии в плагине?"
+
+#. translators: %1$s: link
+#: includes/templates/page-activation.php:68
+msgid ""
+"Activating the %1$s will give you access to the in-plugin support and "
+"automatic plugin updates. Now bug fixes and new features will be "
+"automatically implemented in your plugin."
+msgstr ""
+"Активация %1$s даст вам доступ к поддержке внутри плагина и автоматическим "
+"обновлениям плагина. Теперь исправления ошибок и новые функции будут "
+"автоматически внедрены в ваш плагин."
+
+#. translators: Activating the [plugin] will give ..
+#: includes/templates/page-activation.php:73
+#: includes/templates/page-support.php:28
+msgid "plugin"
+msgstr "плагина"
+
+#: includes/templates/page-activation.php:81
+msgid "What is CodeCanyon purchase code?"
+msgstr "Что такое код покупки CodeCanyon?"
+
+#. translators: %1$s: link
+#: includes/templates/page-activation.php:86
+msgid ""
+"Purchase code is a license key, that you get after buying the plugin on "
+"%1$s. It looks like this: 13fc2617-5d1d-4127-873a-feb85d27a012."
+msgstr ""
+"Код покупки - это лицензионный ключ, который вы получаете после покупки "
+"плагина на %1$s. Это выглядит так: 13fc2617-5d1d-4127-873a-feb85d27a012."
+
+#: includes/templates/page-activation.php:100
+msgid "How do I get my purchase code?"
+msgstr "Как получить код покупки?"
+
+#. translators: %1$s: product link, %2$s: download link, %3$s: help link
+#: includes/templates/page-activation.php:105
+msgid ""
+"After purchasing the %1$s, go to %2$s, click \"Download\" and select "
+"“License Certificate & Purchase Code”. You’ll find your purchase code in the "
+"downloaded file. To find out more, read: %3$s"
+msgstr ""
+"После покупки %1$s перейдите к %2$s, нажмите «Download» и выберите «License "
+"Certificate & Purchase Code». Вы найдете код покупки в загруженном файле. "
+"Чтобы узнать больше, прочитайте: %3$s"
+
+#. translators: After purchasing the [item], go to ..
+#: includes/templates/page-activation.php:110
+msgid "item"
+msgstr "плагина"
+
+#: includes/templates/page-activation.php:116
+msgid "Where to find your Envato purchase code?"
+msgstr "Где найти код покупки Envato?"
+
+#: includes/templates/page-activation.php:127
+msgid "How do I activate a CodeCanyon license?"
+msgstr "Как активировать лицензию CodeCanyon?"
+
+#: includes/templates/page-activation.php:129
+msgid ""
+"To activate your license in the plugin insert you purchase code into the "
+"CodeCanyon License form above and press “Activate License” button. After the "
+"successful activation, you will see the corresponding notification."
+msgstr ""
+"Чтобы активировать свою лицензию в плагине, вставьте приобретенный вами код "
+"в форму лицензии CodeCanyon выше и нажмите кнопку «Активировать лицензию». "
+"После успешной активации вы увидите соответствующее уведомление."
+
+#: includes/templates/page-support.php:9 includes/templates/page-support.php:47
+msgid "Support"
+msgstr "Поддержка"
+
+#: includes/templates/page-support.php:16
+msgid "Unlock"
+msgstr "Разблокировать"
+
+#: includes/templates/page-support.php:18
+msgid ""
+"Support section is only available for CodeCanyon clients with activated "
+"license"
+msgstr ""
+"Раздел поддержки доступен только для клиентов CodeCanyon с активированной "
+"лицензией"
+
+#. translators: %1$s: link
+#: includes/templates/page-support.php:24
+msgid ""
+"To unlock the in-plugin support, please, activate your license by entering "
+"CodeCanyon purchase code of the %1$s."
+msgstr ""
+"Чтобы разблокировать поддержку в плагине, пожалуйста, активируйте свою "
+"лицензию, введя код покупки CodeCanyon %1$s."
+
+#: includes/templates/page-support.php:50
+msgid ""
+"We understand all the importance of product support for our customers. "
+"That’s why we are ready to solve all your issues and answer any questions "
+"related to our plugin."
+msgstr ""
+"Мы понимаем всю важность поддержки продукта для наших клиентов. Именно "
+"поэтому мы готовы решить все ваши проблемы и ответить на любые вопросы, "
+"связанные с нашим плагином."
+
+#: includes/templates/page-support.php:57
+msgid "Before submitting a ticket, make sure that"
+msgstr "Перед подачей заявки убедитесь, что"
+
+#: includes/templates/page-support.php:65
+msgid "You use the latest version."
+msgstr "Вы используете последнюю версию."
+
+#: includes/templates/page-support.php:73
+msgid "There are no javascript errors on your website."
+msgstr "На вашем сайте нет ошибок javascript."
+
+#: includes/templates/page-support.php:81
+msgid "The documentation doesn't help."
+msgstr "Документация не помогает."
+
+#: includes/templates/page-support.php:85
+msgid "Didn't help? Open a ticket at our Support Center"
+msgstr "Не помогло? Откройте тикет в нашем Центре поддержки"
+
+#: includes/templates/page-support.php:94
+msgid "Our Support Includes"
+msgstr "Наша поддержка включает"
+
+#: includes/templates/page-support.php:98
+msgid "Fixing product bugs"
+msgstr "Исправление ошибок плагина"
+
+#: includes/templates/page-support.php:100
+msgid ""
+"Our product doesn’t work properly on your website? Report your issue or bug "
+"by describing it in detail and providing us with a link to your website. We "
+"will do our best to find a solution."
+msgstr ""
+"Наш продукт не работает должным образом на вашем сайте? Сообщите о своей "
+"проблеме или ошибке, подробно описав ее и предоставив нам ссылку на ваш "
+"сайт. Мы сделаем все возможное, чтобы найти решение."
+
+#: includes/templates/page-support.php:104
+msgid "Life-time updates"
+msgstr "Пожизненные обновления"
+
+#: includes/templates/page-support.php:106
+msgid ""
+"We release new updates and features on a regular basis. Just don’t forget to "
+"check for the latest version in your WordPress admin panel."
+msgstr ""
+"Мы выпускаем новые обновления и функции на регулярной основе. Просто не "
+"забудьте проверить наличие последней версии в вашей панели администратора "
+"WordPress."
+
+#: includes/templates/page-support.php:110
+msgid "Customer-friendly development"
+msgstr "Дружественную к клиенту разработка"
+
+#: includes/templates/page-support.php:112
+msgid ""
+"We are open to your ideas. If you need some specific features, that might "
+"also improve our products, then just drop us a line. We will consider "
+"implementing them in our future updates."
+msgstr ""
+"Мы открыты для ваших идей. Если вам нужны определенные функции, которые "
+"могут также улучшить наши продукты, просто напишите нам. Мы рассмотрим "
+"возможность их применения в наших будущих обновлениях."
+
+#: includes/templates/page-support.php:118
+msgid "Our Support Doesn’t Include"
+msgstr "Наша поддержка не включает"
+
+#: includes/templates/page-support.php:122
+msgid "Plugin installation"
+msgstr "Установку плагина"
+
+#: includes/templates/page-support.php:124
+msgid ""
+"We don’t provide installation services for our plugins. However, we're happy "
+"to provide you with installation tutorials. And if any errors come up during "
+"installation, feel free to contact us."
+msgstr ""
+"Мы не предоставляем услуги по установке наших плагинов. Тем не менее, мы "
+"рады предоставить вам учебные пособия по установке. Если во время установки "
+"возникнут какие-либо ошибки, свяжитесь с нами."
+
+#: includes/templates/page-support.php:128
+msgid "Plugin customization"
+msgstr "Ручную настройку плагина"
+
+#: includes/templates/page-support.php:130
+msgid ""
+"We don’t provide plugin customization services. If you need to modify the "
+"way some features work, share your ideas with us, and we will consider them "
+"for future updates."
+msgstr ""
+"Мы не предоставляем услуги по ручной настройке плагинов. Если вам нужно "
+"изменить способ работы некоторых функций, поделитесь своими идеями с нами, и "
+"мы рассмотрим их для будущих обновлений."
+
+#: includes/templates/page-support.php:134
+msgid "3rd-party issues"
+msgstr "Сторонние проблемы"
+
+#: includes/templates/page-support.php:136
+msgid ""
+"We don’t fix bugs or issues related to other plugins and themes, created by "
+"3rd-party developers. Also we don’t provide integration services for 3rd-"
+"party plugins and themes."
+msgstr ""
+"Мы не исправляем ошибки или проблемы, связанные с другими плагинами и "
+"темами, созданными сторонними разработчиками. Также мы не осуществляем "
+"интеграцию для сторонних плагинов и тем."
+
+#: includes/templates/page-widgets.php:7
+msgid "Widgets"
+msgstr "Виджеты"
+
+#: includes/templates/page-widgets.php:9 includes/templates/page-welcome.php:13
+msgid "Create widget"
+msgstr "Создать виджет"
+
+#: includes/templates/page-widgets.php:11
+msgid ""
+"Create, edit or remove your widgets. Use their shortcodes to insert them "
+"into the required place."
+msgstr ""
+"Создавайте, редактируйте или удаляйте ваши виджеты. Используйте их шорткоды, "
+"чтобы вставить их в нужное место."
+
+#: includes/templates/page-widgets.php:17
+msgid "Name"
+msgstr "Имя"
+
+#: includes/templates/page-widgets.php:18
+msgid "Shortcode"
+msgstr "Шорткод"
+
+#: includes/templates/page-widgets.php:19
+msgid "Last updated"
+msgstr "Последнее изменение"
+
+#: includes/templates/page-widgets.php:20
+msgid "Actions"
+msgstr "Действия"
+
+#: includes/templates/page-widgets.php:48
+msgid "Edit"
+msgstr "Редактировать"
+
+#: includes/templates/page-widgets.php:49
+msgid "Duplicate"
+msgstr "Дублировать"
+
+#: includes/templates/page-widgets.php:50
+msgid "Remove"
+msgstr "Удалить"
+
+#: includes/templates/page-widgets.php:53
+msgid "The widget has been removed."
+msgstr "Виджет был удален."
+
+#: includes/templates/page-widgets.php:54
+msgid "Restore it"
+msgstr "Восстановить"
+
+#: includes/templates/page-widgets.php:63
+msgid "There is no any widget yet."
+msgstr "Ещё нет ни одного виджета."
+
+#: includes/templates/page-widgets.php:64 includes/widget.php:57
+msgid "Create the first one."
+msgstr "Создайте первый."
+
+#: includes/templates/menu-actions.php:7
+msgid "CodeCanyon License:"
+msgstr "Лицензия CodeCanyon:"
+
+#: includes/templates/menu-actions.php:8
+msgid "Not Activated"
+msgstr "Не активировано"
+
+#: includes/templates/menu-actions.php:15
+msgid "A new version is available"
+msgstr "Доступна новая версия"
+
+#: includes/templates/menu-actions.php:17
+msgid "Update to"
+msgstr "Обновить до"
+
+#: includes/templates/header.php:8
+msgid "Would you share what you think about the plugin?"
+msgstr "Не могли бы вы поделиться мыслями о плагине?"
+
+#: includes/templates/header.php:11 includes/templates/header.php:14
+#: includes/templates/header.php:17 includes/templates/header.php:20
+#: includes/templates/popup-rating.php:17
+#: includes/templates/popup-rating.php:20
+#: includes/templates/popup-rating.php:23
+#: includes/templates/popup-rating.php:26
+msgid "stars"
+msgstr "звёзд"
+
+#: includes/templates/header.php:23 includes/templates/popup-rating.php:29
+msgid "star"
+msgstr "звезда"
+
+#. translators: %s: version
+#: includes/templates/header.php:37
+msgid "Version %s"
+msgstr "Версия %s"
+
+#. translators: %s: date
+#: includes/templates/header.php:46
+msgid "Last updated on %1$s"
+msgstr "Последнее обновление %1$s"
+
+#: includes/templates/header.php:55
+msgid "Need help?"
+msgstr "Нужна помощь?"
+
+#. translators: %s: Plugin Name
+#: includes/templates/page-welcome.php:6
+msgid "Welcome to %s"
+msgstr "%s"
+
+#: includes/templates/page-welcome.php:10
+msgid "Let’s create your first widget!"
+msgstr "Создайте свой первый виджет!"
+
+#: includes/templates/page-edit-widget.php:12
+msgid "Back to list"
+msgstr "Вернуться к списку"
+
+#: includes/templates/page-edit-widget.php:15
+msgid "Create Widget"
+msgstr "Создать Виджет"
+
+#: includes/templates/page-edit-widget.php:17
+msgid "Edit Widget"
+msgstr "Редактировать Виджет"
+
+#: includes/templates/page-edit-widget.php:19
+msgid ""
+"Name your widget, adjust settings and save it. You will see the shortcode of "
+"your new widget in the widgets list. You can copy-paste it to the required "
+"place of your website."
+msgstr ""
+"Назовите свой виджет, настройте параметры и сохраните его. Вы увидите "
+"шорткод вашего нового виджета в списке виджетов. Вы можете скопировать и "
+"вставить его в нужное место вашего сайта."
+
+#: includes/templates/page-edit-widget.php:27
+msgid "Widget name"
+msgstr "Имя виджета"
+
+#: includes/templates/page-edit-widget.php:33
+msgid "Name your widget. The name will be displayed only in your admin panel."
+msgstr ""
+"Назовите свой виджет. Имя будет отображаться только в вашей панели "
+"администратора."
+
+#: includes/templates/page-edit-widget.php:41
+msgid "Adjust settings"
+msgstr "Настроить параметры"
+
+#: includes/templates/page-edit-widget.php:45
+#: includes/templates/page-preferences.php:54
+#: includes/templates/page-preferences.php:88
+msgid "Save"
+msgstr "Сохранить"
+
+#: includes/templates/page-edit-widget.php:60
+msgid "Save and Exit"
+msgstr "Сохранить и выйти"
+
+#: includes/templates/page-edit-widget.php:62
+msgid "Cancel"
+msgstr "Отмена"
+
+#: includes/templates/page-error.php:6
+msgid "Oops, something went wrong"
+msgstr "Упс! Что-то пошло не так"
+
+#: includes/templates/page-error.php:9
+msgid "Unfortunately, there is no such page."
+msgstr "К сожалению, такой страницы нет."
+
+#: includes/templates/page-error.php:12
+msgid "Back to Home"
+msgstr "Вернуться Домой"
+
+#: includes/templates/page-preferences.php:7
+msgid "Preferences"
+msgstr "Настройки"
+
+#: includes/templates/page-preferences.php:10
+msgid "These settings will be applied to each widget of the plugin."
+msgstr "Эти настройки будут применены к каждому виджету плагина."
+
+#: includes/templates/page-preferences.php:20
+msgid "Add plugin script to every page"
+msgstr "Добавить скрипт плагина на каждую страницу"
+
+#: includes/templates/page-preferences.php:24
+msgid ""
+"By default the plugin adds its scripts only to pages with its shortcode. "
+"This option makes the plugin add scripts to every page. It is useful for "
+"ajax websites."
+msgstr ""
+"По умолчанию плагин добавляет свои скрипты только на страницы со своим "
+"шорткодом. Эта опция заставляет плагин добавлять скрипты на каждую страницу. "
+"Это полезно для ajax-сайтов."
+
+#: includes/templates/page-preferences.php:39
+msgid "Custom CSS"
+msgstr "Пользовательский CSS"
+
+#: includes/templates/page-preferences.php:43
+msgid ""
+"Here you can set the plugin's custom styles. The code will be added to each "
+"page with the widget."
+msgstr ""
+"Здесь вы можете установить собственные стили плагина. Код будет добавлен на "
+"каждую страницу с виджетом."
+
+#: includes/templates/page-preferences.php:60
+#: includes/templates/page-preferences.php:94
+msgid "Done!"
+msgstr "Готово!"
+
+#: includes/templates/page-preferences.php:73
+msgid "Custom JavaScript"
+msgstr "Пользовательский JavaScript"
+
+#: includes/templates/page-preferences.php:77
+msgid ""
+"Here you can set the plugin's custom javascript code. The code will be added "
+"to each page with the widget."
+msgstr ""
+"Здесь вы можете установить собственный код JavaScript для плагина. Код будет "
+"добавлен на каждую страницу с виджетом."
+
+#: includes/templates/page-preferences.php:108
+msgid "Who can access the plugin"
+msgstr "Кто может получить доступ к плагину"
+
+#: includes/templates/page-preferences.php:112
+msgid ""
+"Here you can set the minimal permissions role that can access the plugin."
+msgstr ""
+"Здесь вы можете установить минимальную роль пользователя, который может "
+"получить доступ к плагину."
+
+#: includes/templates/page-preferences.php:119
+msgid "Admin"
+msgstr "Администратор"
+
+#: includes/templates/page-preferences.php:120
+msgid "Editor"
+msgstr "Редактор"
+
+#: includes/templates/page-preferences.php:121
+msgid "Author"
+msgstr "Автор"
+
+#: includes/templates/page-preferences.php:133
+msgid "Automatic updates"
+msgstr "Автоматические обновления"
+
+#: includes/templates/page-preferences.php:137
+msgid ""
+"When this option is on (recommended), this plugin's released updates with "
+"the new features and bug fixes will be installed to your website "
+"automatically. When it is off, you'll only have the option of updating "
+"manually."
+msgstr ""
+"Когда эта опция включена (рекомендуется), выпущенные обновления этого "
+"плагина с новыми функциями и исправлениями ошибок будут автоматически "
+"установлены на ваш сайт. Когда он выключен, у вас будет возможность "
+"обновляться только вручную."
+
+#. translators: %s: Plugin Name
+#: includes/templates/popup-rating.php:12
+msgid "Enjoying %s Plugin?"
+msgstr "Понравился %s?"
+
+#. translators: %s: Plugin Name
+#: includes/templates/popup-rating.php:13
+msgid "Click a star to rate us"
+msgstr "Нажмите на звездочку, чтобы оценить нас"
+
+#: includes/templates/popup-rating.php:32
+msgid "Please, let us know how we can improve our plugin"
+msgstr "Пожалуйста, дайте знать, как мы можем улучшить наш плагин"
+
+#. translators: %s: product review link
+#: includes/templates/popup-rating.php:36
+msgid "Please, share this rating on %s"
+msgstr "Пожалуйста, поделитесь этим рейтингом на %s"
+
+#. translators: %s: facebook review link
+#: includes/templates/popup-rating.php:37
+msgid "Please, share this recommendation on %s"
+msgstr "Пожалуйста, поделитесь этой рекомендацией на %s"
+
+#: includes/templates/popup-rating.php:42
+msgid "Thanks for helping us improve!"
+msgstr "Спасибо за помощь в улучшении!"
+
+#: includes/templates/popup-rating.php:43
+msgid "Your feedback is very important for us!"
+msgstr "Ваше мнение очень важно для нас!"
+
+#. translators: %1$s: br, %2$s: product review link
+#: includes/templates/popup-rating.php:48
+msgid "We are very grateful %1$s for your awesome review on %2$s"
+msgstr "Мы очень благодарны %1$s за ваш потрясающий отзыв на %2$s"
+
+#. translators: %1$s: br, %2$s: facebook review link
+#: includes/templates/popup-rating.php:55
+msgid "We are very grateful %1$s for your awesome recommendation on %2$s"
+msgstr "Мы очень благодарны %1$s за вашу замечательную рекомендацию на %2$s"
+
+#: includes/templates/popup-rating.php:63
+msgid "No, thanks"
+msgstr "Нет, спасибо"
+
+#: includes/templates/popup-rating.php:64
+#: includes/templates/popup-rating.php:65
+msgid "Rate us"
+msgstr "Оцените нас"
+
+#: includes/admin.php:277
+msgid "The file can not be overwritten. Please check the file permissions."
+msgstr ""
+"Файл не может быть перезаписан. Пожалуйста, проверьте права доступа к файлу."
+
+#: includes/widget.php:46
+msgid "Select a widget:"
+msgstr "Выберите виджет:"
+
+#: includes/widget.php:48
+msgid "— Select —"
+msgstr "— Выбрать —"
+
+#: includes/widget.php:56
+msgid "No widgets yet."
+msgstr "Ещё нет виджетов."
+
+#~ msgid "Activated"
+#~ msgstr "Активировано"
+
+#~ msgid "Apply"
+#~ msgstr "Применить"
+
+#~ msgid "The plugin is not activated"
+#~ msgstr "Плагин не активирован"
+
+#, fuzzy
+#~| msgid "Widgets"
+#~ msgid "Widgets 1"
+#~ msgstr "Виджеты"

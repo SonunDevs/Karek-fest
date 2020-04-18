@@ -1,0 +1,20 @@
+.penci-block_38 {
+	&.penci-vc-column-1 {
+		.penci-post-blog-overlay {
+
+			.classic-post-hasimage {
+				margin-bottom: 0;
+			}
+
+			.entry-header{
+				position: static;
+				padding: 20px 0 0;
+			}
+		}
+
+		.penci-post-blog-overlay,
+		.penci-post-blog-standard {
+			margin-bottom: 20px;
+		}
+	}
+}

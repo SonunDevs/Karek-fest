@@ -1,0 +1,71 @@
+.footer__sidebars {
+	color: $color__white;
+	overflow: hidden;
+	clear: both;
+	padding-top: 47px;
+	padding-bottom: 26px;
+
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+
+	li, a {
+		color: $color__white;
+	}
+
+	a:hover {
+		color: $color__blue;
+	}
+
+	.widget {
+		border-top: 0;
+		padding: 0 10px;
+		margin-bottom: 40px;
+	}
+	.footer-sidebar-item:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+
+	.footer-sidebar-item .widget:last-of-type {
+		margin-bottom: 0;
+
+		&.penci-block-load_more .penci-block-ajax-more-button {
+			margin-bottom: 0;
+		}
+	}
+
+	.penci-block_6,
+	.penci-block_7,
+	.penci-block_10,
+	.penci-block_15 {
+		&:not( .penci-block-load_more ) .penci-post-item:last-of-type {
+			margin-bottom: 0;
+		}
+
+	}
+
+	.penci-block_11:not( .penci-block-load_more ) .block11_items .penci-post-item:last-of-type {
+		margin-bottom: 0;
+	}
+
+	.penci-block_6 .penci-ajax-more .penci-block-ajax-more-button,
+	.penci-block_7 .penci-ajax-more .penci-block-ajax-more-button,
+	.penci-block_9 .penci-ajax-more .penci-block-ajax-more-button,
+	.penci-block_10 .penci-ajax-more .penci-block-ajax-more-button,
+	.penci-block_11 .penci-ajax-more .penci-block-ajax-more-button,
+	.penci-block_15 .penci-ajax-more .penci-block-ajax-more-button,
+	.penci-block_36 .penci-ajax-more .penci-block-ajax-more-button {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: 1400px) {
+	body:not( .penci_dis_padding_bw ) .footer__sidebars > .footer__sidebars-inner > .row {
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}

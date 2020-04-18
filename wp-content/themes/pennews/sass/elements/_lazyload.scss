@@ -1,0 +1,30 @@
+.penci-animated_ajax2 .penci-lazy{
+	opacity: 0;
+}
+
+.penci-animated_ajax2 .penci-lazy.b-loaded {
+    opacity: 1;
+}
+
+.penci-lazy[src*="penci-holder"] {
+	width: 100%;
+	height: auto;
+}
+
+@-webkit-keyframes pencipreload {
+	from {
+		background-position: -400px 0
+	}
+	to {
+		background-position: 800px 0
+	}
+}
+
+@keyframes pencipreload {
+	from {
+		background-position: -400px 0
+	}
+	to {
+		background-position: 800px 0
+	}
+}

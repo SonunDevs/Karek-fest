@@ -1,0 +1,147 @@
+#tribe-events-content-wrapper {
+	margin-bottom: 20px;
+}
+
+#tribe-events .tribe-events-button,
+#tribe-events .tribe-events-button:hover,
+#tribe_events_filters_wrapper input[type=submit],
+.tribe-events-button, .tribe-events-button.tribe-active:hover,
+.tribe-events-button.tribe-inactive,
+.tribe-events-button:hover,
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-],
+.tribe-events-calendar td.tribe-events-present div[id*=tribe-events-daynum-]>a {
+	background-color: $color__blue;
+}
+
+#tribe-bar-form .tribe-bar-submit input[type=submit] {
+	padding: 7px 10px;
+	background-color: $color__dark;
+
+	&:hover {
+		background-color: $color__blue;
+	}
+}
+
+.tribe-events-calendar thead th {
+	padding: 8px 0;
+	border: 1px solid #666;
+}
+
+#tribe-bar-form label,
+#tribe-events-content .tribe-events-tooltip h4,
+#tribe_events_filters_wrapper .tribe_events_slider_val,
+.single-tribe_events a.tribe-events-gcal,
+.single-tribe_events a.tribe-events-ical {
+	color:  $color__dark;
+}
+#tribe-bar-form label {
+	font-size: 13px;
+}
+#tribe-geo-results h2.tribe-events-page-title,
+#tribe-events-content h2.tribe-events-page-title {
+	margin-top: 18px;
+	margin-bottom: 7px;
+}
+
+.tribe-events-notices {
+	border-radius: 0;
+}
+
+.penci-archive-event__content .entry-content,
+.blog-grid.post-type-archive-tribe_events .penci-archive__content .entry-content {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.events-list #tribe-events-footer,
+.single-tribe_events #tribe-events-footer,
+.tribe-events-day #tribe-events-footer,
+.tribe-events-map #tribe-events-footer,
+.tribe-events-photo #tribe-events-footer {
+	border-color: #eee;
+}
+
+.events-list,
+.single-tribe_organizer,
+.single-tribe_venue,
+.tribe-events-day {
+	.penci-archive-event__content {
+		.tribe-events-loop {
+			max-width: 100%;
+		}
+	}
+}
+
+.tribe-events-list .tribe-events-loop .tribe-event-featured {
+	background-color: $color__blue;
+}
+
+.tribe-events-schedule {
+	margin: 7px 0 20px;
+
+	h2{
+		margin-top: 0;
+		margin-bottom: 0;
+		font-size: 14px;
+		color: #777;
+	}
+}
+
+.single-tribe_events .tribe-events-event-image {
+	text-align: center;
+}
+#tribe-events-content {
+	margin-bottom: 0;
+	padding:0;
+}
+
+.events-archive .penci-content-post {
+	padding: 20px;
+	background: #ffffff;
+}
+
+.tribe-events-list-widget .tribe-events-list-widget-events {
+	margin-left: 0;
+}
+
+.tribe-events-list-widget .tribe-events-list-widget-events:not( .tribe-event-featured ) {
+	padding: 0;
+	.tribe-event-image{
+		margin: 0;
+	}
+}
+.tribe-events-widget-link {
+	margin-bottom: 0;
+}
+
+#tribe-events-content-wrapper {
+
+	.tribe-events-list-separator-month span {
+		padding: 0 20px;
+	}
+
+	.tribe-events-event-cost span {
+		border: 0;
+		padding: 0;
+		font-size: 1.2em;
+		background-color: transparent;
+	}
+}
+
+
+#tribe-events-content-wrapper .tribe-events-list-separator-month {
+	margin-bottom: 0;
+}
+
+.single-tribe_events .tribe-events-schedule .tribe-events-cost {
+	vertical-align: middle;
+	font-size: 1.4em;
+	color: $color__blue;
+}
+
+#tribe-events-content-wrapper  #tribe-bar-form input[type=text] {
+	border-bottom: 1px solid #e0e0e0;
+}
+#tribe-events-content-wrapper #tribe-bar-form input[type=text]:focus {
+	outline: none;
+}

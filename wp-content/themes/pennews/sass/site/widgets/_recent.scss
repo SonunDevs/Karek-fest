@@ -1,0 +1,39 @@
+.widget {
+	&.widget_recent_entries,
+	&.widget_recent_comments,
+	&.widget_meta {
+		li {
+			color: #888;
+			line-height: 1.3;
+			display: table;
+			width: 100%;
+			margin-bottom: 12px;
+			padding-bottom: 13px;
+			border-bottom: 1px solid $color__border;
+
+			.site-footer &{
+                border-color: #313131;
+			}
+
+			a {
+				font-weight: 600;
+			}
+
+			&:last-child {
+				border-bottom: 0;
+			}
+		}
+
+
+	}
+
+	&.widget_recent_entries {
+		.post-date {
+			@include font-size( 1.2 );
+			color: #999999;
+			margin-top: 5px;
+			display: block;
+		}
+	}
+}
+

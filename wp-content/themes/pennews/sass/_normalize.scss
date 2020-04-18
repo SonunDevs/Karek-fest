@@ -1,0 +1,592 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-size: 10px;
+}
+body {
+  margin: 0;
+  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  @include font-size( 1.4 );
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  word-wrap: break-word;
+  overflow-x: hidden;
+}
+
+*:focus {
+  outline: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  margin:0;
+  padding:0;
+  background-color: transparent;
+  transition: color 0.3s;
+  text-decoration: none;
+  vertical-align:baseline;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: 700;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-size: 1em;
+  font-family: $font__code;
+  @include font-size(1.5);
+}
+
+
+p {
+  margin-bottom: 17px;
+}
+
+dfn, cite, em, i {
+  font-style: italic;
+}
+
+cite {
+  @include font-size( 1.3 );
+  font-style: italic;
+  font-weight: normal;
+  text-transform: none;
+  color: $color__dark;
+
+  .site-footer & {
+    color: $color__white;
+  }
+}
+
+
+
+blockquote:not( .wp-block-quote ), q {
+  @include font-size( 2.4 );
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.25;
+  text-align: center;
+  color: #3f51b5;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  position: relative;
+  margin-top: 26px;
+  margin-bottom: 33px;
+  text-transform: uppercase;
+
+  .author {
+    font-style: normal;
+    color: #888888;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  p{
+    margin-bottom: 0;
+  }
+}
+
+q{
+  padding-bottom: 27px;
+  display: inline-block;
+}
+
+blockquote:not( .wp-block-quote ):before, q:before {
+  content: '';
+  top:0;
+  left: 50%;
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background-color: #ececec;
+  margin-left: -75px;
+}
+
+blockquote:not( .wp-block-quote ):after, q:after {
+  content: '';
+  bottom: 0;
+  left: 50%;
+  position: absolute;
+  width: 150px;
+  height: 2px;
+  background-color: #ececec;
+  margin-left: -75px;
+}
+
+blockquote {
+  clear: both;
+}
+blockquote:not( .wp-block-quote ).alignleft,
+blockquote:not( .wp-block-quote ).alignright {
+  width: 100%;
+  clear: none;
+  max-width: 400px;
+}
+
+blockquote:not( .wp-block-quote ).alignleft,
+blockquote.style-2.alignleft,
+blockquote.style-3.alignleft{
+  margin: 10px 20px 20px 0;
+}
+
+blockquote:not( .wp-block-quote ).alignright,
+blockquote.style-2.alignright,
+blockquote.style-3.alignright {
+  margin: 10px 0 20px 20px;
+}
+
+blockquote.style-2 {
+  position: relative;
+  padding: 0 0 0 46px;
+  border: none !important;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+  font-weight: normal;
+  text-transform: none;
+}
+
+blockquote.style-2:before {
+  color: #3f51b5;
+  content: '“' !important;
+  font-family: "Mukta Vaani", sans-serif;
+  font-size: 64px;
+  font-weight: 900;
+  line-height: 1;
+  font-style: normal;
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  margin-left: 0;
+
+
+}
+blockquote:not( .wp-block-quote ).style-3:after,
+blockquote:not( .wp-block-quote ).style-2:after {
+  content: none;
+}
+
+blockquote.style-2,
+blockquote.style-2 p {
+  font-size: 16px;
+  color: #888;
+  font-style: italic;
+  line-height: 1.7;
+  text-align: left;
+}
+
+blockquote.style-2 p {
+  margin-bottom: 0;
+}
+
+blockquote.style-2 cite,
+blockquote.style-2 .author {
+  display: block;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: 7px;
+  margin-bottom: 0;
+  color: #3f51b5;
+  font-style: normal;
+  font-weight: bold;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+blockquote.style-2 .author span {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+
+
+blockquote.style-2 .author span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 90px;
+  height: 0;
+  border-top: 1px solid;
+  left: 100%;
+  opacity: 0.5;
+}
+
+blockquote.style-2.align-right {
+  max-width: 460px;
+  float: right;
+  width: 100%;
+  margin-left: 20px;
+}
+
+blockquote.style-3,
+blockquote.style-3 p {
+  font-size: 16px;
+  color: #888;
+  font-style: normal;
+  line-height: 1.7;
+  text-align: left;
+  margin-bottom: 0;
+}
+
+blockquote.style-3 {
+  position: relative;
+  padding: 13px 15px 0 24px;
+  background-color: #f5f5f5;
+  border: none !important;
+  overflow: hidden;
+  margin: 0 0 20px 0;
+  font-weight: normal;
+  text-transform: none;
+}
+
+blockquote.style-3:before {
+  content: '';
+  background-color: #3f51b5;
+  top:0;
+  left:0;
+  bottom:0;
+  width: 4px;
+  height: 100%;
+  margin-left: 0;
+}
+
+blockquote.style-3 cite,
+blockquote.style-3 .author {
+  display: block;
+  font-size: 12px;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+  margin-top: 7px;
+  color: #3f51b5;
+  font-style: normal;
+  font-weight: bold;
+  overflow: hidden;
+  text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+blockquote.style-3 .author span {
+  position: relative;
+  display: inline-block;
+  padding: 0 10px 0 0;
+}
+
+
+blockquote.style-3 .author span:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 90px;
+  height: 1px;
+  border-top: 1px solid;
+  left: 100%;
+  opacity: 0.5;
+}
+
+.wpb_text_column {
+  blockquote.style-3 cite,
+  blockquote.style-3 .author {
+    margin-bottom: 14px !important;
+  }
+
+  blockquote.style-3 .author span:after {
+    content: "" !important;
+  }
+}
+
+.wp-block-pullquote blockquote{
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  text-align: inherit;
+  color: inherit;
+  padding: 0;
+  position: inherit;
+  margin: 1em;
+  text-transform: inherit;
+}
+.wp-block-pullquote blockquote:before,
+.wp-block-pullquote blockquote:after{
+  content: none !important;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+kbd {
+  font-size: 12px;
+  line-height: 20px;
+  padding: 6px 10px;
+  border-radius: 0;
+}
+
+code {
+  font-size: 12px;
+  line-height: 20px;
+  border-top: 1px solid $color__border;
+  border-bottom: 1px solid $color__border;
+  border-right: 1px solid $color__border;
+  border-left: 4px solid $color__border;
+  padding: 5px 10px;
+  border-radius: 0;
+  background: none;
+  color: inherit;
+  display: inline-block;
+}
+
+pre {
+  display: block;
+  font-size: 14px;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 0 0 20px;
+  line-height: 1.4;
+  padding: 15px;
+  letter-spacing: 0;
+  color: inherit;
+  border-radius: 0;
+}
+
+.site-footer pre {
+  background: #212121;
+}
+
+
+abbr, acronym {
+  border-bottom: 1px dotted $color__border;
+  cursor: help;
+}
+
+mark, ins {
+  text-decoration: none;
+}
+
+big {
+  font-size: 125%;
+  text-transform: uppercase;
+}
+
+abbr[title], dfn[title] {
+  border-bottom:1px dotted;
+  cursor:help;
+}
+
+del {
+  text-decoration: line-through;
+}
+select {
+  background-color: transparent;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+  vertical-align: middle;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid $color__border;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: 700;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+
+.penci-schema-markup {
+  display: none !important;
+}
+
+@media (min-width: 1100px) and (max-width: 1450px) {
+  .site-main{
+    overflow-x:hidden;
+  }
+}
+
+@media screen and ( max-width: 480px ) {
+  blockquote.alignleft,
+  blockquote.alignright {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+
+  }
+}

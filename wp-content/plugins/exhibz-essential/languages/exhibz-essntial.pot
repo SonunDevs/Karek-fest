@@ -1,0 +1,274 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Exhibz Essentials\n"
+"POT-Creation-Date: 2019-09-10 13:06+0600\n"
+"PO-Revision-Date: 2019-09-10 13:06+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.1\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: exhibz-essential.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/post-type/post-class.php:30 includes/post-type/post-class.php:81
+msgid "Add New "
+msgstr ""
+
+#: includes/post-type/post-class.php:31 includes/post-type/post-class.php:82
+msgid "Edit "
+msgstr ""
+
+#: includes/post-type/post-class.php:32 includes/post-type/post-class.php:80
+msgid "New "
+msgstr ""
+
+#: includes/post-type/post-class.php:33
+msgid "View "
+msgstr ""
+
+#: includes/post-type/post-class.php:34 includes/post-type/post-class.php:85
+msgid "Search "
+msgstr ""
+
+#: includes/post-type/post-class.php:35 includes/post-type/post-class.php:36
+msgid "No "
+msgstr ""
+
+#: includes/post-type/post-class.php:37 includes/post-type/post-class.php:88
+#: includes/post-type/post-class.php:90
+msgid "Parent "
+msgstr ""
+
+#: includes/post-type/post-class.php:83
+msgid "Update "
+msgstr ""
+
+#: includes/post-type/post-class.php:84
+msgid "Add or remove "
+msgstr ""
+
+#: includes/post-type/post-class.php:86
+msgid "Popular "
+msgstr ""
+
+#: includes/post-type/post-class.php:87
+msgid "All "
+msgstr ""
+
+#: includes/post-type/post-class.php:89
+msgid "Choose from the most used "
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:12
+#: includes/widgets/footer-address/widget-class.php:15
+msgid "Exhibz footer address"
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:119
+msgid "Footer address"
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:155
+#: includes/widgets/instagram/widget-class.php:86
+#: includes/widgets/recent-post/widget-class.php:103
+#: includes/widgets/social/widget-class.php:285
+#: includes/widgets/twitter-feed/class-widget-twitter-feed.php:77
+msgid "Title:"
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:159
+msgid "Message"
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:165
+msgid "Address:"
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:171
+msgid "Mobile:"
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:177
+msgid "Media icon:"
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:183
+msgid "Map icon:"
+msgstr ""
+
+#: includes/widgets/footer-address/widget-class.php:189
+msgid "Map button:"
+msgstr ""
+
+#: includes/widgets/instagram/widget-class.php:15
+msgid "exhibz instagram"
+msgstr ""
+
+#: includes/widgets/instagram/widget-class.php:69
+msgid "Instagram"
+msgstr ""
+
+#: includes/widgets/instagram/widget-class.php:92
+msgid "Log in and get my Access Token and User ID"
+msgstr ""
+
+#: includes/widgets/instagram/widget-class.php:97
+msgid "Access token:"
+msgstr ""
+
+#: includes/widgets/instagram/widget-class.php:102
+msgid "User ID:"
+msgstr ""
+
+#: includes/widgets/instagram/widget-class.php:107
+msgid "Count:"
+msgstr ""
+
+#: includes/widgets/recent-post/widget-class.php:11
+msgid "Recent post with thumbnail"
+msgstr ""
+
+#: includes/widgets/recent-post/widget-class.php:14
+msgid "Exhibz recent post"
+msgstr ""
+
+#: includes/widgets/recent-post/widget-class.php:55
+msgid "thumb"
+msgstr ""
+
+#: includes/widgets/recent-post/widget-class.php:73
+msgid "No post avainable"
+msgstr ""
+
+#: includes/widgets/recent-post/widget-class.php:94
+msgid "Recent posts"
+msgstr ""
+
+#: includes/widgets/recent-post/widget-class.php:107
+msgid "Number of posts:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:10
+msgid "Exhibz Social"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:13
+msgid "Exhibz social"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:203
+msgid "Social"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:289
+msgid "Facebook:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:295
+msgid "Twitter:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:301
+msgid "Google Plus:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:307
+msgid "Pinterest:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:313
+msgid "Instagram:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:319
+msgid "Linkedin:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:325
+msgid "behance:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:331
+msgid "flickr:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:337
+msgid "github:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:343
+msgid "soundcloud:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:349
+msgid "skype:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:356
+msgid "stumbleupon:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:362
+msgid "tumblr:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:368
+msgid "vimeo:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:374
+msgid "vine:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:380
+msgid "vk:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:386
+msgid "xing:"
+msgstr ""
+
+#: includes/widgets/social/widget-class.php:392
+msgid "yelp:"
+msgstr ""
+
+#: includes/widgets/twitter-feed/class-widget-twitter-feed.php:10
+#: includes/widgets/twitter-feed/class-widget-twitter-feed.php:13
+msgid "Exhibz twitter feed"
+msgstr ""
+
+#: includes/widgets/twitter-feed/class-widget-twitter-feed.php:25
+#: includes/widgets/twitter-feed/class-widget-twitter-feed.php:66
+msgid "Loading!"
+msgstr ""
+
+#: includes/widgets/twitter-feed/class-widget-twitter-feed.php:62
+msgid "Twitter feed"
+msgstr ""
+
+#: includes/widgets/twitter-feed/class-widget-twitter-feed.php:81
+msgid "Username:"
+msgstr ""
+
+#: includes/widgets/twitter-feed/class-widget-twitter-feed.php:87
+msgid "Loading text:"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Exhibz Essentials"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "This is a required plugin for Exhibz theme."
+msgstr ""

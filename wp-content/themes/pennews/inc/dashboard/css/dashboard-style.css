@@ -1,0 +1,315 @@
+.penci-about-wrap {
+	max-width: 1200px;
+}
+
+.penci-about-wrap .feature-section h3{
+	margin-top: 1.25em !important;
+}
+
+.about-wrap .wp-badge {
+	background-image: url(../images/logo.png);
+	color: #fff;
+}
+
+.about-wrap .nav-tab{
+	font-size: 15px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.product {
+	text-align: center;
+}
+
+.products .product img {
+	box-shadow: none;
+	margin: 0 auto;
+}
+
+.wp-badge:hover {
+	text-decoration: none;
+}
+
+.feature-section.two-col {
+	align-items: flex-start;
+}
+
+.feature-section.two-col h3:not(:first-child) {
+	margin-top: 3em;
+}
+
+.feature-section img {
+	display: block;
+	box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.nav-tab-active:focus {
+	box-shadow: none;
+}
+
+.button-hide {
+	display: none !important;
+}
+
+.penci-upload-font-actions {
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
+.custom-fonts-name {
+	width: 250px;
+}
+
+.gt-is-active {
+	display: block;
+}
+
+.form-table tr {
+	border-bottom: 1px solid #ddd;
+}
+
+.form-table th {
+	padding-left: 10px;
+}
+
+.form-table th:not(:first-child),
+.form-table td:not(:first-child) {
+	width: 15%;
+	text-align: center;
+}
+
+.about-wrap td h3 {
+	margin-top: 0;
+}
+
+.form-table .dashicons {
+	font-size: 35px;
+	width: 35px;
+	height: 35px;
+}
+
+.form-table .dashicons-yes {
+	color: green;
+}
+
+.form-table .dashicons-no {
+	color: red;
+}
+
+.penci-table-options {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#system_status table{
+	margin-bottom: 35px;
+}
+
+#system_status table th {
+    padding: 10px 10px 10px 15px;
+    font-weight: bold;
+}
+
+#system_status table td {
+    padding: 10px;
+}
+
+#system_status .system-status-name {
+    width: 200px;
+    padding-left: 15px !important;
+}
+
+#system_status .system-status-status {
+    width: 50px;
+    text-align: center;
+    font-size: 11px !important;
+}
+
+#system_status .penci-tooltip {
+    width: 12px;
+    height: 13px;
+    display: inline-block;
+    text-align: center;
+    line-height: 13px;
+    cursor: pointer;
+    position: relative;
+    top: 2px;
+}
+
+#system_status .system-status-info {
+    background-color: silver;
+    color: white;
+    font-size: 11px;
+}
+
+#system_status .system-status-green {
+  background-color: #58AD58;
+}
+#system_status .system-status-yellow {
+  background-color: #F2E132;
+}
+#system_status .system-status-red {
+  background-color: #f2483a;
+}
+
+.status-small-text {
+  font-size: 12px;
+  color: #707070;
+  font-style: italic;
+  display: block;
+}
+
+.multiple-select {
+	width: 90%;
+}
+
+.pennews-hide-googlefont,
+.penmews-hide-option {
+	display:  none;
+}
+.title-more-items {
+	text-align: center;
+}
+
+.about-wrap #getting-started .feature-section .col,
+.about-wrap #support .feature-section .col {
+    margin-top: 20px;
+}
+ 
+ .about-wrap #support .feature-section.three-col h3,  	
+.about-wrap #getting-started .feature-section.three-col h3 {
+    margin-top: 0;
+}
+
+.penci-activate-wrap{
+	background-color: #fff;
+	max-width: 750px;
+	margin-top: 50px;
+	padding: 40px;
+	box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.08);
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.penci-activate-wrap .penci-activate-code-title {
+	font-size: 28px;
+	margin-top: -11px;
+	margin-bottom: 12px;
+	line-height: 30px;
+}
+
+.penci-activate-wrap .penci-activate-desc2,
+.penci-activate-wrap .penci-activate-desc {
+	width: 100%;
+	font-size: 14px;
+	line-height: 24px;
+	margin-bottom: 36px;
+}
+
+.penci-activate-wrap .penci-activate-inputs {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.penci-activate-wrap .penci-form-control {
+	width: 100%;
+	height: 42px;
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	border: 0;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+	-webkit-box-shadow: inset 0px -20px 0px -19px #dedede;
+	-moz-box-shadow: inset 0px -20px 0px -19px #dedede;
+	box-shadow: inset 0px -20px 0px -19px #dedede;
+}
+
+.penci-activate-wrap .penci-form-control::placeholder {
+	color: #b4b4b4;
+}
+.penci-activate-wrap .penci-form-control:focus {
+	-webkit-box-shadow: inset 0px -20px 0px -19px #3f51b5;
+	-moz-box-shadow: inset 0px -20px 0px -19px #3f51b5;
+	box-shadow: inset 0px -20px 0px -19px #3f51b5;
+}
+.penci-activate-wrap .penci-form-control:focus::placeholder {
+	visibility: hidden;
+}
+
+.penci-activate-wrap .penci-form-control-bar {
+	position: absolute;
+	top: 41px;
+	left: 0;
+	-webkit-transition: width 0.3s ease;
+	-moz-transition: width 0.3s ease;
+	-o-transition: width 0.3s ease;
+	transition: width 0.3s ease;
+	background-color: #3f51b5;
+	width: 0;
+	height: 2px;
+}
+
+.penci-activate-wrap .penci-form-control:focus + .penci-form-control-bar {
+	width: 100%;
+}
+
+.penci-activate-wrap button{
+	border: 0;
+	border-radius: 0;
+	background: #000;
+	color: #fff;
+	line-height: 36px;
+	padding: 0 15px 0;
+	text-align: center;
+	transition: all 0.25s;
+	font-size: 14px;
+	text-transform: uppercase;
+	cursor: pointer;
+	letter-spacing: 1px;
+}
+
+.penci-activate-wrap button:hover {
+	border-color: #3f51b5;
+	background: #3f51b5;
+	color: #fff;
+}
+
+.penci-activate-wrap .pennews-find-code{
+	display: inline-block;
+	padding-left: 20px;
+	font-size: 13px;
+}
+
+.penci-activate-wrap  .penci-activate-err {
+	color: red;
+	font-size: 14px;
+	margin-top: 5px;
+}
+
+.penci-activate-wrap  .penci-activate-err span{
+	display: none;
+}
+
+.penci-activate-wrap  .penci-activate-err span.penci-err-show{
+	display: block;
+}
+
+.penci-activate-wrap  .spinner {
+	float: none;
+	display: none;
+}
+
+.penci-activate-wrap  .spinner.active {
+	visibility: visible;
+	display: inline-block;
+}
+
+.penci-table-options-ads {
+	margin-top: 20px;
+}

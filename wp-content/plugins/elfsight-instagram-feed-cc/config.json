@@ -1,0 +1,832 @@
+{
+  "observerUrl": "./preview/dist/instagram-feed-observer.js",
+  "preferences": {
+    "previewUpdateTimeout": 0,
+    "enableCustomCSS": true
+  },
+  "settings": {
+    "tabs": [
+      {
+        "id": "content",
+        "name": "Content",
+        "active": true
+      },
+      {
+        "id": "layout",
+        "name": "Layout"
+      },
+      {
+        "id": "colors",
+        "name": "Colors"
+      },
+      {
+        "id": "more",
+        "name": "More"
+      }
+    ],
+    "properties": [
+      {
+        "id": "source",
+        "name": "Instagram sources",
+        "tab": "content",
+        "type": "tags",
+        "tags": {
+          "placeholder": "@username, #hashtag, post/location URL"
+        },
+        "defaultValue": [
+          "@muradosmann"
+        ],
+        "allowEmpty": true,
+        "description": "Set any combination of Instagram @username, #hashtag, location URL or post URL."
+      },
+      {
+        "id": "contentFilters",
+        "name": "Filters",
+        "tab": "content",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "filterOnly",
+              "name": "Display only from",
+              "type": "tags",
+              "tags": {
+                "placeholder": "@username, #hashtag, URL"
+              },
+              "defaultValue": [],
+              "description": "It filters the images to the ones from the specified sources. If this filter is applied, the image will display only if it's posted in each source. The filter accepts @username, #hashtag, location URL or post URL."
+            },
+            {
+              "id": "filterExcept",
+              "name": "Exclude by source",
+              "type": "tags",
+              "tags": {
+                "placeholder": "@username, #hashtag, URL"
+              },
+              "defaultValue": [],
+              "description": "It allows to exclude specific images by their URL, by specific hashtags, source usernames or locations."
+            },
+            {
+              "id": "limit",
+              "name": "Number of posts to display",
+              "tab": "content",
+              "type": "number",
+              "defaultValue": 0,
+              "description": "Set the required number to restrict the count of loaded posts. Leave this option empty or \"0\" to show all available posts."
+            }
+          ]
+        }
+      },
+      {
+        "id": "contentSort",
+        "name": "Sorting ",
+        "tab": "content",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "order",
+              "name": "Order by",
+              "type": "select-inline",
+              "selectInline": {
+                "options": [
+                  {
+                    "value": "date",
+                    "name": "Publication date"
+                  },
+                  {
+                    "value": "position",
+                    "name": "Source list position"
+                  }
+                ]
+              },
+              "defaultValue": "date",
+              "description": "Set the display order for Instagram posts in your feed. Publication date displays them chronologically in the order they were published on Instagram. Source list position displays the posts according to the order the sources were added in."
+            }
+          ]
+        }
+      },
+      {
+        "id": "layout",
+        "name": "Feed Layout",
+        "tab": "layout",
+        "type": "select-visual",
+        "select": {
+          "options": [
+            {
+              "value": "slider",
+              "name": "Slider",
+              "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAABMCAYAAAClFL8EAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAr5JREFUeNrsnTFIlGEYx08zIhBEkKIS2oOWPAgaxClDaWi8u6GWJmnIIaihoaGIcApEcGi6O0QxGhyCikAdImzQIWppSRSEQjihNLz+T7wffCniBz4Fvt/vB3/e9zs+njvf53f3fXf3HbY0m80C5JdWlgABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEAAQABAAHg8NOy3w6lcuW2hpEs+2ZgWxmq16pjofaMhgGnv2Vd6VXtRdU9ofmC0u1Ue0kpqvamavdr/kI55lR7VHWHwno81HDXqe6WUlbtqYO+Alx1an5yf1dS2wOOMncofWF+zrH5xnnldJj3OzbfGPxH63E0S73WjE3jkBbpenAOwEkgIAAgACAAIAAgACAAIAAgAOSBtmRSKlc6NdxSFuq16gxLEx/qsX3v0KM8VY+//xFAN5oEN5UHSpfyQUGAOLEeX7Anuvp+X+O4NX9OuZja6QjrFC1Jb+2JPqpct3OAdtYlt7SbAEXlntIIN26zLtGS9LYRel5s08nAD00e6ZjwTOMd5R3rFC2Pw+H+ifq+8te7AN2wqmGYNYoX9XhCwwSfAwACAAIAAgACIAAgACAAIAAgACDAbg7TPxVqRnIf/+2xZhHgtfODmk3N5xzr/lTmw/yz8s2x9hdlNczfFny/MZ3dY+7Bm/12yPSz71K5clLDcYcHtFGvVddSdU3AMwWfi1DWVHsjVdt+wn3K6Vm0rNq/UrXt8rkOh9pbqru8Y63tMXv8/Hw9uewLAOAAh4AY0EurHWauKUt6afyk7bOaX1Ke20Ux2r4cXjZzdUFMnt4G3lAmlVdhe1qpKcNqvl0l89JOSjXvQoA4+Wgnocr7sG3jprKofFVWwj6NXB0C+N/B+YZPAhEAEAAQABAAEAAQABAAEAAQABAAEAAQABAAEACi5LcAAwBV1Zib8OoodwAAAABJRU5ErkJggg=="
+            },
+            {
+              "value": "grid",
+              "name": "Grid",
+              "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEIAAABMCAYAAADZXmGYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAd5JREFUeNrs3E8rRGEUx/HHdIuNopQlGwupSf4skQUrspAyM14BC+U1WNoo3oGZsbSwkQVJWYiYkoXNbJVQFhQav2vOalI251nc+p467ln9nqfPnXupeZIUiqWjEMJs8Kk39XS1Ur5Sbrfma3W/U3ZdPaLsF2WPaj5RdzplH+ccEYJtbMLmvCNCsKy8zROOCGnN5EK8astI5m/FhMhUAQEEEEAAAQQQQAABBBBAAAEEEEAAAQQQQAABBBBAAAEEEJmHeHfOfLPrc4T9vrSs4VXviX7MqSedAl/Ve+lQrZRrhWJpReOAU/aDMm9tTtdIjwV0OWWf8UxYJbprG7rOB5+zB0/qNd25R+Wmn7Zt9ZDTXu/U68r+Unav5l11j0NuQ32YbnYr+B7AOFXvqMfVq465U/ZIXKiX1Iue2bngfwolsWt7hE9we8saXtXGr0/+jgACCCCAAAIIIIAAAggggAACCCCAAAIIIIAAAggggAACCCD+rm+7fkbI/mxZw63Sb5U3Q/PUjNf5iAObL9X76kGnvd5bZrA1FoLj+QieCd4RQADx38syShWKpQ57WQ47Rd6ol6uV8kemIFRj9mb3qj7LPM/ao5Fk6cbFhGhkJDM6RC00/62aV9UtM0r9CDAAD7BQeoUoMr8AAAAASUVORK5CYII="
+            }
+          ]
+        },
+        "defaultValue": "slider",
+        "description": "Choose one of the two feed layouts: slider or grid."
+      },
+      {
+        "id": "postTemplate",
+        "name": "Post Template",
+        "tab": "layout",
+        "type": "select-visual",
+        "select": {
+          "options": [
+            {
+              "value": "tile",
+              "name": "Tile",
+              "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAA7CAYAAAD8QkPoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAdZJREFUeNrsmUuOgkAURYsCEUHEOHRgL6h30N1jF+Xu2oEzEyZolF9ziRgp+cqnyk69hBhlwKn7LvcVqMRxTEQrSgQsCSWhJJSEklD/BUr7+v75TD53ybEWgOeQHFsqEBC5ceyoQEB3MO3x237/SzzPG53Csiyy2XwUG/18PnORhr3u+0aCoijjRkLVyfl8nvYbUJfLhbiuS8bYPpcqpapqCpWpNJ1OyWw249s+Sim3NpZCBUFAwjDM/Xa9Xvl6Ct45Ho9pyzJP+b7P3+hRFHEJU7l1GQUKsSEUFMy/Wq3S/BIGCsEKpRaLRe/59RKUpmnp+HlMfu5QjuM87YcAWgT/ioqtoRCmk8nk6Xe0kfXccrm8KzoYFOahbduF53Rdzw3sTL0yFXuDAlDRoGbPAyLzGRRj291pzFQpUaUkqwzabZomOZ1O/e48Wc+09Rxgm4ZtIyissq0vuiysFqrPHGq6e62F6jux626WWijDMHqfbVWxUgvVxgOvBHDVYmkXmbtUlS0Kr5rlypCFG6isjZSVtWiODVVYOARg78hc+ODNBx4WcDSpNk/LZa3CCKJUfYLC27P1490xpJca1AFX397ARKj09aIi/++TUBJKQkkoCTVc/QkwAPZbU7mQOtovAAAAAElFTkSuQmCC"
+            },
+            {
+              "value": "classic",
+              "name": "Classic",
+              "img": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACUAAAA7CAYAAAD8QkPoAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAwFJREFUeNrsWYuO0kAUvQzlXR4Gk21dwWTX1U8yUf9gv2f/QE38LFnXdgNEsEAC4SGnobVM22lLacuunGSS6WQeZ+aeezuP3GazoY+fPn8gorttalM2GG7T7bevX77jg+0KsyREu7HvrA/JUWhjsViQYfwx8/V6g4rFYlrE9kjZmE6ndH/fI5gV6Pf71Ol0qFaTU1s2F6nHR90mBCCv6zpdX7+l+XxOvd4PWi6X4k4librdN1Qqlcxvr3Z8HScYX4AOeMCcIGcYRiAhAHVQ1wKkwLfj6whJeTGHpnK53FZfdXOGgcu/rYO6FqBLvh1fR2i+iwtlT1MgoyiKTfjm5h2tVishqXw+75oo346vIyRVq9Xo6upa6H2iDqOQDU3KMle7/TKzoMXoBOFaqfV6TQ8PP2kymSQ6sCzLdHn5mhhjwSs1Ho8TJwRgDIwVynxh4tCx4DfW09CUVyBstVqmO89mM98onKr3QZAghiCKGBYmoj/LkMDCeAkEid8OtjVpOIIUxkMGg8E5oj8/UofuFhIlhfhVLpdPh1S1WqVCoWDuHhHDMieFPzuCqmVCK58pKayOc8vBR3qY1GuvnxgpmKxSqbjKG42GvadHHulQs0YmZQ3utYXGClmrGMes7BBxiwijjp9Zj07KKW5RHR7NZjM5Ury4o2jQuXpHI+Un7qQmxOKIOywsjzwaqSBxh0WU2MXiijtqOAkTu5jXQSGuuEW7Cuck/cIF83JhNIwrbj8gdqFvjOEXLiQvk3U6XfP4jiSC88YvSOj7W54XQjNKIj0d03SYQNAkhaRw4NS0X2ZeUVTbnXFnpWmaqzwI6Av3Bs6LuGazRaqqhvc+dIJbNyRd1xzlmme5CDiWjUYj1+XuaPTbPHE/7YODqr4y3RcJZvpXrnqWB3kb9vJOYSMPsfv9EyW/f1W9/t6jvGGmqMAkkc6H0cTvEsI+dcQeOMozyGRipHKzEukZRJbrqVyMRXoGsZ4szkI/C/0s9P9R6Bap4QlwGfKkbjMmNtxxMPFXgAEAIJQoWeeWkQUAAAAASUVORK5CYII="
+            }
+          ]
+        },
+        "defaultValue": "tile",
+        "description": "Select one of post templates: tile or classic."
+      },
+      {
+        "id": "layoutFeedSize",
+        "name": "Columns & Rows",
+        "tab": "layout",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "columns",
+              "name": "Columns",
+              "tab": "layout",
+              "type": "number",
+              "defaultValue": 4,
+              "number": {
+                "min": 1
+              },
+              "description": "Number of columns in the feed."
+            },
+            {
+              "id": "rows",
+              "name": "Rows",
+              "tab": "layout",
+              "type": "number",
+              "defaultValue": 2,
+              "number": {
+                "min": 1
+              },
+              "description": "Number of rows in the feed."
+            },
+            {
+              "id": "gutter",
+              "name": "Space between images (px)",
+              "tab": "layout",
+              "type": "number",
+              "defaultValue": 0,
+              "description": "The space between the images in the feed in pixels."
+            },
+            {
+              "id": "responsive",
+              "name": "Mobile optimization",
+              "tab": "layout",
+              "type": "complex",
+              "complex": {
+                "properties": [
+                  {
+                    "id": "minWidth",
+                    "name": "Window width (px)",
+                    "type": "text",
+                    "defaultValue": "",
+                    "description": "Set the required window width in pixels to apply the breakpoint."
+                  },
+                  {
+                    "id": "columns",
+                    "name": "Columns",
+                    "type": "text",
+                    "defaultValue": "",
+                    "allowEmpty": true,
+                    "description": "Number of columns in the feed."
+                  },
+                  {
+                    "id": "rows",
+                    "name": "Rows",
+                    "type": "text",
+                    "defaultValue": "",
+                    "allowEmpty": true,
+                    "description": "Number of rows in the feed."
+                  },
+                  {
+                    "id": "gutter",
+                    "name": "Space between images (px)",
+                    "type": "text",
+                    "defaultValue": "",
+                    "allowEmpty": true,
+                    "description": "The space between the images in the feed in pixels."
+                  }
+                ]
+              },
+              "defaultValue": [
+                {
+                  "minWidth": 375,
+                  "columns": 1,
+                  "rows": 1,
+                  "gutter": "0"
+                },
+                {
+                  "minWidth": 768,
+                  "columns": 3,
+                  "rows": 2,
+                  "gutter": "0"
+                }
+              ],
+              "description": "Specify the breakpoints to set the columns, rows and space between images in the feed depending on a window width."
+            },
+            {
+              "id": "width",
+              "name": "Width (px, auto)",
+              "type": "text",
+              "defaultValue": "auto",
+              "description": "Feed width (any CSS valid value: px, %, em, etc). Set \"auto\" to make the feed full width and responsive."
+            }
+          ]
+        }
+      },
+      {
+        "id": "layoutCallToActionButtons",
+        "name": "Call to Action Buttons",
+        "tab": "layout",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "callToActionButtons",
+              "name": "Call to Action Buttons",
+              "tab": "layout",
+              "type": "complex",
+              "complex": {
+                "properties": [
+                  {
+                    "id": "postUrl",
+                    "name": "Instagram post URL",
+                    "type": "text",
+                    "defaultValue": "",
+                    "description": "Set the Instagram URL of the target post from your feed you need to add the button to."
+                  },
+                  {
+                    "id": "buttonLink",
+                    "name": "Action link",
+                    "type": "text",
+                    "defaultValue": "",
+                    "description": "Set the button redirect link (product page, contact page, etc)."
+                  },
+                  {
+                    "id": "buttonLabel",
+                    "name": "Button Label",
+                    "type": "text",
+                    "defaultValue": "",
+                    "description": "Set the compelling button text your visitors won't resist."
+                  }
+                ]
+              },
+              "defaultValue": [
+                {
+                  "postUrl": "https://www.instagram.com/p/Bmr7eH0nyxQ/",
+                  "buttonLabel": "Install Instagram Feed now",
+                  "buttonLink": "https://elfsight.com/instagram-feed-instashow/"
+                },
+                {
+                  "postUrl": "https://www.instagram.com/p/BmgZy5FnnQB/",
+                  "buttonLabel": "Install Instagram Feed now",
+                  "buttonLink": "https://elfsight.com/instagram-feed-instashow/"
+                },
+                {
+                  "postUrl": "https://www.instagram.com/p/BmbbCfBndRU/",
+                  "buttonLabel": "Install Instagram Feed now",
+                  "buttonLink": "https://elfsight.com/instagram-feed-instashow/"
+                }
+              ],
+              "description": "Set the call to action buttons. The buttons will be displayed on the popup. You can set a specific call to action for each post. Call to action buttons encourage your visitors to perform the actions you need (buy a product, register at your service or contact you)."
+            }
+          ]
+        }
+      },
+      {
+        "id": "layoutElements",
+        "name": "Post Settings",
+        "tab": "layout",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "postElements",
+              "name": "Display post elements",
+              "type": "checklist",
+              "checklist": {
+                "options": [
+                  {
+                    "value": "user",
+                    "name": "User"
+                  },
+                  {
+                    "value": "date",
+                    "name": "Date"
+                  },
+                  {
+                    "value": "instagramLink",
+                    "name": "Instagram Link"
+                  },
+                  {
+                    "value": "likesCount",
+                    "name": "Likes Count"
+                  },
+                  {
+                    "value": "commentsCount",
+                    "name": "Comments Count"
+                  },
+                  {
+                    "value": "share",
+                    "name": "Share"
+                  },
+                  {
+                    "value": "text",
+                    "name": "Text"
+                  }
+                ]
+              },
+              "defaultValue": [
+                "user",
+                "date",
+                "instagramLink",
+                "likesCount",
+                "commentsCount",
+                "share",
+                "text"
+              ],
+              "description": "Choose the post elements to display them in the feed."
+            },
+            {
+              "id": "popupElements",
+              "name": "Display popup elements",
+              "type": "checklist",
+              "checklist": {
+                "options": [
+                  {
+                    "value": "user",
+                    "name": "User"
+                  },
+                  {
+                    "value": "location",
+                    "name": "Location"
+                  },
+                  {
+                    "value": "followButton",
+                    "name": "Follow Button"
+                  },
+                  {
+                    "value": "instagramLink",
+                    "name": "Instagram Link"
+                  },
+                  {
+                    "value": "likesCount",
+                    "name": "Likes Count"
+                  },
+                  {
+                    "value": "share",
+                    "name": "Share"
+                  },
+                  {
+                    "value": "text",
+                    "name": "Text"
+                  },
+                  {
+                    "value": "comments",
+                    "name": "Comments"
+                  },
+                  {
+                    "value": "date",
+                    "name": "Date"
+                  }
+                ]
+              },
+              "defaultValue": [
+                "user",
+                "location",
+                "followButton",
+                "instagramLink",
+                "likesCount",
+                "share",
+                "text",
+                "comments",
+                "date"
+              ],
+              "description": "Choose the elements to display in popup."
+            },
+            {
+              "id": "imageClickAction",
+              "name": "Action on image click",
+              "tab": "layout",
+              "type": "select",
+              "select": {
+                "options": [
+                  {
+                    "value": "popup",
+                    "name": "Open in Popup"
+                  },
+                  {
+                    "value": "instagram",
+                    "name": "Open on Instagram"
+                  },
+                  {
+                    "value": "none",
+                    "name": "None"
+                  }
+                ]
+              },
+              "defaultValue": "popup",
+              "description": "Select the action on image click. Open the image in popup, open the image on Instagram in a new browser tab or do nothing."
+            }
+          ]
+        }
+      },
+      {
+        "id": "layoutSlider",
+        "name": "Slider Controls",
+        "tab": "layout",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "sliderArrows",
+              "name": "Arrows control",
+              "type": "toggle",
+              "defaultValue": true,
+              "description": "Activate/Deactivate arrows in the slider."
+            },
+            {
+              "id": "sliderDrag",
+              "name": "Drag control",
+              "type": "toggle",
+              "defaultValue": true,
+              "description": "Activate/Deactivate drag in the slider."
+            },
+            {
+              "id": "sliderSpeed",
+              "name": "Slide switch speed (sec)",
+              "type": "number",
+              "defaultValue": 0.6,
+              "description": "Animation speed of slide switching (sec)."
+            },
+            {
+              "id": "sliderAutoplay",
+              "name": "Autoplay speed (sec)",
+              "type": "number",
+              "defaultValue": "",
+              "description": "Autoplay in the slider (in seconds). If this option is set to \"0\" autoplay is turned off."
+            }
+          ]
+        }
+      },
+      {
+        "id": "colorScheme",
+        "name": "Color scheme",
+        "tab": "colors",
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "value": "default",
+              "name": "Default"
+            },
+            {
+              "value": "sky",
+              "name": "Sky"
+            },
+            {
+              "value": "dark",
+              "name": "Dark"
+            },
+            {
+              "value": "emerald",
+              "name": "Emerald"
+            },
+            {
+              "value": "jeans",
+              "name": "Jeans"
+            },
+            {
+              "value": "leather",
+              "name": "Leather"
+            },
+            {
+              "value": "light",
+              "name": "Light"
+            },
+            {
+              "value": "night-life",
+              "name": "Night Life"
+            },
+            {
+              "value": "orange",
+              "name": "Orange"
+            },
+            {
+              "value": "red-power",
+              "name": "Red Power"
+            },
+            {
+              "value": "yellow",
+              "name": "Yellow"
+            },
+            {
+              "value": "custom",
+              "name": "Custom"
+            }
+          ]
+        },
+        "defaultValue": "default",
+        "description": "To get the perfect look for your feed, choose one of the 10 ready-made color schemes, and adjust it using available color options."
+      },
+      {
+        "id": "colorsPostTile",
+        "name": "Post colors",
+        "tab": "colors",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "colorPostOverlayBg",
+              "name": "Overlay Background",
+              "type": "color",
+              "defaultValue": "rgba(0, 0, 0, 0.8)"
+            },
+            {
+              "id": "colorPostOverlayText",
+              "name": "Overlay Text",
+              "type": "color",
+              "defaultValue": "rgb(255, 255, 255)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "colorsPostClassic",
+        "name": "Post colors",
+        "tab": "colors",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "colorPostBg",
+              "name": "Background",
+              "type": "color",
+              "defaultValue": "rgb(255, 255, 255)"
+            },
+            {
+              "id": "colorPostText",
+              "name": "Text",
+              "type": "color",
+              "defaultValue": "rgb(0, 0, 0)"
+            },
+            {
+              "id": "colorPostLinks",
+              "name": "Links",
+              "type": "color",
+              "defaultValue": "rgb(0, 53, 107)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "colorsSlider",
+        "name": "Slider colors",
+        "tab": "colors",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "colorSliderArrows",
+              "name": "Arrows",
+              "type": "color",
+              "defaultValue": "rgb(255, 255, 255)"
+            },
+            {
+              "id": "colorSliderArrowsBg",
+              "name": "Arrows background",
+              "type": "color",
+              "defaultValue": "rgba(0, 0, 0, 0.9)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "colorsGrid",
+        "name": "Grid colors",
+        "tab": "colors",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "colorGridLoadMoreButton",
+              "name": "Load More Button",
+              "type": "color",
+              "defaultValue": "rgb(56, 151, 240)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "colorsPopup",
+        "name": "Popup colors",
+        "tab": "colors",
+        "type": "subgroup",
+        "subgroup": {
+          "properties": [
+            {
+              "id": "colorPopupOverlay",
+              "name": "Overlay",
+              "type": "color",
+              "defaultValue": "rgba(43, 43, 43, 0.9)"
+            },
+            {
+              "id": "colorPopupBg",
+              "name": "Background",
+              "type": "color",
+              "defaultValue": "rgb(255, 255, 255)"
+            },
+            {
+              "id": "colorPopupText",
+              "name": "Text",
+              "type": "color",
+              "defaultValue": "rgb(0, 0, 0)"
+            },
+            {
+              "id": "colorPopupLinks",
+              "name": "Links",
+              "type": "color",
+              "defaultValue": "rgb(0, 53, 105)"
+            },
+            {
+              "id": "colorPopupFollowButton",
+              "name": "Follow button",
+              "type": "color",
+              "defaultValue": "rgb(56, 151, 240)"
+            },
+            {
+              "id": "colorPopupCtaButton",
+              "name": "Call to action button",
+              "type": "color",
+              "defaultValue": "rgb(56, 151, 240)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "widgetTitle",
+        "name": "Feed Title",
+        "tab": "more",
+        "type": "text",
+        "defaultValue": "Follow us on Instagram",
+        "allowEmpty": "true",
+        "description": "Set the feed title. URLs, hashtags (with #) and Instagram usernames (with @) will be automatically displayed as clickable links."
+      },
+      {
+        "id": "lang",
+        "name": "Feed Language",
+        "tab": "more",
+        "type": "select",
+        "select": {
+          "options": [
+            {
+              "value": "en",
+              "name": "English"
+            },
+            {
+              "value": "de",
+              "name": "Deutsch"
+            },
+            {
+              "value": "es",
+              "name": "Español"
+            },
+            {
+              "value": "fi",
+              "name": "Suomalainen"
+            },
+            {
+              "value": "fr",
+              "name": "Français"
+            },
+            {
+              "value": "it",
+              "name": "Italiano"
+            },
+            {
+              "value": "nl",
+              "name": "Nederlands"
+            },
+            {
+              "value": "no",
+              "name": "Norsk"
+            },
+            {
+              "value": "pl",
+              "name": "Polski"
+            },
+            {
+              "value": "pt-BR",
+              "name": "Português"
+            },
+            {
+              "value": "sl",
+              "name": "Slovenščina"
+            },
+            {
+              "value": "sk-SK",
+              "name": "Slovak"
+            },
+            {
+              "value": "sv",
+              "name": "Svenska"
+            },
+            {
+              "value": "tr",
+              "name": "Türkçe"
+            },
+            {
+              "value": "ru",
+              "name": "Русский"
+            },
+            {
+              "value": "hi",
+              "name": "हिन्दी"
+            },
+            {
+              "value": "ko",
+              "name": "한국의"
+            },
+            {
+              "value": "zh-CN",
+              "name": "简体中文"
+            },
+            {
+              "value": "zh-HK",
+              "name": "繁體中文"
+            },
+            {
+              "value": "ja",
+              "name": "日本語"
+            },
+            {
+              "value": "vn",
+              "name": "Tiếng Việt"
+            },
+            {
+              "value": "he-IL",
+              "name": "עברית"
+            },
+            {
+              "value": "fa-IR",
+              "name": "فارسی"
+            },
+            {
+              "value": "ar",
+              "name": "عربی"
+            },
+            {
+              "value": "dk",
+              "name": "Dansk"
+            },
+            {
+              "value": "cs",
+              "name": "Czech"
+            },
+            {
+              "value": "hu",
+              "name": "Magyar"
+            },
+            {
+              "value": "hr-HR",
+              "name": "Hrvatski"
+            },
+            {
+              "value": "ro",
+              "name": "Romanian"
+            },
+            {
+              "value": "lt",
+              "name": "Lithuanian"
+            },
+            {
+              "value": "az",
+              "name": "Azerbaijani"
+            }
+          ]
+        },
+        "defaultValue": "en",
+        "description": "Choose one of the available languages for the feed."
+      }
+    ]
+  }
+}

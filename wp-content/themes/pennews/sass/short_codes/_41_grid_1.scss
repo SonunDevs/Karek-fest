@@ -1,0 +1,361 @@
+.penci-grid_1 {
+
+	.penci-block_content__items {
+		margin-top: 2px;
+
+		&.penci-block-items__1 {
+			margin-top: 0;
+		}
+	}
+
+	.penci-grid-item {
+		position: relative;
+		width: 100%;
+		float: left;
+		border: 1px solid transparent;
+		margin-bottom: 0;
+		overflow: hidden;
+		background-color: transparent;
+
+		&:nth-child( 1 ),
+		&:nth-child( 2 ),
+		&:nth-child( 3 ) {
+			border-top: 0;
+		}
+
+		&:nth-child( 3n  ) {
+			float: right;
+		}
+
+		&:nth-child( 3n + 1 ) {
+			clear: both;
+		}
+	}
+
+	.penci-post-item:hover .penci-cat-name {
+		background-color: $color__blue;
+	}
+
+	.penci_post_content {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		z-index: 1;
+		padding: 10px 19px 15px;
+
+		.penci__post-title {
+			@include font-size(2);
+			font-weight: 600;
+			line-height: 1.25;
+			margin-top: 0;
+			margin-bottom: 0;
+			color: $color__white;
+
+		}
+
+		.penci_post-meta {
+			margin-top: 5px;
+			font-family: $font__roboto;
+			@include font-size(1.2);
+
+			.entry-meta-item {
+				padding-right: 10px;
+				display: inline-block;
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+
+		.penci__post-title,
+		.penci_post-meta {
+			position: relative;
+			z-index: 2;
+			color: $color__white;
+
+
+		}
+
+		.penci_post-meta {
+			i {
+				margin-right: 5px;
+			}
+		}
+
+		a,i {
+			color:inherit;
+		}
+	}
+
+}
+
+.penci-container-width-1400 .penci-content-main.penci-col-6 .penci-grid_1 {
+	.penci_post-meta {
+		display: none;
+	}
+
+	.penci_post_content {
+		padding: 10px 15px 10px;
+	}
+
+	.penci__post-title {
+		font-size: 15px !important;
+	}
+}
+
+.penci-container-width-1080 .penci-content-main.penci-col-4 .penci-grid_1,
+.wpb_wrapper > .penci-grid_1.penci-vc-column-1,
+.widget-area .penci-grid_1 {
+	.penci-grid-item {
+		position: relative;
+		width: 100%;
+		border: 0;
+		border-top:2px solid transparent;
+
+		&:first-child {
+			border: 0;
+		}
+	}
+
+	.penci_post_content {
+		padding: 10px 15px 10px;
+	}
+
+	.penci-block_content {
+		margin-left: -20px;
+		margin-right:-20px;
+	}
+	.penci__post-title {
+		font-size: 16px !important;
+	}
+}
+
+.penci-container-width-1080 .penci-content-main.penci-col-6 .penci-grid_1,
+.penci-container-width-1400 .penci-content-main.penci-col-4 .penci-grid_1 {
+	.penci_post-meta {
+		display: none;
+	}
+
+	.penci-grid-item {
+		width: 50%;
+		float: left;
+
+		.penci-grid-item:nth-child(3) {
+			border-top: 1px solid transparent;
+		}
+
+		&:nth-child(3n + 1) {
+			clear: none;
+		}
+
+		&:nth-child(2n + 1) {
+			clear: both;
+		}
+	}
+
+	.penci_post_content {
+		padding: 10px 15px 10px;
+	}
+
+	.penci__post-title {
+		font-size: 14px !important;
+	}
+}
+
+.penci-container-width-1400.penci-vc_sidebar-right .penci-content-main .penci-grid_1 {
+	.penci_post_content {
+		.penci__post-title {
+			@include font-size(1.8);
+		}
+	}
+}
+
+.penci-container-width-1080.penci-vc_sidebar-right .penci-content-main .penci-grid_1,
+.penci-container-width-1080.penci-vc_sidebar-left .penci-content-main .penci-grid_1,
+.penci-container-width-1400.penci-vc_two-sidebar .penci-content-main .penci-grid_1 {
+	.penci_post_content {
+		.penci__post-title {
+			@include font-size(1.4);
+		}
+	}
+}
+
+.penci-grid_1 {
+	.penci-block_content {
+		margin-left: -21px;
+		margin-right: -21px;
+
+		.penci_dis_padding_bw & {
+			margin-left: -1px;
+			margin-right: -1px;
+		}
+	}
+
+	&.style-title-grid .penci-block-heading {
+		margin-left: -20px;
+		margin-right: -20px;
+
+		.penci_dis_padding_bw & {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.penci-grid_1 {
+		.penci-grid-item {
+			position: relative;
+			width: (100% / 3);
+		}
+	}
+}
+
+@media screen and (max-width: 1200px ) and (min-width: 961px) {
+	.penci-container-width-1400 .penci-content-main.penci-col-6 .penci-grid_1 {
+		.penci_post-meta {
+			display: none;
+		}
+
+		.penci-grid-item {
+			width: 50%;
+			float: left;
+
+			.penci-grid-item:nth-child(3) {
+				border-top: 1px solid transparent;
+			}
+
+			&:nth-child(3n + 1) {
+				clear: none;
+			}
+
+			&:nth-child(2n + 1) {
+				clear: both;
+			}
+		}
+
+		.penci_post_content {
+			padding: 10px 15px 10px;
+		}
+
+		.penci__post-title {
+			font-size: 16px !important;
+		}
+	}
+
+	.penci-container-width-1400.penci-vc_sidebar-left,
+	.penci-container-width-1400.penci-vc_sidebar-right {
+		.penci-grid_1 {
+
+			.penci_post-meta,
+			.icon-post-format,
+			.penci-post-cat,
+			.penci-piechart {
+				display:  none;
+			}
+
+			.penci_post_content {
+				padding: 10px 15px 10px;
+			}
+
+			.penci__post-title {
+				font-size: 16px !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 960px ) and (min-width: 768px) {
+	.penci-grid_1 {
+
+		.penci_post-meta,
+		.icon-post-format,
+		.penci-post-cat,
+		.penci-piechart {
+			display:  none;
+		}
+
+		.penci_post_content {
+			padding: 10px 15px 10px;
+		}
+
+		.penci__post-title a{
+			font-size: 18px !important;
+			line-height: 1.25;
+			display: block;
+		}
+	}
+
+	.penci-container-width-1400.penci-vc_sidebar-left,
+	.penci-container-width-1400.penci-vc_sidebar-right {
+		.penci-grid_1 {
+			.penci__post-title {
+				font-size: 18px !important;
+			}
+		}
+	}
+}
+
+@media screen and ( max-width: 767px ){
+	.penci-grid_1 .penci_post_content {
+		padding: 0 15px 10px;
+	}
+
+	.penci-grid_1 .penci_post_content .penci__post-title {
+		font-size: 18px !important;
+	}
+
+	.penci-grid_1 {
+		.penci-grid-item {
+			position: relative;
+			width: (100% / 2);
+		}
+
+		.penci-grid-item:nth-child(3n + 1) {
+			clear: none;
+		}
+
+		.penci-grid-item:nth-child(2n + 1) {
+			clear: both;
+		}
+
+		.icon-post-format,
+		.penci-post-cat,
+		.penci-piechart {
+			display:  none;
+		}
+	}
+}
+
+@media screen and ( max-width: 600px ) {
+	.penci-grid_1 {
+		.penci_post-meta{
+			display:  none;
+		}
+
+		.penci_post_content .penci__post-title {
+			font-size: 16px !important;
+			text-align: center;
+		}
+	}
+}
+
+@media screen and ( max-width: 480px ) {
+	.penci-grid_1 {
+		.penci_post_content .penci__post-title {
+			font-size: 14px !important;
+		}
+
+
+		.penci_post-meta {
+			display: none;
+		}
+	}
+
+	.penci-block-vc.penci-block_grid .penci-block_content{
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+}

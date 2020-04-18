@@ -1,0 +1,30 @@
+.penci-owl-featured-area.style-28 {
+	.penci-image-holder {
+		width: 300px;
+	}
+
+	.penci_slider__title {
+		font-size: 16px;
+	}
+
+	.icon-post-format {
+		display: none;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	.penci-owl-featured-area.style-28 .penci_slider__title {
+		font-size: 14px;
+	}
+
+	.penci-owl-featured-area.style-28 .penci-image-holder{
+		width: 100%;
+	}
+
+	.penci-owl-featured-area.style-28 .penci-slider__text {
+		padding: 0 10px 10px !important;
+	}
+
+
+}

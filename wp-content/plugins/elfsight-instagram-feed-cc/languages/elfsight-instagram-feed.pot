@@ -1,0 +1,571 @@
+# Copyright (C) 2019 Elfsight
+# This file is distributed under the same license as the Elfsight Instagram Feed CC plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Elfsight Instagram Feed CC <%= version %>\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/backend\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-08-15T07:50:11+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.1.0\n"
+
+#: includes/widgets-api.php:18
+msgid "Widget with the specified id doesnt exist."
+msgstr ""
+
+#: includes/widgets-api.php:19
+msgid "Parameter \"id\" is required."
+msgstr ""
+
+#: includes/widgets-api.php:20
+msgid "Incoming data is invalid."
+msgstr ""
+
+#: includes/widgets-api.php:21
+msgid "An MySQL error occurred while adding new widget."
+msgstr ""
+
+#: includes/vc-element.php:49
+msgid "Select a widget "
+msgstr ""
+
+#: includes/templates/page-activation.php:7
+msgid "Activation"
+msgstr ""
+
+#: includes/templates/page-activation.php:14
+msgid "CodeCanyon License"
+msgstr ""
+
+#: includes/templates/page-activation.php:24
+msgid "Please, enter your plugin's CodeCanyon purchase code"
+msgstr ""
+
+#: includes/templates/page-activation.php:28
+msgid "Purchase code"
+msgstr ""
+
+#: includes/templates/page-activation.php:34
+#: includes/templates/page-support.php:35
+#: includes/templates/menu-actions.php:10
+msgid "Activate License"
+msgstr ""
+
+#: includes/templates/page-activation.php:37
+msgid "Deactivate License"
+msgstr ""
+
+#: includes/templates/page-activation.php:40
+msgid "Are you sure you want to deactivate the plugin?"
+msgstr ""
+
+#: includes/templates/page-activation.php:42
+msgid "No"
+msgstr ""
+
+#: includes/templates/page-activation.php:44
+msgid "Yes"
+msgstr ""
+
+#: includes/templates/page-activation.php:49
+msgid "The plugin is successfuly activated"
+msgstr ""
+
+#: includes/templates/page-activation.php:50
+msgid "Your purchase code is not valid"
+msgstr ""
+
+#: includes/templates/page-activation.php:51
+msgid "Error occurred while checking your purchase code. Please, contact our support team via <a href=\"mailto:support@elfsight.com\">support@elfsight.com</a>. We apologize for inconveniences."
+msgstr ""
+
+#: includes/templates/page-activation.php:58
+msgid "FAQ"
+msgstr ""
+
+#: includes/templates/page-activation.php:62
+msgid "How do I benefit from activating the license in the plugin?"
+msgstr ""
+
+#. translators: %1$s: link
+#: includes/templates/page-activation.php:68
+msgid "Activating the %1$s will give you access to the in-plugin support and automatic plugin updates. Now bug fixes and new features will be automatically implemented in your plugin."
+msgstr ""
+
+#. translators: Activating the [plugin] will give ..
+#: includes/templates/page-activation.php:73
+#: includes/templates/page-support.php:28
+msgid "plugin"
+msgstr ""
+
+#: includes/templates/page-activation.php:81
+msgid "What is CodeCanyon purchase code?"
+msgstr ""
+
+#. translators: %1$s: link
+#: includes/templates/page-activation.php:86
+msgid "Purchase code is a license key, that you get after buying the plugin on %1$s. It looks like this: 13fc2617-5d1d-4127-873a-feb85d27a012."
+msgstr ""
+
+#: includes/templates/page-activation.php:100
+msgid "How do I get my purchase code?"
+msgstr ""
+
+#. translators: %1$s: product link, %2$s: download link, %3$s: help link
+#: includes/templates/page-activation.php:105
+msgid "After purchasing the %1$s, go to %2$s, click \"Download\" and select “License Certificate & Purchase Code”. You’ll find your purchase code in the downloaded file. To find out more, read: %3$s"
+msgstr ""
+
+#. translators: After purchasing the [item], go to ..
+#: includes/templates/page-activation.php:110
+msgid "item"
+msgstr ""
+
+#: includes/templates/page-activation.php:116
+msgid "Where to find your Envato purchase code?"
+msgstr ""
+
+#: includes/templates/page-activation.php:127
+msgid "How do I activate a CodeCanyon license?"
+msgstr ""
+
+#: includes/templates/page-activation.php:129
+msgid "To activate your license in the plugin insert you purchase code into the CodeCanyon License form above and press “Activate License” button. After the successful activation, you will see the corresponding notification."
+msgstr ""
+
+#: includes/templates/page-support.php:9
+#: includes/templates/page-support.php:47
+msgid "Support"
+msgstr ""
+
+#: includes/templates/page-support.php:16
+msgid "Unlock"
+msgstr ""
+
+#: includes/templates/page-support.php:18
+msgid "Support section is only available for CodeCanyon clients with activated license"
+msgstr ""
+
+#. translators: %1$s: link
+#: includes/templates/page-support.php:24
+msgid "To unlock the in-plugin support, please, activate your license by entering CodeCanyon purchase code of the %1$s."
+msgstr ""
+
+#: includes/templates/page-support.php:50
+msgid "We understand all the importance of product support for our customers. That’s why we are ready to solve all your issues and answer any questions related to our plugin."
+msgstr ""
+
+#: includes/templates/page-support.php:57
+msgid "Before submitting a ticket, make sure that"
+msgstr ""
+
+#: includes/templates/page-support.php:65
+msgid "You use the latest version."
+msgstr ""
+
+#: includes/templates/page-support.php:73
+msgid "There are no javascript errors on your website."
+msgstr ""
+
+#: includes/templates/page-support.php:81
+msgid "The documentation doesn't help."
+msgstr ""
+
+#: includes/templates/page-support.php:85
+msgid "Didn't help? Open a ticket at our Support Center"
+msgstr ""
+
+#: includes/templates/page-support.php:94
+msgid "Our Support Includes"
+msgstr ""
+
+#: includes/templates/page-support.php:98
+msgid "Fixing product bugs"
+msgstr ""
+
+#: includes/templates/page-support.php:100
+msgid "Our product doesn’t work properly on your website? Report your issue or bug by describing it in detail and providing us with a link to your website. We will do our best to find a solution."
+msgstr ""
+
+#: includes/templates/page-support.php:104
+msgid "Life-time updates"
+msgstr ""
+
+#: includes/templates/page-support.php:106
+msgid "We release new updates and features on a regular basis. Just don’t forget to check for the latest version in your WordPress admin panel."
+msgstr ""
+
+#: includes/templates/page-support.php:110
+msgid "Customer-friendly development"
+msgstr ""
+
+#: includes/templates/page-support.php:112
+msgid "We are open to your ideas. If you need some specific features, that might also improve our products, then just drop us a line. We will consider implementing them in our future updates."
+msgstr ""
+
+#: includes/templates/page-support.php:118
+msgid "Our Support Doesn’t Include"
+msgstr ""
+
+#: includes/templates/page-support.php:122
+msgid "Plugin installation"
+msgstr ""
+
+#: includes/templates/page-support.php:124
+msgid "We don’t provide installation services for our plugins. However, we're happy to provide you with installation tutorials. And if any errors come up during installation, feel free to contact us."
+msgstr ""
+
+#: includes/templates/page-support.php:128
+msgid "Plugin customization"
+msgstr ""
+
+#: includes/templates/page-support.php:130
+msgid "We don’t provide plugin customization services. If you need to modify the way some features work, share your ideas with us, and we will consider them for future updates."
+msgstr ""
+
+#: includes/templates/page-support.php:134
+msgid "3rd-party issues"
+msgstr ""
+
+#: includes/templates/page-support.php:136
+msgid "We don’t fix bugs or issues related to other plugins and themes, created by 3rd-party developers. Also we don’t provide integration services for 3rd-party plugins and themes."
+msgstr ""
+
+#: includes/templates/page-widgets.php:7
+msgid "Widgets"
+msgstr ""
+
+#: includes/templates/page-widgets.php:9
+#: includes/templates/page-welcome.php:13
+msgid "Create widget"
+msgstr ""
+
+#: includes/templates/page-widgets.php:11
+msgid "Create, edit or remove your widgets. Use their shortcodes to insert them into the required place."
+msgstr ""
+
+#: includes/templates/page-widgets.php:17
+msgid "Name"
+msgstr ""
+
+#: includes/templates/page-widgets.php:18
+msgid "Shortcode"
+msgstr ""
+
+#: includes/templates/page-widgets.php:19
+msgid "Last updated"
+msgstr ""
+
+#: includes/templates/page-widgets.php:20
+msgid "Actions"
+msgstr ""
+
+#: includes/templates/page-widgets.php:48
+msgid "Edit"
+msgstr ""
+
+#: includes/templates/page-widgets.php:49
+msgid "Duplicate"
+msgstr ""
+
+#: includes/templates/page-widgets.php:50
+msgid "Remove"
+msgstr ""
+
+#: includes/templates/page-widgets.php:53
+msgid "The widget has been removed."
+msgstr ""
+
+#: includes/templates/page-widgets.php:54
+msgid "Restore it"
+msgstr ""
+
+#: includes/templates/page-widgets.php:63
+msgid "There is no any widget yet."
+msgstr ""
+
+#: includes/templates/page-widgets.php:64
+#: includes/widget.php:57
+msgid "Create the first one."
+msgstr ""
+
+#: includes/templates/menu-actions.php:7
+msgid "CodeCanyon License:"
+msgstr ""
+
+#: includes/templates/menu-actions.php:8
+msgid "Not Activated"
+msgstr ""
+
+#: includes/templates/menu-actions.php:15
+msgid "A new version is available"
+msgstr ""
+
+#: includes/templates/menu-actions.php:17
+msgid "Update to"
+msgstr ""
+
+#: includes/templates/header.php:8
+msgid "Would you share what you think about the plugin?"
+msgstr ""
+
+#: includes/templates/header.php:11
+#: includes/templates/header.php:14
+#: includes/templates/header.php:17
+#: includes/templates/header.php:20
+#: includes/templates/popup-rating.php:17
+#: includes/templates/popup-rating.php:20
+#: includes/templates/popup-rating.php:23
+#: includes/templates/popup-rating.php:26
+msgid "stars"
+msgstr ""
+
+#: includes/templates/header.php:23
+#: includes/templates/popup-rating.php:29
+msgid "star"
+msgstr ""
+
+#. translators: %s: version
+#: includes/templates/header.php:37
+msgid "Version %s"
+msgstr ""
+
+#. translators: %s: date
+#: includes/templates/header.php:46
+msgid "Last updated on %1$s"
+msgstr ""
+
+#: includes/templates/header.php:55
+msgid "Need help?"
+msgstr ""
+
+#. translators: %s: Plugin Name
+#: includes/templates/page-welcome.php:6
+msgid "Welcome to %s"
+msgstr ""
+
+#: includes/templates/page-welcome.php:10
+msgid "Let’s create your first widget!"
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:12
+msgid "Back to list"
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:15
+msgid "Create Widget"
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:17
+msgid "Edit Widget"
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:19
+msgid "Name your widget, adjust settings and save it. You will see the shortcode of your new widget in the widgets list. You can copy-paste it to the required place of your website."
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:27
+msgid "Widget name"
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:33
+msgid "Name your widget. The name will be displayed only in your admin panel."
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:41
+msgid "Adjust settings"
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:45
+#: includes/templates/page-preferences.php:35
+#: includes/templates/page-preferences.php:69
+msgid "Save"
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:60
+msgid "Save and Exit"
+msgstr ""
+
+#: includes/templates/page-edit-widget.php:62
+msgid "Cancel"
+msgstr ""
+
+#: includes/templates/page-error.php:6
+msgid "Oops, something went wrong"
+msgstr ""
+
+#: includes/templates/page-error.php:9
+msgid "Unfortunately, there is no such page."
+msgstr ""
+
+#: includes/templates/page-error.php:12
+msgid "Back to Home"
+msgstr ""
+
+#: includes/templates/page-preferences.php:7
+msgid "Preferences"
+msgstr ""
+
+#: includes/templates/page-preferences.php:10
+msgid "These settings will be applied to each widget of the plugin."
+msgstr ""
+
+#: includes/templates/page-preferences.php:20
+msgid "Custom CSS"
+msgstr ""
+
+#: includes/templates/page-preferences.php:24
+msgid "Here you can set the plugin's custom styles. The code will be added to each page with the widget."
+msgstr ""
+
+#: includes/templates/page-preferences.php:41
+#: includes/templates/page-preferences.php:75
+msgid "Done!"
+msgstr ""
+
+#: includes/templates/page-preferences.php:54
+msgid "Custom JavaScript"
+msgstr ""
+
+#: includes/templates/page-preferences.php:58
+msgid "Here you can set the plugin's custom javascript code. The code will be added to each page with the widget."
+msgstr ""
+
+#: includes/templates/page-preferences.php:89
+msgid "Who can access the plugin"
+msgstr ""
+
+#: includes/templates/page-preferences.php:93
+msgid "Here you can set the minimal permissions role that can access the plugin."
+msgstr ""
+
+#: includes/templates/page-preferences.php:100
+msgid "Admin"
+msgstr ""
+
+#: includes/templates/page-preferences.php:101
+msgid "Editor"
+msgstr ""
+
+#: includes/templates/page-preferences.php:102
+msgid "Author"
+msgstr ""
+
+#: includes/templates/page-preferences.php:114
+msgid "Automatic updates"
+msgstr ""
+
+#: includes/templates/page-preferences.php:118
+msgid "When this option is on (recommended), this plugin's released updates with the new features and bug fixes will be installed to your website automatically. When it is off, you'll only have the option of updating manually."
+msgstr ""
+
+#: includes/templates/page-preferences.php:133
+msgid "Ajax Loading (activate for AJAX-powered themes)"
+msgstr ""
+
+#: includes/templates/page-preferences.php:137
+msgid "By default the plugin script loads only on pages you've added its shortcode to. In case of AJAX-powered themes, you need to activate this option to load the plugin script at the initial site load."
+msgstr ""
+
+#. translators: %s: Plugin Name
+#: includes/templates/popup-rating.php:12
+msgid "Enjoying %s Plugin?"
+msgstr ""
+
+#. translators: %s: Plugin Name
+#: includes/templates/popup-rating.php:13
+msgid "Click a star to rate us"
+msgstr ""
+
+#: includes/templates/popup-rating.php:32
+msgid "Please, let us know how we can improve our plugin"
+msgstr ""
+
+#. translators: %s: product review link
+#: includes/templates/popup-rating.php:36
+msgid "Please, share this rating on %s"
+msgstr ""
+
+#. translators: %s: facebook review link
+#: includes/templates/popup-rating.php:37
+msgid "Please, share this recommendation on %s"
+msgstr ""
+
+#: includes/templates/popup-rating.php:42
+msgid "Thanks for helping us improve!"
+msgstr ""
+
+#: includes/templates/popup-rating.php:43
+msgid "Your feedback is very important for us!"
+msgstr ""
+
+#. translators: %1$s: br, %2$s: product review link
+#: includes/templates/popup-rating.php:48
+msgid "We are very grateful %1$s for your awesome review on %2$s"
+msgstr ""
+
+#. translators: %1$s: br, %2$s: facebook review link
+#: includes/templates/popup-rating.php:55
+msgid "We are very grateful %1$s for your awesome recommendation on %2$s"
+msgstr ""
+
+#: includes/templates/popup-rating.php:63
+msgid "No, thanks"
+msgstr ""
+
+#: includes/templates/popup-rating.php:64
+#: includes/templates/popup-rating.php:65
+msgid "Rate us"
+msgstr ""
+
+#: includes/admin.php:285
+msgid "The file can not be overwritten. Please check the file permissions."
+msgstr ""
+
+#: includes/widget.php:46
+msgid "Select a widget:"
+msgstr ""
+
+#: includes/widget.php:48
+msgid "— Select —"
+msgstr ""
+
+#: includes/widget.php:56
+msgid "No widgets yet."
+msgstr ""
+
+#. Plugin Name of the plugin
+msgid "Elfsight Instagram Feed CC"
+msgstr ""
+
+#. Plugin URI of the plugin
+msgid "https://elfsight.com/instagram-feed-instashow/wordpress/?utm_source=markets&utm_medium=codecanyon&utm_campaign=instagram-feed&utm_content=plugin-site"
+msgstr ""
+
+#. Description of the plugin
+msgid "<%= description %>"
+msgstr ""
+
+#. Author of the plugin
+msgid "Elfsight"
+msgstr ""
+
+#. Author URI of the plugin
+msgid "https://elfsight.com/?utm_source=markets&utm_medium=codecanyon&utm_campaign=instagram-feed&utm_content=plugins-list"
+msgstr ""
+
+#: elfsight-instagram-feed-cc.php:32
+msgid "Instagram Feed"
+msgstr ""
+
+#: elfsight-instagram-feed-cc.php:33
+msgid "Add Instagram images to your website to engage your visitors"
+msgstr ""
+
+#: elfsight-instagram-feed-cc.php:41
+msgid "Elfsight Instagram Feed"
+msgstr ""

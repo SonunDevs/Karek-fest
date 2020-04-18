@@ -1,0 +1,38 @@
+.penci-block-vc .about-widget {
+	text-align: center;
+}
+
+.penci-block-vc .about-widget.pc_alignleft {
+	text-align: left;
+}
+
+.penci-block-vc .about-widget.pc_alignright {
+	text-align: right;
+}
+
+.about-widget img {
+	max-width: 100% !important;
+	height: auto;
+	margin-bottom: 16px;
+	vertical-align: top;
+}
+
+.about-widget .about-me-heading {
+	color: $color__dark;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.3;
+	margin-bottom: 8px;
+	position: relative;
+}
+
+.about-widget.pc_alignleft .about-me-heading:before {
+	margin: 0;
+	left: 0;
+}
+
+.about-widget.pc_alignright .about-me-heading:before {
+	margin: 0;
+	left: auto;
+	right: 0;
+}

@@ -1,0 +1,233 @@
+
+.penci-container-fluid,
+.two-sidebar .site-main .penci-container,
+.penci-container-width-1400 {
+	max-width: 1430px;
+}
+
+.penci-container-1080,
+.penci-container-width-1080 {
+	max-width: 1110px;
+}
+
+.penci-container-fluid .penci-container {
+	float: left;
+}
+
+.penci-container-1080,
+.penci-container-width-1400,
+.penci-container-fluid,
+.penci-container-full {
+	@include center-block;
+	padding-left: 15px;
+	padding-right: 15px;
+
+	&:after {
+		@include clearfix-after();
+	}
+}
+
+.penci-content-main,
+.widget-area {
+	width: 100%;
+	float: left;
+}
+
+.widget-area-1 {
+	float: right;
+}
+
+/******** 576 *********/
+@media screen and (min-width:576px){
+
+}
+
+/******** 768 *********/
+@media screen and (min-width:768px){
+	.penci-container-vc {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:960px){
+	.penci-vc_two-sidebar{
+		&> .penci-container__content > .widget-area {
+			display: block;
+			width: 50%;
+		}
+
+		&> .penci-container__content > .widget-area-2 {
+			padding-right: 10px;
+		}
+
+		&> .penci-container__content > .widget-area-1 {
+			padding-left: 10px;
+		}
+	}
+}
+
+/******** 992 *********/
+@media screen and (min-width:960px){
+	.penci-container-vc > .penci-container__content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.widget-area-2 {
+		order: 1;
+	}
+
+	.widget-area-1 {
+		order: 3;
+	}
+
+	.penci-content-main{
+
+		&.penci-col-6 {
+			width: 50%;
+		}
+
+		&.penci-col-4 {
+			width: 33.33333333%;
+		}
+	}
+
+	.widget-area {
+		width: 285px;
+
+		&.penci-col-3 {
+			width: 25%;
+		}
+
+		&.penci-col-4 {
+			width: 33.33333333%;
+		}
+	}
+
+	.penci-vc_two-sidebar > .penci-container__content > .penci-content-main {
+		width: calc( 100% - 570px );
+		order : 2;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.penci-vc_sidebar-right > .penci-container__content > .penci-content-main {
+		width: calc( 100% - 285px );
+		order : 1;
+		padding-right: 20px;
+	}
+
+	.penci-vc_sidebar-left {
+		&> .penci-container__content > .penci-content-main {
+			width: calc( 100% - 285px );
+			order : 2;
+			padding-left: 20px;
+		}
+
+		.widget-area-1 {
+			order: 1;
+		}
+	}
+
+}
+
+/******** 1110 *********/
+@media screen and (min-width:1110px){
+	.penci_dis_padding_bw{
+		.penci-vc_two-sidebar > .penci-container__content > .penci-content-main {
+			padding-left: 40px;
+			padding-right: 40px;
+		}
+
+		.penci-vc_sidebar-right > .penci-container__content > .penci-content-main {
+			padding-right: 40px;
+		}
+
+		.penci-vc_sidebar-left > .penci-container__content > .penci-content-main {
+			padding-left: 40px;
+		}
+
+		.penci-container__content {
+			.penci-content-main.penci-col-6{
+				&:nth-child(2n+1) {
+					padding-right: 20px;
+				}
+
+				&:nth-child(2n+2) {
+					padding-left: 20px;
+				}
+			}
+
+			.penci-content-main.penci-col-4 {
+				&:nth-child(3n+1) {
+					padding-right:20px;
+				}
+
+				&:nth-child(3n+2){
+					padding-left: 20px;
+					padding-right: 20px;
+				}
+
+				&:nth-child(3n+3){
+					padding-left:20px;
+				}
+			}
+
+			.widget-area.penci-col-3 {
+				&:nth-child(4n+1){
+					padding-right: 20px;
+				}
+
+				&:nth-child(4n+2),
+				&:nth-child(4n+3){
+					padding-right: 20px;
+					padding-left: 20px;
+				}
+
+				&:nth-child(4n+4) {
+					padding-left: 20px;
+				}
+			}
+		}
+	}
+}
+
+/******** 1240 *********/
+@media screen and (min-width:1240px) {
+	.widget-area {
+		width: 300px;
+	}
+
+	.penci-vc_two-sidebar > .penci-container__content > .penci-content-main {
+		width: calc( 100% - 600px );
+		order : 2;
+	}
+
+	.penci-vc_sidebar-right > .penci-container__content > .penci-content-main {
+		width: calc( 100% - 300px );
+	}
+
+	.penci-vc_sidebar-left > .penci-container__content > .penci-content-main {
+		width: calc( 100% - 300px );
+	}
+}
+
+@media screen and (max-width: 1240px) and (min-width: 960px){
+	.penci-vc_two-sidebar{
+		&> .penci-container__content > .penci-content-main {
+			width: calc( 100% - 285px );
+			padding-left: 0;
+
+		}
+
+		&> .penci-container__content > .widget-area-2 {
+			display: none;
+		}
+	}
+}
+
+/******** 1430 *********/
+@media screen and (min-width: 1400px) {
+
+}

@@ -1,0 +1,67 @@
+#wp-calendar {
+	width: 100%;
+	margin-bottom: 0;
+
+	caption {
+		text-align: right;
+		color: #777;
+		@include font-size(1.4);
+		margin-top: -3px;
+		margin-bottom: 15px;
+		font-weight: 700;
+	}
+	thead {
+		font-size: 12px;
+		th {
+			padding-bottom: 10px;
+		}
+	}
+	tbody {
+		color: #aaa;
+		td {
+			background: transparent;
+			border: 1px solid #fff;
+			text-align: center;
+			padding: 8px;
+
+			.site-footer & {
+				background: transparent;
+			}
+
+			a {
+				font-weight: 700;
+				color: #222;
+
+				.site-footer & {
+					color: $color__white;
+				}
+
+			}
+		}
+		.pad {
+			background: none;
+		}
+	}
+	tfoot {
+		#next {
+			font-size: 11px;
+			text-transform: uppercase;
+			text-align: right;
+		}
+		#prev {
+			font-size: 12px;
+			text-transform: uppercase;
+			padding-top: 15px;
+
+		}
+
+		td {
+			padding: 0;
+			border: 0;
+		}
+	}
+	thead th {
+		padding-bottom: 10px;
+		text-align: center;
+	}
+}

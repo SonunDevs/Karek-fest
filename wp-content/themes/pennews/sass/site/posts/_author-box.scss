@@ -1,0 +1,113 @@
+/*** Post author ***/
+.penci-post-author {
+	margin: 0;
+	overflow: hidden;
+	padding: 20px 0 14px 0;
+	border-bottom: 1px solid $color__border;
+
+	.author-img {
+		float: left;
+		margin-right: 20px;
+		border-radius: 100%;
+		-webkit-border-radius: 100%;
+		-moz-border-radius: 100%;
+		overflow: hidden;
+	}
+
+	img {
+		border-radius: 100%;
+	}
+}
+
+
+.penci-author-content {
+	h5 {
+		@include font-size( 1.8 );
+		margin: -3px 0 9px;
+		color: $color__dark;
+		display: block;
+		font-weight: 600;
+
+		a {
+			display: inline-block;
+			margin: 0;
+		}
+	}
+
+	.author-description {
+		margin-top: 5px;
+		margin-bottom: 0;
+		line-height: 1.71;
+
+		p{
+			padding: 0;
+			margin: 0;
+		}
+	}
+
+	.author-socials {
+		margin-top: 14px;
+	}
+
+	.author-social {
+		font-size: 14px;
+		color: #313131;
+		margin-right: 10px;
+		&:hover {
+			color: $color__blue;
+		}
+	}
+}
+
+.penci-author-box-wrap {
+	border: 1px solid $color__border;
+	padding: 21px;
+	margin-top: 19px;
+	margin-bottom: 0;
+	font-size: 12px;
+
+	.penci-author-url {
+		font-size: 11px;
+		font-style: italic;
+		line-height: 21px;
+		margin-bottom: 6px;
+	}
+
+	.penci-author-content .author-social {
+		font-size: 15px;
+		width: auto;
+		min-width: 18px;
+		height: auto;
+		margin-right: 15px;
+	}
+
+	.penci-author-content .author-description {
+		line-height: 21px;
+		margin-bottom: 12px;
+	}
+}
+
+.penci-author-box-wrap + .penci-archive__list_posts {
+	margin-top: 20px;
+}
+
+@media screen and (max-width: 480px) {
+	.penci-post-author {
+		display: block;
+		text-align: center;
+
+		.author-img {
+			float: none;
+			margin-bottom: 15px;
+
+			&, img{
+				width: 80px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+		}
+		.penci-author-content {
+			margin: 0;
+		}
+	}
+}

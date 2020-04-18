@@ -1,0 +1,47 @@
+<html>
+      <head>
+        <meta charset="UTF-8">
+        <title>README.md</title>
+      </head>
+      <body>
+        <h3 id="update-icons">Update Icons</h3>
+<pre><code class="lang-javascript">// 1. Open http://fontawesome.io/icons/
+// 2. Run this script
+// 3. Convert JSON to PHP Array https://www.google.com/#q=json+to+php+online
+
+var fa = {
+    groups: {
+        // &#39;id&#39;: &#39;Title&#39;
+    },
+    icons: {
+        // &#39;fa fa-adjust&#39;: {&#39;group&#39;: &#39;web-app&#39;},
+    }
+};
+
+var $section = jQuery(&#39;section#web-application&#39;),
+    group;
+
+do {
+    group = {
+        id: $section.attr(&#39;id&#39;),
+        title: $section.find(&#39;&gt; h2&#39;).text()
+    };
+
+    fa.groups[group.id] = group.title;
+
+    $section.find(&#39;.fontawesome-icon-list i.fa&#39;).each(function(){
+        var icon = jQuery(this).attr(&#39;class&#39;);
+
+        if (fa.icons[icon]) return;
+
+        fa.icons[icon] = {group: group.id};
+    });
+
+    $section = $section.next();
+} while($section.length);
+
+console.log( JSON.stringify(fa) );
+</code></pre>
+
+      </body>
+    </html>

@@ -1,0 +1,48 @@
+.penci_dark_layout {
+
+	button,
+	.button,
+	.entry-content a.button,
+	input[type="button"],
+	input[type="reset"],
+	input[type="submit"],
+	#buddypress .activity-list li.load-more a,
+	.penci-ajax-more .penci-ajax-more-button,
+	.penci-ajax-more .penci-block-ajax-more-button {
+		background: #444;
+		border-color: #444;
+		color: #f9f9f9;
+
+	}
+
+	.site-main #buddypress button,
+	.site-main #buddypress a.button,
+	.site-main #buddypress input[type=button],
+	.site-main #buddypress input[type=reset] {
+		background: #444;
+		border-color: #444;
+		color: #f9f9f9;
+	}
+
+	.penci-review-text {
+		color: $color__white;
+	}
+
+	.widget.widget_display_topics li, .widget.widget_display_views li,
+	.widget.widget_display_forums li, .widget.widget_layered_nav li,
+	.widget.widget_product_categories li, .widget.widget_categories li,
+	.widget.widget_archive li, .widget.widget_pages li, .widget.widget_meta li{
+		color:#666666;
+	}
+
+	.activity-list.bp-list .activity-item{
+		background: transparent;
+	}
+	.activity-list li.bbp_topic_create .activity-content .activity-inner, .activity-list li.bbp_reply_create .activity-content .activity-inner{
+		background: transparent;
+	}
+
+	.buddypress-wrap .bp-feedback{
+		background: transparent;
+	}
+}

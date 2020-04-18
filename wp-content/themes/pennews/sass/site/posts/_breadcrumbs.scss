@@ -1,0 +1,31 @@
+.penci_breadcrumbs {
+	margin-top: -6px;
+
+	a, span {
+		@include font-size(1.3);
+		color: #888888;
+		transition: all 0.3s;
+	}
+
+	a:hover {
+
+		&, span {
+			color: $color__blue;
+		}
+	}
+
+	i {
+		margin-left: 8px;
+		margin-right: 8px;
+		@include font-size(1.2);
+		color: #888888;
+	}
+
+	ul li {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		line-height: 1.3;
+		display: inline-block;
+	}
+}

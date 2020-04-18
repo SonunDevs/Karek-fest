@@ -1,0 +1,41 @@
+.penci-owl-featured-area.style-2 {
+	.penci-item-mag {
+		width: 100%;
+	}
+	.penci-image-holder:before {
+		padding-top: 133.1412%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.penci-owl-featured-area.style-2,
+	.penci-owl-featured-area.style-4,
+	.penci-owl-featured-area.style-6,
+	.penci-owl-featured-area.style-5 {
+		.penci_slider__title {
+			font-size: 18px !important;
+		}
+
+		.penci-slider__text {
+			padding: 0 15px 10px !important;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.penci-owl-featured-area.style-2,
+	.penci-owl-featured-area.style-4,
+	.penci-owl-featured-area.style-5,
+	.penci-owl-featured-area.style-6 {
+		.penci_slider__title {
+			font-size: 18px !important;
+			text-align: center;
+		}
+
+		.penci-slider__cat,
+		.penci_post-meta {
+			display: none !important;
+		}
+	}
+
+}

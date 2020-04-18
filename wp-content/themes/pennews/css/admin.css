@@ -1,0 +1,1405 @@
+@font-face {
+	font-family: 'FontAwesome';
+	src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+	src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+#toplevel_page_penci_dashboard_review .wp-menu-image:before,
+#toplevel_page_pennews_dashboard_welcome .wp-menu-image:before {
+	content: '';
+	background-image: url(../images/icon.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	top: -2px;
+	position: relative;
+}
+
+body[class*="fa-"]:before {
+	content: none !important;
+}
+
+body[class*="fa-"] #toplevel_page_pennews_dashboard_welcome .wp-menu-image {
+	display: inline-block;
+}
+body[class*="fa-"] #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{
+	background-image: none;
+	top: 2px;
+	font: normal normal normal 14px/1 FontAwesome;
+	font-size: inherit;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+	font-size: 16px;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body.fa-glass #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f000"}body.fa-music #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f001"}body.fa-search #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f002"}body.fa-envelope-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f003"}body.fa-heart #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f004"}body.fa-star #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f005"}body.fa-star-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f006"}body.fa-user #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f007"}body.fa-film #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f008"}body.fa-th-large #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f009"}body.fa-th #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f00a"}body.fa-th-list #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f00b"}body.fa-check #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f00c"}body.fa-remove #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-close #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-times #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f00d"}body.fa-search-plus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f00e"}body.fa-search-minus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f010"}body.fa-power-off #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f011"}body.fa-signal #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f012"}body.fa-gear #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-cog #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f013"}body.fa-trash-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f014"}body.fa-home #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f015"}body.fa-file-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f016"}body.fa-clock-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f017"}body.fa-road #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f018"}body.fa-download #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f019"}body.fa-arrow-circle-o-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f01a"}body.fa-arrow-circle-o-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f01b"}body.fa-inbox #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f01c"}body.fa-play-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f01d"}body.fa-rotate-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-repeat #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f01e"}body.fa-refresh #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f021"}body.fa-list-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f022"}body.fa-lock #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f023"}body.fa-flag #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f024"}body.fa-headphones #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f025"}body.fa-volume-off #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f026"}body.fa-volume-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f027"}body.fa-volume-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f028"}body.fa-qrcode #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f029"}body.fa-barcode #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f02a"}body.fa-tag #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f02b"}body.fa-tags #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f02c"}body.fa-book #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f02d"}body.fa-bookmark #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f02e"}body.fa-print #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f02f"}body.fa-camera #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f030"}body.fa-font #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f031"}body.fa-bold #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f032"}body.fa-italic #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f033"}body.fa-text-height #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f034"}body.fa-text-width #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f035"}body.fa-align-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f036"}body.fa-align-center #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f037"}body.fa-align-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f038"}body.fa-align-justify #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f039"}body.fa-list #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f03a"}body.fa-dedent #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-outdent #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f03b"}body.fa-indent #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f03c"}body.fa-video-camera #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f03d"}body.fa-photo #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-image #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-picture-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f03e"}body.fa-pencil #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f040"}body.fa-map-marker #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f041"}body.fa-adjust #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f042"}body.fa-tint #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f043"}body.fa-edit #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-pencil-square-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f044"}body.fa-share-square-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f045"}body.fa-check-square-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f046"}body.fa-arrows #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f047"}body.fa-step-backward #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f048"}body.fa-fast-backward #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f049"}body.fa-backward #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f04a"}body.fa-play #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f04b"}body.fa-pause #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f04c"}body.fa-stop #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f04d"}body.fa-forward #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f04e"}body.fa-fast-forward #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f050"}body.fa-step-forward #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f051"}body.fa-eject #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f052"}body.fa-chevron-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f053"}body.fa-chevron-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f054"}body.fa-plus-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f055"}body.fa-minus-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f056"}body.fa-times-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f057"}body.fa-check-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f058"}body.fa-question-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f059"}body.fa-info-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f05a"}body.fa-crosshairs #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f05b"}body.fa-times-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f05c"}body.fa-check-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f05d"}body.fa-ban #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f05e"}body.fa-arrow-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f060"}body.fa-arrow-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f061"}body.fa-arrow-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f062"}body.fa-arrow-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f063"}body.fa-mail-forward #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-share #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f064"}body.fa-expand #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f065"}body.fa-compress #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f066"}body.fa-plus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f067"}body.fa-minus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f068"}body.fa-asterisk #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f069"}body.fa-exclamation-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f06a"}body.fa-gift #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f06b"}body.fa-leaf #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f06c"}body.fa-fire #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f06d"}body.fa-eye #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f06e"}body.fa-eye-slash #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f070"}body.fa-warning #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-exclamation-triangle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f071"}body.fa-plane #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f072"}body.fa-calendar #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f073"}body.fa-random #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f074"}body.fa-comment #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f075"}body.fa-magnet #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f076"}body.fa-chevron-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f077"}body.fa-chevron-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f078"}body.fa-retweet #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f079"}body.fa-shopping-cart #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f07a"}body.fa-folder #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f07b"}body.fa-folder-open #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f07c"}body.fa-arrows-v #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f07d"}body.fa-arrows-h #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f07e"}body.fa-bar-chart-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-bar-chart #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f080"}body.fa-twitter-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f081"}body.fa-facebook-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f082"}body.fa-camera-retro #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f083"}body.fa-key #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f084"}body.fa-gears #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-cogs #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f085"}body.fa-comments #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f086"}body.fa-thumbs-o-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f087"}body.fa-thumbs-o-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f088"}body.fa-star-half #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f089"}body.fa-heart-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f08a"}body.fa-sign-out #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f08b"}body.fa-linkedin-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f08c"}body.fa-thumb-tack #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f08d"}body.fa-external-link #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f08e"}body.fa-sign-in #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f090"}body.fa-trophy #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f091"}body.fa-github-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f092"}body.fa-upload #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f093"}body.fa-lemon-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f094"}body.fa-phone #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f095"}body.fa-square-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f096"}body.fa-bookmark-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f097"}body.fa-phone-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f098"}body.fa-twitter #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f099"}body.fa-facebook-f #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-facebook #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f09a"}body.fa-github #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f09b"}body.fa-unlock #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f09c"}body.fa-credit-card #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f09d"}body.fa-feed #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-rss #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f09e"}body.fa-hdd-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a0"}body.fa-bullhorn #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a1"}body.fa-bell #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f3"}body.fa-certificate #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a3"}body.fa-hand-o-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a4"}body.fa-hand-o-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a5"}body.fa-hand-o-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a6"}body.fa-hand-o-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a7"}body.fa-arrow-circle-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a8"}body.fa-arrow-circle-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a9"}body.fa-arrow-circle-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0aa"}body.fa-arrow-circle-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ab"}body.fa-globe #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ac"}body.fa-wrench #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ad"}body.fa-tasks #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ae"}body.fa-filter #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0b0"}body.fa-briefcase #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0b1"}body.fa-arrows-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0b2"}body.fa-group #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-users #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c0"}body.fa-chain #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-link #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c1"}body.fa-cloud #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c2"}body.fa-flask #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c3"}body.fa-cut #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-scissors #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c4"}body.fa-copy #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-files-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c5"}body.fa-paperclip #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c6"}body.fa-save #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-floppy-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c7"}body.fa-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c8"}body.fa-navicon #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-reorder #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-bars #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0c9"}body.fa-list-ul #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ca"}body.fa-list-ol #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0cb"}body.fa-strikethrough #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0cc"}body.fa-underline #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0cd"}body.fa-table #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ce"}body.fa-magic #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d0"}body.fa-truck #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d1"}body.fa-pinterest #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d2"}body.fa-pinterest-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d3"}body.fa-google-plus-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d4"}body.fa-google-plus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d5"}body.fa-money #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d6"}body.fa-caret-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d7"}body.fa-caret-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d8"}body.fa-caret-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0d9"}body.fa-caret-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0da"}body.fa-columns #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0db"}body.fa-unsorted #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-sort #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0dc"}body.fa-sort-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-sort-desc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0dd"}body.fa-sort-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-sort-asc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0de"}body.fa-envelope #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e0"}body.fa-linkedin #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e1"}body.fa-rotate-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-undo #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e2"}body.fa-legal #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-gavel #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e3"}body.fa-dashboard #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-tachometer #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e4"}body.fa-comment-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e5"}body.fa-comments-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e6"}body.fa-flash #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-bolt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e7"}body.fa-sitemap #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e8"}body.fa-umbrella #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0e9"}body.fa-paste #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-clipboard #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ea"}body.fa-lightbulb-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0eb"}body.fa-exchange #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ec"}body.fa-cloud-download #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ed"}body.fa-cloud-upload #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0ee"}body.fa-user-md #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f0"}body.fa-stethoscope #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f1"}body.fa-suitcase #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f2"}body.fa-bell-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0a2"}body.fa-coffee #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f4"}body.fa-cutlery #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f5"}body.fa-file-text-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f6"}body.fa-building-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f7"}body.fa-hospital-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f8"}body.fa-ambulance #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0f9"}body.fa-medkit #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0fa"}body.fa-fighter-jet #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0fb"}body.fa-beer #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0fc"}body.fa-h-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0fd"}body.fa-plus-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f0fe"}body.fa-angle-double-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f100"}body.fa-angle-double-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f101"}body.fa-angle-double-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f102"}body.fa-angle-double-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f103"}body.fa-angle-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f104"}body.fa-angle-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f105"}body.fa-angle-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f106"}body.fa-angle-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f107"}body.fa-desktop #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f108"}body.fa-laptop #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f109"}body.fa-tablet #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f10a"}body.fa-mobile-phone #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-mobile #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f10b"}body.fa-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f10c"}body.fa-quote-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f10d"}body.fa-quote-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f10e"}body.fa-spinner #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f110"}body.fa-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f111"}body.fa-mail-reply #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-reply #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f112"}body.fa-github-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f113"}body.fa-folder-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f114"}body.fa-folder-open-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f115"}body.fa-smile-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f118"}body.fa-frown-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f119"}body.fa-meh-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f11a"}body.fa-gamepad #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f11b"}body.fa-keyboard-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f11c"}body.fa-flag-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f11d"}body.fa-flag-checkered #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f11e"}body.fa-terminal #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f120"}body.fa-code #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f121"}body.fa-mail-reply-all #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-reply-all #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f122"}body.fa-star-half-empty #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-star-half-full #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-star-half-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f123"}body.fa-location-arrow #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f124"}body.fa-crop #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f125"}body.fa-code-fork #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f126"}body.fa-unlink #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-chain-broken #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f127"}body.fa-question #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f128"}body.fa-info #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f129"}body.fa-exclamation #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f12a"}body.fa-superscript #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f12b"}body.fa-subscript #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f12c"}body.fa-eraser #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f12d"}body.fa-puzzle-piece #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f12e"}body.fa-microphone #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f130"}body.fa-microphone-slash #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f131"}body.fa-shield #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f132"}body.fa-calendar-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f133"}body.fa-fire-extinguisher #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f134"}body.fa-rocket #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f135"}body.fa-maxcdn #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f136"}body.fa-chevron-circle-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f137"}body.fa-chevron-circle-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f138"}body.fa-chevron-circle-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f139"}body.fa-chevron-circle-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f13a"}body.fa-html5 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f13b"}body.fa-css3 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f13c"}body.fa-anchor #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f13d"}body.fa-unlock-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f13e"}body.fa-bullseye #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f140"}body.fa-ellipsis-h #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f141"}body.fa-ellipsis-v #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f142"}body.fa-rss-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f143"}body.fa-play-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f144"}body.fa-ticket #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f145"}body.fa-minus-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f146"}body.fa-minus-square-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f147"}body.fa-level-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f148"}body.fa-level-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f149"}body.fa-check-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f14a"}body.fa-pencil-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f14b"}body.fa-external-link-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f14c"}body.fa-share-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f14d"}body.fa-compass #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f14e"}body.fa-toggle-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-caret-square-o-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f150"}body.fa-toggle-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-caret-square-o-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f151"}body.fa-toggle-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-caret-square-o-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f152"}body.fa-euro #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-eur #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f153"}body.fa-gbp #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f154"}body.fa-dollar #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-usd #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f155"}body.fa-rupee #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-inr #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f156"}body.fa-cny #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-rmb #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-yen #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-jpy #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f157"}body.fa-ruble #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-rouble #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-rub #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f158"}body.fa-won #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-krw #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f159"}body.fa-bitcoin #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-btc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f15a"}body.fa-file #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f15b"}body.fa-file-text #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f15c"}body.fa-sort-alpha-asc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f15d"}body.fa-sort-alpha-desc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f15e"}body.fa-sort-amount-asc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f160"}body.fa-sort-amount-desc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f161"}body.fa-sort-numeric-asc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f162"}body.fa-sort-numeric-desc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f163"}body.fa-thumbs-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f164"}body.fa-thumbs-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f165"}body.fa-youtube-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f166"}body.fa-youtube #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f167"}body.fa-xing #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f168"}body.fa-xing-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f169"}body.fa-youtube-play #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f16a"}body.fa-dropbox #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f16b"}body.fa-stack-overflow #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f16c"}body.fa-instagram #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f16d"}body.fa-flickr #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f16e"}body.fa-adn #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f170"}body.fa-bitbucket #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f171"}body.fa-bitbucket-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f172"}body.fa-tumblr #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f173"}body.fa-tumblr-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f174"}body.fa-long-arrow-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f175"}body.fa-long-arrow-up #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f176"}body.fa-long-arrow-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f177"}body.fa-long-arrow-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f178"}body.fa-apple #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f179"}body.fa-windows #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f17a"}body.fa-android #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f17b"}body.fa-linux #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f17c"}body.fa-dribbble #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f17d"}body.fa-skype #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f17e"}body.fa-foursquare #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f180"}body.fa-trello #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f181"}body.fa-female #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f182"}body.fa-male #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f183"}body.fa-gittip #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-gratipay #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f184"}body.fa-sun-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f185"}body.fa-moon-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f186"}body.fa-archive #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f187"}body.fa-bug #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f188"}body.fa-vk #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f189"}body.fa-weibo #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f18a"}body.fa-renren #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f18b"}body.fa-pagelines #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f18c"}body.fa-stack-exchange #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f18d"}body.fa-arrow-circle-o-right #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f18e"}body.fa-arrow-circle-o-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f190"}body.fa-toggle-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-caret-square-o-left #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f191"}body.fa-dot-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f192"}body.fa-wheelchair #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f193"}body.fa-vimeo-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f194"}body.fa-turkish-lira #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-try #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f195"}body.fa-plus-square-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f196"}body.fa-space-shuttle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f197"}body.fa-slack #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f198"}body.fa-envelope-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f199"}body.fa-wordpress #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f19a"}body.fa-openid #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f19b"}body.fa-institution #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-bank #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-university #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f19c"}body.fa-mortar-board #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-graduation-cap #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f19d"}body.fa-yahoo #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f19e"}body.fa-google #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a0"}body.fa-reddit #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a1"}body.fa-reddit-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a2"}body.fa-stumbleupon-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a3"}body.fa-stumbleupon #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a4"}body.fa-delicious #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a5"}body.fa-digg #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a6"}body.fa-pied-piper-pp #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a7"}body.fa-pied-piper-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a8"}body.fa-drupal #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1a9"}body.fa-joomla #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1aa"}body.fa-language #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ab"}body.fa-fax #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ac"}body.fa-building #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ad"}body.fa-child #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ae"}body.fa-paw #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b0"}body.fa-spoon #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b1"}body.fa-cube #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b2"}body.fa-cubes #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b3"}body.fa-behance #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b4"}body.fa-behance-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b5"}body.fa-steam #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b6"}body.fa-steam-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b7"}body.fa-recycle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b8"}body.fa-automobile #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-car #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1b9"}body.fa-cab #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-taxi #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ba"}body.fa-tree #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1bb"}body.fa-spotify #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1bc"}body.fa-deviantart #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1bd"}body.fa-soundcloud #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1be"}body.fa-database #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c0"}body.fa-file-pdf-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c1"}body.fa-file-word-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c2"}body.fa-file-excel-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c3"}body.fa-file-powerpoint-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c4"}body.fa-file-photo-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-file-picture-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-file-image-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c5"}body.fa-file-zip-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-file-archive-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c6"}body.fa-file-sound-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-file-audio-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c7"}body.fa-file-movie-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-file-video-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c8"}body.fa-file-code-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1c9"}body.fa-vine #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ca"}body.fa-codepen #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1cb"}body.fa-jsfiddle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1cc"}body.fa-life-bouy #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-life-buoy #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-life-saver #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-support #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-life-ring #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1cd"}body.fa-circle-o-notch #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ce"}body.fa-ra #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-resistance #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-rebel #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d0"}body.fa-ge #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-empire #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d1"}body.fa-git-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d2"}body.fa-git #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d3"}body.fa-y-combinator-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-yc-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-hacker-news #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d4"}body.fa-tencent-weibo #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d5"}body.fa-qq #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d6"}body.fa-wechat #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-weixin #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d7"}body.fa-send #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-paper-plane #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d8"}body.fa-send-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-paper-plane-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1d9"}body.fa-history #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1da"}body.fa-circle-thin #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1db"}body.fa-header #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1dc"}body.fa-paragraph #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1dd"}body.fa-sliders #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1de"}body.fa-share-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e0"}body.fa-share-alt-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e1"}body.fa-bomb #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e2"}body.fa-soccer-ball-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-futbol-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e3"}body.fa-tty #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e4"}body.fa-binoculars #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e5"}body.fa-plug #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e6"}body.fa-slideshare #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e7"}body.fa-twitch #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e8"}body.fa-yelp #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1e9"}body.fa-newspaper-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ea"}body.fa-wifi #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1eb"}body.fa-calculator #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ec"}body.fa-paypal #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ed"}body.fa-google-wallet #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1ee"}body.fa-cc-visa #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f0"}body.fa-cc-mastercard #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f1"}body.fa-cc-discover #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f2"}body.fa-cc-amex #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f3"}body.fa-cc-paypal #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f4"}body.fa-cc-stripe #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f5"}body.fa-bell-slash #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f6"}body.fa-bell-slash-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f7"}body.fa-trash #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f8"}body.fa-copyright #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1f9"}body.fa-at #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1fa"}body.fa-eyedropper #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1fb"}body.fa-paint-brush #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1fc"}body.fa-birthday-cake #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1fd"}body.fa-area-chart #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f1fe"}body.fa-pie-chart #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f200"}body.fa-line-chart #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f201"}body.fa-lastfm #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f202"}body.fa-lastfm-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f203"}body.fa-toggle-off #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f204"}body.fa-toggle-on #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f205"}body.fa-bicycle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f206"}body.fa-bus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f207"}body.fa-ioxhost #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f208"}body.fa-angellist #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f209"}body.fa-cc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f20a"}body.fa-shekel #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-sheqel #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-ils #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f20b"}body.fa-meanpath #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f20c"}body.fa-buysellads #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f20d"}body.fa-connectdevelop #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f20e"}body.fa-dashcube #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f210"}body.fa-forumbee #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f211"}body.fa-leanpub #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f212"}body.fa-sellsy #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f213"}body.fa-shirtsinbulk #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f214"}body.fa-simplybuilt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f215"}body.fa-skyatlas #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f216"}body.fa-cart-plus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f217"}body.fa-cart-arrow-down #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f218"}body.fa-diamond #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f219"}body.fa-ship #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f21a"}body.fa-user-secret #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f21b"}body.fa-motorcycle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f21c"}body.fa-street-view #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f21d"}body.fa-heartbeat #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f21e"}body.fa-venus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f221"}body.fa-mars #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f222"}body.fa-mercury #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f223"}body.fa-intersex #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-transgender #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f224"}body.fa-transgender-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f225"}body.fa-venus-double #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f226"}body.fa-mars-double #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f227"}body.fa-venus-mars #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f228"}body.fa-mars-stroke #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f229"}body.fa-mars-stroke-v #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f22a"}body.fa-mars-stroke-h #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f22b"}body.fa-neuter #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f22c"}body.fa-genderless #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f22d"}body.fa-facebook-official #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f230"}body.fa-pinterest-p #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f231"}body.fa-whatsapp #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f232"}body.fa-server #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f233"}body.fa-user-plus #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f234"}body.fa-user-times #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f235"}body.fa-hotel #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-bed #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f236"}body.fa-viacoin #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f237"}body.fa-train #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f238"}body.fa-subway #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f239"}body.fa-medium #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f23a"}body.fa-yc #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-y-combinator #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f23b"}body.fa-optin-monster #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f23c"}body.fa-opencart #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f23d"}body.fa-expeditedssl #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f23e"}body.fa-battery-4 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-battery #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-battery-full #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f240"}body.fa-battery-3 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-battery-three-quarters #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f241"}body.fa-battery-2 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-battery-half #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f242"}body.fa-battery-1 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-battery-quarter #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f243"}body.fa-battery-0 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-battery-empty #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f244"}body.fa-mouse-pointer #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f245"}body.fa-i-cursor #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f246"}body.fa-object-group #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f247"}body.fa-object-ungroup #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f248"}body.fa-sticky-note #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f249"}body.fa-sticky-note-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f24a"}body.fa-cc-jcb #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f24b"}body.fa-cc-diners-club #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f24c"}body.fa-clone #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f24d"}body.fa-balance-scale #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f24e"}body.fa-hourglass-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f250"}body.fa-hourglass-1 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-hourglass-start #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f251"}body.fa-hourglass-2 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-hourglass-half #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f252"}body.fa-hourglass-3 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-hourglass-end #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f253"}body.fa-hourglass #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f254"}body.fa-hand-grab-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-hand-rock-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f255"}body.fa-hand-stop-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-hand-paper-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f256"}body.fa-hand-scissors-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f257"}body.fa-hand-lizard-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f258"}body.fa-hand-spock-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f259"}body.fa-hand-pointer-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f25a"}body.fa-hand-peace-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f25b"}body.fa-trademark #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f25c"}body.fa-registered #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f25d"}body.fa-creative-commons #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f25e"}body.fa-gg #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f260"}body.fa-gg-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f261"}body.fa-tripadvisor #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f262"}body.fa-odnoklassniki #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f263"}body.fa-odnoklassniki-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f264"}body.fa-get-pocket #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f265"}body.fa-wikipedia-w #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f266"}body.fa-safari #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f267"}body.fa-chrome #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f268"}body.fa-firefox #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f269"}body.fa-opera #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f26a"}body.fa-internet-explorer #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f26b"}body.fa-tv #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-television #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f26c"}body.fa-contao #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f26d"}body.fa-500px #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f26e"}body.fa-amazon #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f270"}body.fa-calendar-plus-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f271"}body.fa-calendar-minus-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f272"}body.fa-calendar-times-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f273"}body.fa-calendar-check-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f274"}body.fa-industry #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f275"}body.fa-map-pin #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f276"}body.fa-map-signs #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f277"}body.fa-map-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f278"}body.fa-map #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f279"}body.fa-commenting #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f27a"}body.fa-commenting-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f27b"}body.fa-houzz #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f27c"}body.fa-vimeo #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f27d"}body.fa-black-tie #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f27e"}body.fa-fonticons #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f280"}body.fa-reddit-alien #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f281"}body.fa-edge #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f282"}body.fa-credit-card-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f283"}body.fa-codiepie #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f284"}body.fa-modx #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f285"}body.fa-fort-awesome #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f286"}body.fa-usb #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f287"}body.fa-product-hunt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f288"}body.fa-mixcloud #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f289"}body.fa-scribd #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f28a"}body.fa-pause-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f28b"}body.fa-pause-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f28c"}body.fa-stop-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f28d"}body.fa-stop-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f28e"}body.fa-shopping-bag #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f290"}body.fa-shopping-basket #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f291"}body.fa-hashtag #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f292"}body.fa-bluetooth #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f293"}body.fa-bluetooth-b #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f294"}body.fa-percent #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f295"}body.fa-gitlab #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f296"}body.fa-wpbeginner #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f297"}body.fa-wpforms #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f298"}body.fa-envira #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f299"}body.fa-universal-access #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f29a"}body.fa-wheelchair-alt #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f29b"}body.fa-question-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f29c"}body.fa-blind #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f29d"}body.fa-audio-description #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f29e"}body.fa-volume-control-phone #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a0"}body.fa-braille #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a1"}body.fa-assistive-listening-systems #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a2"}body.fa-asl-interpreting #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-american-sign-language-interpreting #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a3"}body.fa-deafness #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-hard-of-hearing #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-deaf #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a4"}body.fa-glide #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a5"}body.fa-glide-g #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a6"}body.fa-signing #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-sign-language #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a7"}body.fa-low-vision #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a8"}body.fa-viadeo #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2a9"}body.fa-viadeo-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2aa"}body.fa-snapchat #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2ab"}body.fa-snapchat-ghost #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2ac"}body.fa-snapchat-square #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2ad"}body.fa-pied-piper #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2ae"}body.fa-first-order #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b0"}body.fa-yoast #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b1"}body.fa-themeisle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b2"}body.fa-google-plus-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-google-plus-official #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b3"}body.fa-fa #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-font-awesome #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b4"}body.fa-handshake-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b5"}body.fa-envelope-open #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b6"}body.fa-envelope-open-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b7"}body.fa-linode #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b8"}body.fa-address-book #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2b9"}body.fa-address-book-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2ba"}body.fa-vcard #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-address-card #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2bb"}body.fa-vcard-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-address-card-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2bc"}body.fa-user-circle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2bd"}body.fa-user-circle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2be"}body.fa-user-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c0"}body.fa-id-badge #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c1"}body.fa-drivers-license #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-id-card #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c2"}body.fa-drivers-license-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-id-card-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c3"}body.fa-quora #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c4"}body.fa-free-code-camp #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c5"}body.fa-telegram #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c6"}body.fa-thermometer-4 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-thermometer #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-thermometer-full #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c7"}body.fa-thermometer-3 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-thermometer-three-quarters #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c8"}body.fa-thermometer-2 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-thermometer-half #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2c9"}body.fa-thermometer-1 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-thermometer-quarter #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2ca"}body.fa-thermometer-0 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-thermometer-empty #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2cb"}body.fa-shower #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2cc"}body.fa-bathtub #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-s15 #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-bath #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2cd"}body.fa-podcast #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2ce"}body.fa-window-maximize #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d0"}body.fa-window-minimize #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d1"}body.fa-window-restore #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d2"}body.fa-times-rectangle #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-window-close #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d3"}body.fa-times-rectangle-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before,body.fa-window-close-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d4"}body.fa-bandcamp #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d5"}body.fa-grav #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d6"}body.fa-etsy #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d7"}body.fa-imdb #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d8"}body.fa-ravelry #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2d9"}body.fa-eercast #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2da"}body.fa-microchip #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2db"}body.fa-snowflake-o #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2dc"}body.fa-superpowers #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2dd"}body.fa-wpexplorer #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2de"}body.fa-meetup #toplevel_page_pennews_dashboard_welcome .wp-menu-image:before{content:"\f2e0"}
+
+
+
+.vc_add-element-container .wpb-content-layouts span{
+	line-height: 1.3;
+}
+
+.vc_add-element-container .wpb-content-layouts #penci_block_1,
+.vc_add-element-container .wpb-content-layouts #penci_block_2,
+.vc_add-element-container .wpb-content-layouts #penci_block_3,
+.vc_add-element-container .wpb-content-layouts #penci_block_4,
+.vc_add-element-container .wpb-content-layouts #penci_block_5,
+.vc_add-element-container .wpb-content-layouts #penci_block_6,
+.vc_add-element-container .wpb-content-layouts #penci_block_7,
+.vc_add-element-container .wpb-content-layouts #penci_block_8,
+.vc_add-element-container .wpb-content-layouts #penci_block_9,
+.vc_add-element-container .wpb-content-layouts #penci_block_10,
+.vc_add-element-container .wpb-content-layouts #penci_block_11,
+.vc_add-element-container .wpb-content-layouts #penci_block_12,
+.vc_add-element-container .wpb-content-layouts #penci_block_13,
+.vc_add-element-container .wpb-content-layouts #penci_block_14,
+.vc_add-element-container .wpb-content-layouts #penci_block_15,
+.vc_add-element-container .wpb-content-layouts #penci_block_16,
+.vc_add-element-container .wpb-content-layouts #penci_block_17,
+.vc_add-element-container .wpb-content-layouts #penci_block_18,
+.vc_add-element-container .wpb-content-layouts #penci_block_19,
+.vc_add-element-container .wpb-content-layouts #penci_block_20,
+.vc_add-element-container .wpb-content-layouts #penci_block_21,
+.vc_add-element-container .wpb-content-layouts #penci_block_22,
+.vc_add-element-container .wpb-content-layouts #penci_block_23,
+.vc_add-element-container .wpb-content-layouts #penci_block_24,
+.vc_add-element-container .wpb-content-layouts #penci_block_25,
+.vc_add-element-container .wpb-content-layouts #penci_block_26,
+.vc_add-element-container .wpb-content-layouts #penci_block_27,
+.vc_add-element-container .wpb-content-layouts #penci_block_28,
+.vc_add-element-container .wpb-content-layouts #penci_block_29,
+.vc_add-element-container .wpb-content-layouts #penci_block_30,
+.vc_add-element-container .wpb-content-layouts #penci_block_31,
+.vc_add-element-container .wpb-content-layouts #penci_block_32,
+.vc_add-element-container .wpb-content-layouts #penci_block_33,
+.vc_add-element-container .wpb-content-layouts #penci_block_34,
+.vc_add-element-container .wpb-content-layouts #penci_block_35,
+.vc_add-element-container .wpb-content-layouts #penci_block_36,
+.vc_add-element-container .wpb-content-layouts #penci_block_37,
+.vc_add-element-container .wpb-content-layouts #penci_block_38,
+.vc_add-element-container .wpb-content-layouts #penci_grid_1,
+.vc_add-element-container .wpb-content-layouts #penci_grid_2,
+.vc_add-element-container .wpb-content-layouts #penci_grid_3,
+.vc_add-element-container .wpb-content-layouts #penci_grid_4,
+.vc_add-element-container .wpb-content-layouts #penci_grid_5,
+.vc_add-element-container .wpb-content-layouts #penci_grid_6,
+.vc_add-element-container .wpb-content-layouts #penci_grid_7,
+.vc_add-element-container .wpb-content-layouts #penci_grid_8,
+.vc_add-element-container .wpb-content-layouts #penci_grid_9,
+.vc_add-element-container .wpb-content-layouts #penci_grid_10,
+.vc_add-element-container .wpb-content-layouts #penci_grid_11,
+.vc_add-element-container .wpb-content-layouts #penci_grid_12,
+.vc_add-element-container .wpb-content-layouts #penci_grid_13,
+.vc_add-element-container .wpb-content-layouts #penci_grid_14,
+.vc_add-element-container .wpb-content-layouts #penci_grid_15,
+.vc_add-element-container .wpb-content-layouts #penci_sliders,
+.vc_add-element-container .wpb-content-layouts #penci_news_ticker,
+.vc_add-element-container .wpb-content-layouts #penci_container,
+.vc_add-element-container .wpb-content-layouts #penci_container_inner,
+.vc_add-element-container .wpb-content-layouts #penci_social_counter,
+.vc_add-element-container .wpb-content-layouts #penci_ad_box,
+.vc_add-element-container .wpb-content-layouts #penci_mailchimp,
+.vc_add-element-container .wpb-content-layouts #penci_videos_playlist,
+.vc_add-element-container .wpb-content-layouts #penci_image_gallery,
+.vc_add-element-container .wpb-content-layouts #portfolio,
+.vc_add-element-container .wpb-content-layouts #penci_weather,
+.vc_add-element-container .wpb-content-layouts #penci_popular_category,
+.vc_add-element-container .wpb-content-layouts #penci_custom_slider,
+
+.vc_add-element-container .wpb-content-layouts #penci_facebook_page,
+.vc_add-element-container .wpb-content-layouts #penci_latest_tweets,
+.vc_add-element-container .wpb-content-layouts #penci_pinterest,
+.vc_add-element-container .wpb-content-layouts #penci_about_us,
+.vc_add-element-container .wpb-content-layouts #penci_authors_box,
+.vc_add-element-container .wpb-content-layouts #penci_image_box,
+
+.vc_add-element-container .wpb-content-layouts #penci_authors_box_2,
+.vc_add-element-container .wpb-content-layouts #penci_team_members,
+.vc_add-element-container .wpb-content-layouts #penci_instagram,
+
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_archives,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_calendar,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_custommenu,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_posts,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_recentcomments,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_search,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_tagcolud,
+.vc_add-element-container .wpb-content-layouts #penci_text_block,
+.vc_add-element-container .wpb-content-layouts #penci_login_form,
+
+.vc_add-element-container .wpb-content-layouts #penci_fancy_heading,
+.vc_add-element-container .wpb-content-layouts #penci_info_box,
+.vc_add-element-container .wpb-content-layouts #penci_advanced_carousel,
+.vc_add-element-container .wpb-content-layouts #penci_count_down,
+.vc_add-element-container .wpb-content-layouts #penci_map,
+.vc_add-element-container .wpb-content-layouts #penci_testimonials,
+.vc_add-element-container .wpb-content-layouts #penci_single_video,
+.vc_add-element-container .wpb-content-layouts #penci_blog_list,
+.vc_add-element-container .wpb-content-layouts #penci_counter_up,
+.vc_add-element-container .wpb-content-layouts #penci_opening_hours,
+.vc_add-element-container .wpb-content-layouts #penci_pricing_item,
+.vc_add-element-container .wpb-content-layouts #penci_progress_bar,
+.vc_add-element-container .wpb-content-layouts #penci_testimonails,
+.vc_add-element-container .wpb-content-layouts #penci_testimonail,
+.vc_add-element-container .wpb-content-layouts #penci_social_media,
+.vc_add-element-container .wpb-content-layouts #penci_bos_searchbox,
+
+.vc_add-element-container .wpb-content-layouts #penci_metro_slider_item,
+.vc_add-element-container .wpb-content-layouts #penci_metro_slider,
+.vc_add-element-container .wpb-content-layouts #penci_recent_review,
+
+
+.vc_add-element-container .wpb-content-layouts #penci_block_video {
+	padding-left: 75px;
+}
+
+.vc_add-element-container .wpb-content-layouts #penci_block_1 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_2 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_3 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_4 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_5 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_6 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_7 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_8 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_9 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_10 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_11 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_12 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_13 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_14 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_15 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_16 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_17 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_18 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_19 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_20 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_21 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_22 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_23 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_24 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_25 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_26 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_27 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_28 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_29 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_30 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_31 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_32 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_33 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_34 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_35 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_36 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_37 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_block_38 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_1 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_2 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_3 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_4 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_5 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_6 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_7 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_8 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_9 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_10 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_11 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_12 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_13 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_14 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_grid_15 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_sliders .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_news_ticker .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_container .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_container_inner .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_social_counter .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_ad_box .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_mailchimp .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_videos_playlist .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_image_gallery .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #portfolio .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_weather .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_popular_category .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_text_block .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_facebook_page .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_latest_tweets .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_pinterest .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_custom_slider .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_archives .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_calendar .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_custommenu .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_posts .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_recentcomments .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_search .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_tagcolud .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_about_us .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_authors_box .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_image_box .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_login_form .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_authors_box_2 .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_team_members .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_instagram .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_fancy_heading .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_info_box .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_advanced_carousel .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_count_down .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_map .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_testimonials .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_testimonials .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_single_video .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_blog_list .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_counter_up .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_opening_hours .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_pricing_item .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_progress_bar .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_testimonails .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_testimonail .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_social_media .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_bos_searchbox .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_metro_slider .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_metro_slider_item .vc_element-description,
+.vc_add-element-container .wpb-content-layouts #penci_recent_review .vc_element-description,
+
+.vc_add-element-container .wpb-content-layouts #penci_block_video .vc_element-description {
+	display: none;
+}
+
+.vc_add-element-container .wpb-content-layouts #penci_block_1 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_2 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_3 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_4 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_5 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_6 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_7 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_8 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_9 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_10 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_11 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_12 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_13 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_14 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_15 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_16 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_17 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_18 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_19 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_20 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_21 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_22 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_23 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_24 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_25 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_26 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_27 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_28 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_29 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_30 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_31 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_32 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_33 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_34 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_35 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_36 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_37 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_block_38 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_1 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_2 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_3 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_4 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_5 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_6 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_7 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_8 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_9 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_10 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_11 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_12 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_13 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_14 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_grid_15 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_sliders .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_news_ticker .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_container .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_container_inner .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_social_counter .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_ad_box .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_mailchimp .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_videos_playlist .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_image_gallery .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #portfolio .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_weather .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_popular_category .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_text_block .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_facebook_page .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_latest_tweets .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_pinterest .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_custom_slider .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_archives .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_calendar .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_custommenu .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_posts .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_recentcomments .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_search .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_wp_widget_tagcolud .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_about_us .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_authors_box .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_image_box .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_login_form .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_authors_box_2 .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_team_members .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_instagram .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_fancy_heading .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_info_box .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_advanced_carousel .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_count_down .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_map .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_testimonials .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_single_video .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_blog_list .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_counter_up .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_opening_hours .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_pricing_item .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_progress_bar .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_testimonails .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_testimonail .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_social_media .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_bos_searchbox .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_metro_slider .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_metro_slider_item .vc_element-icon,
+.vc_add-element-container .wpb-content-layouts #penci_recent_review .vc_element-icon,
+
+.vc_add-element-container .wpb-content-layouts #penci_block_video .vc_element-icon {
+	width: 60px !important;
+	height: 44px !important;
+	margin-bottom: 0 !important;
+	top: 12px !important;
+}
+
+.penci-param-heading-wrapper {
+	padding: 10px 15px;
+	font-size: 14px;
+	background: #e6e6e6;
+	color: #6C6C6C;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.penci-param-heading-wrapper .edit_form_line {
+	display: none;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a.cell-12_14_14,
+.wpb_penci_container .vc_controls-row .vc_row_layouts a.cell-14_14_12 {
+	margin-left: 4px;
+}
+
+.vc_controls-row .vc_control-set-column .vc-composer-icon.vc-c-icon-1-4_1-4_1-2:before,
+.vc_controls-row .vc_control-set-column .vc-composer-icon.vc-c-icon-1-2_1-4_1-4:before {
+	content: '';
+	background-image: url(../images/icon-vc-layout.png);
+	width: 28px;
+	height: 14px;
+	display: block;
+	position: absolute;
+	top: -7px;
+	left: -13px;
+}
+
+.vc_controls-row .vc_control-set-column .vc-composer-icon.vc-c-icon-1-4_1-4_1-2:before {
+	background-position-x: 29px;
+}
+
+
+
+/** widget **/
+
+.penci-field-item  textarea {
+ min-height: 130px;
+}
+.penci-widget-desc {
+	color: #999;
+	font-size: 12px;
+	display: block;
+	font-style: italic;
+	line-height: 20px;
+	margin-top: 8px;
+	clear: both;
+}
+
+.penci-checkbox {
+	float: left;
+	position: relative;
+	top: 4px;
+}
+
+.penci-picker-container {
+	clear: both;
+	display: block;
+}
+
+.penci-field-item {
+	clear: both;
+}
+
+.penci-widget-image {
+	clear: both;
+	width: 100%;
+}
+
+.penci-widget-image .penci-widget-image__select {
+	clear: both;
+}
+
+.penci-widget-image .penci-widget-image__image:not(.hidden) {
+	margin: 10px auto 0;
+	display: block;
+	float: left;
+	height: auto;
+	width: 100%;
+	max-width: 300px;
+	max-height: 300px;
+	background: url(../vc/add.png) center center no-repeat #F5F5F5;
+	border: 1px solid #DFDFDF;
+	font-size: 0;
+	color: #F5F5F5;
+	overflow: hidden;
+}
+
+.penci-widget-image img {
+	width: auto;
+	height: auto;
+	max-height: 100px;
+}
+
+.penci-widget-image .penci-widget-image__select {
+	clear: both;
+	margin-top: 10px;
+	display: inline-block;
+	float: left;
+	margin-right: 15px;
+}
+
+.penci-widget-image .penci-widget-image__remove {
+	display: inline-block;
+	float: left;
+	margin-top: 10px;
+}
+
+.vc_shortcodes_container > .wpb_element_wrapper > .vc_container_for_children, .vc_shortcodes_container > .wpb_element_wrapper > .vc_container_for_children .wpb_column_container {
+	background-color: #F5F5F5;
+	padding: 10px 5px;
+}
+
+.penci-param-heading-wrapper {
+	padding: 10px 15px;
+	font-size: 14px;
+	background: #e6e6e6;
+	color: #6C6C6C;
+	margin-bottom: 0;
+	margin-top: 10px;
+}
+
+.widget-content .penci-param-heading-wrapper {
+	padding: 2px 8px;
+}
+
+.penci-param-heading-wrapper .edit_form_line {
+	display: none;
+}
+
+.vc_edit_form_elements .edit_form_line input[type=number] {
+	height: 28px !important;
+}
+
+.wpb_penci_image_gallery .column_edit_trigger {
+	margin-top: 2px;
+}
+
+.wpb_penci_image_gallery .attachment-thumbnails {
+	overflow: hidden;
+	height: 20px;
+	padding: 0;
+	margin: 5px 0 0;
+}
+
+.wpb_penci_image_gallery .attachment-thumbnails li {
+	height: 20px;
+	width: 20px;
+	overflow: hidden;
+	margin-right: 1px;
+	margin-bottom: 0;
+	display: inline-block;
+}
+
+.wpb_penci_image_gallery .attachment-thumbnails li .vc_icon-remove {
+	display: none;
+}
+
+.wpb_penci_image_gallery .attachment-thumbnails img {
+	height: 20px;
+	width: auto;
+}
+
+/***** Shortcode container ******/
+.wpb_penci_container .vc_controls .wpb_element_title {
+	font-size: 13px;
+	line-height: 13px;
+	display: inline-block;
+	position: relative;
+	top: -3px;
+	color: #131313;
+	font-weight: 600;
+	margin-left: 3px;
+	margin-right: -5px;
+}
+
+.wpb_penci_container .vc_controls .wpb_element_title img {
+	width: 35px;
+	position: relative;
+	margin-bottom: -9px;
+}
+
+.wpb_penci_container > .vc_controls > .column_move {
+	background-color: #fff;
+}
+
+.wpb_row_container > .wpb_vc_column_inner > .vc_controls {
+	text-align: center;
+	background: #fff;
+	width: 100%;
+	line-height: 1px;
+	padding: 2px;
+	height: 24px;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts {
+	height: 17px !important;
+	left: 69px !important;
+	overflow: inherit !important;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a {
+	position: relative;
+}
+
+.vc_controls-row .vc_control-row-layout:hover a.penci-hidden,
+.vc_controls-row .vc_row_layouts:hover a.penci-hidden {
+	display:none;
+}
+
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a.cell-13_23 i {
+	transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	-webkit-transform: rotate(180deg);
+	-o-transform: rotate(180deg);
+	-ms-transform: rotate(180deg);
+	top: 4px;
+	left: 2px;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:before,
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:after {
+	position: absolute;
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	visibility: hidden;
+	opacity: 0;
+	z-index: 1000000;
+	pointer-events: none;
+	-webkit-transition: 0.3s ease;
+	-moz-transition: 0.3s ease;
+	transition: 0.3s ease;
+	-webkit-transition-delay: 0ms;
+	-moz-transition-delay: 0ms;
+	transition-delay: 0ms;
+	left: 100%;
+	bottom: 50%;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:before {
+	content: '';
+	position: absolute;
+	background: transparent;
+	border: 6px solid transparent;
+	z-index: 1000001;
+	margin-bottom: 11px;
+	left: 8px;
+	border-top-color: #383838;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:after {
+	content: attr(data-hint);
+	background: #383838;
+	color: white;
+	padding: 8px 10px;
+	font-size: 12px;
+	line-height: 12px;
+	white-space: nowrap;
+	border-radius: 3px;
+	margin-bottom: 22px;
+	margin-left: -29px;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:hover:before, .wpb_penci_container .vc_controls-row .vc_row_layouts a:hover:after, .wpb_penci_container .vc_controls-row .vc_row_layouts a:focus:before, .wpb_penci_container .vc_controls-row .vc_row_layouts a:focus:after {
+	visibility: visible;
+	opacity: 1;
+	-webkit-transform: translateY(8px);
+	-moz-transform: translateY(8px);
+	transform: translateY(8px);
+	z-index: 5;
+}
+
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:hover:before, .wpb_penci_container .vc_controls-row .vc_row_layouts a:hover:after {
+	-webkit-transition-delay: 100ms;
+	-moz-transition-delay: 100ms;
+	transition-delay: 100ms;
+}
+
+.wpb_penci_container .vc_controls-row .vc_control-row-layout a.vc_active,
+.wpb_penci_container .vc_controls-row .vc_control-row-layout a:hover,
+.wpb_penci_container .vc_controls-row .vc_row_layouts a.vc_active,
+.wpb_penci_container .vc_controls-row .vc_row_layouts a:hover {
+	background-color: #FBEED5;
+}
+
+.wpb_row_container > .wpb_penci_column > .vc_controls,
+.wpb_row_container > .wpb_penci_column_inner > .vc_controls {
+	text-align: center;
+	background: #fff;
+	width: 100%;
+	line-height: 1px;
+	padding: 2px;
+	height: 24px;
+}
+
+.wpb_row_container > .wpb_penci_column > .wpb_element_wrapper,
+.wpb_row_container > .wpb_penci_column_inner > .wpb_element_wrapper {
+	background: #fff;
+	padding: 1px 14px;
+}
+
+.wpb_row_container > .wpb_penci_column > .wpb_element_wrapper > .wpb_column_container,
+.wpb_row_container > .wpb_penci_column_inner > .wpb_element_wrapper > .wpb_column_container {
+	border: 5px solid #f5f5f5;
+}
+
+.wpb_row_container > .wpb_penci_column > .wpb_element_wrapper .wpb_penci_container_inner,
+.wpb_row_container > .wpb_penci_column > .wpb_element_wrapper .wpb_content_element,
+.wpb_row_container > .wpb_penci_column_inner > .wpb_element_wrapper .wpb_penci_container_inner,
+.wpb_row_container > .wpb_penci_column_inner > .wpb_element_wrapper .wpb_content_element {
+	border-bottom: 5px solid #f5f5f5;
+}
+
+.wpb_row_container > .wpb_penci_column > .vc_controls,
+.wpb_row_container > .wpb_penci_column_inner > .vc_controls {
+	text-align: center;
+	background: #fff;
+	width: 100%;
+	line-height: 1px;
+	padding: 2px;
+	height: 24px;
+}
+
+.wpb_penci_container {
+	margin-top: 5px;
+}
+
+.penci_container_controls .vc_row-hash-id {
+	position: inherit !important;
+	left: 2px !important;
+	margin-right: 2px;
+	display: block;
+	height: 15px;
+	overflow: hidden;
+	float: left;
+	padding: 5px;
+	text-align: left;
+	margin-left: 3px;
+	background: #e6e6e6;
+	border: 1px solid transparent;
+	border-radius: 2px 2px 0 0;
+	margin-top: 0;
+	color: #444;
+}
+
+.vc_inappropriate[data-element="penci_container"] + .vc_inappropriate[data-element="penci_container_inner"] {
+	display: block !important;
+}
+
+.penci-image-select {
+	display: inline-block;
+	width: 68px;
+	height: 52px;
+	float: left;
+	margin: 0 5px 10px 0;
+	border: 2px solid #d8d8d8;
+	border-radius: 3px;
+	padding: 1px;
+}
+
+.penci-image-select:hover,
+.penci-image-select--active {
+	border-color: #0074a2;
+}
+
+.penci-image-select:hover {
+	cursor: pointer;
+}
+
+.vc_edit_form_elements .penci-number-input {
+	width: 5em;
+	margin-right: 5px;
+}
+
+.vc_edit_form_elements .penci-only-number-input {
+	width: 7em;
+	margin-right: 5px;
+}
+
+.vc_edit_form_elements .penci-number-suffix {
+	width: 5em;
+	height: 28px;
+	padding: 0 6px;
+	vertical-align: top;
+}
+
+.widget .nav-tab {
+	margin-left: 2px;
+	padding: 3px 5px;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+
+.post-type-penci_slider {
+
+}
+
+.post-type-penci_slider .column-title {
+	width: 10%;
+}
+
+.post-type-penci_slider .column-shortcode {
+	width: 20%;
+}
+
+.column-shortcode textarea{
+	width:100%;
+	height:60px;
+	line-height: 35px;
+	background-color: #eee;
+}
+
+.column-content_slider .slider-thumb{
+	width:120px;
+	margin-right:10px;
+	float: left;
+	max-height: 200px;
+}
+.column-content_slider .slider-item {
+	border-bottom: 1px dashed #e1e1e1;
+	clear: both;
+	overflow: hidden;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+.column-content_slider .slider-item:last-child{
+	border: 0;
+	margin-bottom: 0;
+	padding-bottom: 0;
+}
+
+.column-content_slider h2 {
+	margin-top: 0;
+	margin-bottom: 10px;
+}
+
+/* Widget */
+.pennews-remove-custom-sidebar .notice-dismiss {
+	right: 30px;
+	top: 3px;
+}
+
+.mce-i-pencisc-logo {
+	position: relative;
+}
+.mce-i-pencisc-logo:before {
+	content: '';
+}
+
+.penci-slider-heading {
+	border-left: 4px solid #ffba00;
+	box-shadow: 0 1px 1px 0 rgba(0,0,0,.1);
+}
+
+.widget-content .penci-build-query {
+	border: 1px solid #dfdfdf;
+	padding: 10px;
+	margin-top: 10px;
+	background: #f5f5f5;
+	position: relative;
+	display: none;
+}
+.widget-content .penci-build-query.active {
+	display: block;
+}
+
+.widget-content .penci-build-query:before {
+	content: "";
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: -8px;
+	left: 20px;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #dfdfdf;
+}
+
+/** Metabox **/
+#slider-settings .rwmb-color-wrapper .rwmb-label,
+#slider-settings .rwmb-color-wrapper .rwmb-label ~ .rwmb-input {
+	width: 100%;
+}
+#slider-settings .rwmb-color-wrapper .rwmb-label {
+	margin-bottom: 5px;
+}
+
+@media ( min-width: 768px ) {
+	#slider-settings .rwmb-color-wrapper {
+		width: 33.333%;
+		float: left;
+	}
+}
+
+/** booking **/
+#bos_right #flexi_searchbox:after {
+	content: "";
+	clear: both;
+	width: 100%;
+	display: block;
+}
+
+#bos_right #flexi_searchbox #b_searchboxInc {
+	padding: 20px;
+}
+
+#bos_right #flexi_searchbox #b_searchboxInc #b_destination {
+	width: 100%;
+}
+
+#bos_right #flexi_searchbox #b_searchboxInc select, #bos_right #flexi_searchbox #b_searchboxInc input[type=text] {
+	border-radius: 0;
+	border: none;
+	background: #FFF;
+}
+
+#bos_right #flexi_searchbox #b_searchboxInc input[type=text] {
+	height: 40px;
+	line-height: 40px;
+	padding: 0 10px !important;
+}
+
+#bos_right #flexi_searchbox #b_searchboxInc select {
+	padding: 8px 10px !important;
+	margin-right: 10px;
+}
+
+#bos_right #flexi_searchbox #b_searchboxInc .b_submitButton_wrapper .b_submitButton {
+	border-radius: 0;
+	border: none;
+	font-family: "Roboto", sans-serif;
+}
+
+#bos_right #flexi_searchbox #b_searchboxInc .b_submitButton_wrapper .b_submitButton:hover {
+	border: 0;
+	border-radius: 0;
+}
+
+#bos_right #flexi_searchbox h1, #bos_right #flexi_searchbox h2, #bos_right #flexi_searchbox h3, #bos_right #flexi_searchbox h4 {
+	line-height: 1.3;
+	font-family: "Mukta Vaani", sans-serif;
+	font-style: normal;
+	font-weight: 600;
+}
+
+#bos_right #flexi_searchbox h4 {
+	margin-bottom: 10px;
+}
+
+#bos_right #flexi_searchbox .b_checkbox_container span {
+	vertical-align: top;
+}
+
+/** Taxomomy **/
+.penci-tax-meta-fields {
+	overflow: hidden;
+}
+#poststuff.penci-tax-meta-fields {
+	min-width: 0;
+}
+
+#col-left #poststuff.penci-tax-meta-fields {
+	max-width: 95%;
+}
+
+.penci-tax-meta-fields .rwmb-image_select-wrapper .rwmb-label {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.penci-tax-meta-fields .rwmb-image_select-wrapper .rwmb-label ~ .rwmb-input {
+	width: 100%;
+}
+
+.penci-tax-meta-fields .rwmb-image-select {
+	display: inline-block;
+	width: 60px;
+	height: 44px;
+	float: left;
+	margin: 0 10px 10px 0;
+	border: 2px solid #d8d8d8;
+	border-radius: 3px;
+	padding: 1px;
+}
+.penci-tax-meta-fields .rwmb-image-select img {
+	width: 100% !important;
+	height: 100% !important;
+}
+.penci-tax-meta-fields .rwmb-image-select:hover,
+.penci-tax-meta-fields .rwmb-image-select.rwmb-active {
+	border-color: #0074a2;
+}
+.penci-tax-meta-fields .rwmb-image-select input {
+	display: none;
+}
+
+.rwmb-tab-panel-extra .rwmb-label{
+	display: inline-block;
+	width: auto;
+	float: none;
+}
+
+.rwmb-tab-panel-extra .rwmb-label > label {
+	font-weight: normal;
+}
+
+.rwmb-tab-panel-extra .rwmb-label ~ .rwmb-input {
+	width: 25px;
+	float: left;
+	display: inline-block;
+	margin-top: 4px;
+}
+
+.penci-tax-meta-fields .rwmb-tab-panel-general > .rwmb-checkbox-wrapper .rwmb-label {
+	width: auto;
+	margin-right: 10px;
+}
+.penci-tax-meta-fields .rwmb-tab-panel-general > .rwmb-checkbox-wrapper .rwmb-label ~ .rwmb-input {
+	width: auto;
+}
+
+.penci-css-editor-device {
+	padding-top: 0 !important;
+	display: none;
+}
+.penci-css-editor-device.active{
+	display: block;
+}
+
+.penci_fancy_heading_fsize{
+	margin: 20px;
+}
+/** right to left **/
+.rtl .vc_general.vc_ui-tabs-line>li {
+	float: right;
+}
+
+.penci-table-options-ads {
+	margin-top: 20px;
+}
+#pennews-list-ads {
+
+}
+
+#pennews-list-ads .penci-ad-item{
+	clear: both;
+	padding: 8px 15px;
+	overflow: hidden;
+	position: relative;
+	margin: 0 0 5px;
+	list-style: none;
+	background: #FAFAFA;
+	border: 1px solid #dedede;
+}
+
+.penci-btn-remove-ad {
+	float: right;
+	padding-left:20px;
+}
+
+.penci-ad-item .penci-ads-row {
+	position: relative;
+	clear: left;
+	margin-bottom: 20px;
+
+}
+
+.penci-ad-item .penci-ads-row:before,
+.penci-ad-item .penci-ads-row:after {
+	content: '';
+	clear: both;
+	display: table;
+	width: 100%;
+}
+.penci-ad-item .penci-ads-label {
+	float: left;
+	width: 250px;
+	padding: 0;
+}
+
+.penci-ad-item .penci-ads-title {
+	line-height: 1.3;
+	font-weight: 700;
+	font-size: 15px;
+	margin-bottom: 5px;
+}
+
+.penci-ad-item .penci-ads-desc {
+	font-size: 12px;
+	color: #999999;
+	margin: 0;
+	clear: both;
+	display: block;
+}
+
+.penci-ad-item .penci-ads-control {
+	float: left;
+	width: calc( 100% - 250px );
+	padding-left: 30px;
+	box-sizing: border-box;
+}
+
+.penci-ad-item .penci-ads-control textarea{
+	min-height: 100px;
+	width: 100%;
+}
+
+.penci-ad-item .penci-ads-control input {
+	width: 100%;
+	min-width: 200px;
+}
+
+.penci-about-wrap.about-wrap .nav-tab{
+	padding-right: 12px;
+	padding-left: 12px;
+	font-size: 16px;
+}
+
+.penci_user_review #comments-form .fixed .column-author {
+	width: 200px;
+}
+
+.penci_user_review #comments-form .fixed .column-date {
+	width: 100px;
+}
+.penci_user_review #comments-form .fixed .column-urreview_title {
+	width: 200px;
+}
+.penci_user_review .urreview_criteria .dashicons{
+	width: 16px;
+	height: 16px;
+	font-size: 16px;
+}
+
+.penci-ctw-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+.penci-ctw-wrapper .penci-ctw-col-wrapper {
+	width: 400px;
+	float: left;
+	padding: 20px 0;
+	box-sizing: border-box;
+}
+
+.penci-ctw-wrapper .penci-ctw-col-wrapper.penci-ctw-2col{
+	width: 330px;
+	margin-right: 100px;
+}
+.penci-ctw-wrapper .penci-ctw-resizable {
+	display: inline-block;
+	padding: 0;
+	background: #fff;
+	border: 1px solid #dedede;
+	width: 100%;
+	margin-top: 4px;
+	border-radius: 3px;
+	position: relative;
+	clear: both;
+}
+
+.penci-ctw-resizable-inner{
+	display: table;
+	width: 100%;
+	height: 220px;
+	direction: ltr;
+	border-collapse: separate;
+	border-spacing: 4px;
+}
+
+.penci-ctw-wrapper .penci-ctw-cols {
+	position: relative;
+	overflow: hidden;
+	display: table-row;
+}
+.penci-ctw-wrapper .penci-ctw-col  {
+	background: #efefef;
+	border: 1px solid #d4d4d4;
+	display: table-cell;
+	padding: 10px 0;
+	border-radius: 2px;
+	position: relative;
+	font-size: 14px;
+}
+
+.penci-ctw-wrapper .penci-ctw-col-main {
+	background: #cbcbcb;
+}
+
+.penci-ctw-total-wrapper,
+.penci-ctw-total-w {
+	position: relative;
+}
+.penci-ctw-total-wrapper{
+	display: inline-block;
+	width: 100%;
+}
+.penci-ctw-arrow {
+	position: absolute;
+	top:50%;
+	border-top: 2px solid #d4d4d4;
+	width: 100%;
+	left: 4px;
+	right: 4px;
+}
+
+.penci-ctw-total-val{
+	background: #fff;
+	display: inline-block;
+	position: relative;
+	padding: 0 10px;
+	left: 4px;
+	right: 4px;
+}
+
+.penci-ctw-arrow:before {
+	content: " ";
+	left: -6px;
+	border: 5px solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-right-color: #d4d4d4;
+	top: 50%;
+	margin-top: -6px;
+}
+
+.penci-ctw-arrow:after {
+	content: " ";
+	right: -6px;
+	border: 5px solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-left-color: #d4d4d4;
+	top: 50%;
+	margin-top: -6px;
+}
+
+.penci-ctw-label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+}
+
+.penci-ctw-label-per,
+.penci-ctw-label-name,
+.penci-ctw-label-px {
+	display: block;
+}
+
+.penci-ctw-label-per{
+	position: absolute;
+	top: 15px;
+	left: 0;
+	width: 100%;
+}
+.penci-ctw-label-px {
+	position: absolute;
+	bottom: 15px;
+	left: 0;
+	width: 100%;
+}
+
+.penci-ctw-label-name {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 160px;
+	height: 160px;
+	margin-top: -80px;
+	margin-left: -80px;
+}
+
+.penci-ctw-label-name span{
+	text-transform: uppercase;
+	font-size: 13px;
+	font-weight: bold;
+	display: block;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+	-o-transform: rotate(-90deg);
+	position: relative;
+	top: 70px;
+	letter-spacing: 1.5px;
+}
+
+.penci-ctw-resizable .ui-resizable-handle {
+	position: absolute;
+	cursor: col-resize;
+	z-index: 90;
+	top: 50%;
+	height: 68px;
+	background: #dbdbdb;
+	width: 9px;
+	border: 1px solid #b5b5b5;
+	right: -3px;
+	border-radius: 10px;
+	margin-top: -32px;
+}
+
+.penci-ctw-resizable .ui-resizable-w {
+	left: -3px;
+}
+.penci-ctw-resizable .penci-ctw-col .ui-resizable-e {
+	right: -8px;
+}
+
+#pennews_shortcode_manage_id .rwmb-label{
+	width: 150px;
+}
+
+#pennews_shortcode_manage_id .rwmb-input{
+	width: calc( 100% - 150px );
+}
+#pennews_shortcode_manage_id .rwmb-input-list{
+	width: calc( 100% - 150px );
+}
+
+#pennews_shortcode_manage_id .rwmb-input-list{
+	-moz-column-count: 4;
+	-webkit-column-count: 4;
+	column-count: 4;
+}
+#side-sortables #penci-amp-settings .rwmb-label,
+#side-sortables #penci-amp-settings .rwmb-input {
+	width: auto;
+	display: inline-block;
+}
+#penci-amp-settings .rwmb-input{
+	float: left;
+	margin-right: 5px;
+	position: relative;
+	top: 3px;
+}
+#penci-amp-settings .rwmb-label{
+	float: none;
+}
+#penci-amp-settings .rwmb-label > label {
+	font-weight: normal;
+}
+
+.penci-accordion-name {
+	position: relative;
+	height: 40px;
+	padding: 0 55px 0 15px;
+	line-height: 40px;
+	border: 1px solid #E2DDDB;
+	font-weight: bold;
+	background-color: #F5F5F5;
+	margin-top: 10px;
+	cursor: pointer;
+}
+.penci-accordion-name h3{
+	padding: 0;
+	margin: 0;
+	font-size: 14px;
+}
+.penci-accordion-name .handle-repeater {
+	float: right;
+	height: 40px;
+	width: 40px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: middle;
+	cursor: pointer;
+	position: absolute;
+	right: -1px;
+	top: -1px;
+	font-size: 20px;
+	line-height: 36px;
+	border: 1px solid #E2DDDB;
+}
+
+.penci-accordion-name .handle-repeater:before {
+	content: '\002B';
+}
+.penci-accordion-name.active .handle-repeater:before {
+	content: "\2212";
+}
+
+.penci-panel-accordion {
+	display: none;
+	overflow: hidden;
+	height: 0;
+	transition: max-height 0.2s ease-out;
+	padding: 15px 17px 13px;
+	position: relative;
+	border: 1px solid #E2DDDB;
+	border-top: 0;
+	margin-bottom: 10px;
+}
+
+.widget-content .penci-metabox-fields {
+	margin-bottom: 30px;
+}
+
+.penci-accordion-name.active + .penci-panel-accordion {
+	display: block;
+	height: auto;
+}

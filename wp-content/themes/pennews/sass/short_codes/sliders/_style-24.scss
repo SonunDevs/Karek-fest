@@ -1,0 +1,106 @@
+.penci-owl-featured-area.style-24{
+
+	.penci-item-mag {
+		float: left;
+		border-left: 2px solid transparent;
+		border-right: 2px solid transparent;
+	}
+
+	.penci-image-holder:before {
+		padding-top: 300px;
+	}
+
+	.penci-item-1,
+	.penci-item-2 {
+		border-bottom: 4px solid transparent;
+	}
+
+	.penci-item-1,
+	.penci-item-4 {
+		width: 55%;
+
+
+	}
+
+	.penci-item-2,
+	.penci-item-3 {
+		width: 45%;
+	}
+
+}
+
+@media screen and (min-width: 768px ) {
+	.penci-container-width-1400.penci-vc_sidebar-left .penci-owl-featured-area.style-24 .penci-slider__text,
+	.penci-container-width-1400.penci-vc_sidebar-right .penci-owl-featured-area.style-24 .penci-slider__text {
+		padding: 0 15px 10px;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.penci-owl-featured-area.style-24{
+		.penci-slider__cat {
+			display: none;
+		}
+
+		.penci_slider__title {
+			font-size:  20px;
+		}
+	}
+
+	.penci-container-width-1400.penci-vc_sidebar-left .penci-owl-featured-area h3,
+	.penci-container-width-1400.penci-vc_sidebar-right .penci-owl-featured-area h3 {
+		font-size: 20px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.penci-owl-featured-area.style-24{
+		.penci-item-mag {
+			width: 50%;
+		}
+
+		.penci_slider__title,
+		.penci_post-meta {
+			text-align: center;
+		}
+
+		.penci-slider__cat,
+		.penci_post-meta {
+			display: none;
+		}
+
+		.penci-image-holder:before {
+			height: auto;
+			padding-top: 66.6667%;
+		}
+
+		.penci_slider__title {
+			font-size:  17px;
+		}
+	}
+
+	.penci-container-width-1400.penci-vc_sidebar-left .penci-owl-featured-area h3,
+	.penci-container-width-1400.penci-vc_sidebar-right .penci-owl-featured-area h3 {
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.penci-owl-featured-area.style-24{
+
+		.penci_slider__title {
+			font-size:  14px;
+			text-align: center;
+		}
+
+		.penci_post-meta,
+		.icon-post-format {
+			display: none;
+		}
+	}
+
+	.penci-container-width-1400.penci-vc_sidebar-left .penci-owl-featured-area h3,
+	.penci-container-width-1400.penci-vc_sidebar-right .penci-owl-featured-area h3 {
+		font-size: 14px;
+	}
+}

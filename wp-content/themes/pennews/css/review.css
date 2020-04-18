@@ -1,0 +1,660 @@
+/* = Penci Review
+----------------------------------------------------*/
+.jq-ry-container {
+	position: relative;
+	padding: 0 5px;
+	line-height: 0;
+	display: inline-block;
+	cursor: pointer;
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	direction: ltr;
+}
+
+.jq-ry-container[readonly=readonly] {
+	cursor: default;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper {
+	position: relative;
+	width: 100%;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group {
+	position: relative;
+	line-height: 0;
+	z-index: 10;
+	white-space: nowrap;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group > svg {
+	display: inline-block;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-normal-group {
+	width: 100%;
+}
+
+.jq-ry-container > .jq-ry-group-wrapper > .jq-ry-group.jq-ry-rated-group {
+	width: 0;
+	z-index: 11;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+
+.wrapper-penci-review {
+	margin-bottom: 25px;
+	margin-top: 20px;
+	border: 1px solid #ececec; }
+
+.penci-review-container {
+	padding: 20px;
+	overflow: hidden; }
+.penci-review-container.penci-review-count {
+	border-bottom: 1px solid #ececec; }
+.penci-review-container.penci-review-count h4 {
+	font-size: 22px;
+	margin: -3px 0 0 0; }
+
+.penci-review-count + .penci-usewr-review {
+	border-top: 0; }
+
+.penci-review-schemas,
+.penci-review-desc {
+	margin-top: 13px; }
+
+.penci-userreview-badge {
+	background: #e65a29;
+	display: inline-block;
+	color: #fff;
+	font-size: 12px;
+	font-weight: 500;
+	padding: 4px 6px 3px;
+	line-height: 11px;
+	border-radius: 2px; }
+
+.post-entry .penci-review-desc p {
+	margin: 0; }
+
+.wrapper-penci-review .penci-review ul.penci-review-number {
+	padding: 0;
+	margin: 15px 0 0 0;
+	clear: both; }
+.wrapper-penci-review .penci-review ul.penci-review-number li {
+	list-style: none;
+	margin-bottom: 18px;
+	margin-left: 0; }
+.wrapper-penci-review .penci-review ul.penci-review-number li:last-child {
+	margin-bottom: 0; }
+.wrapper-penci-review .penci-review ul.penci-review-number li:before, .wrapper-penci-review .penci-review ul.penci-review-number li:after {
+	content: '';
+	display: table; }
+
+.penci-review-style_3 .wrapper-penci-review .penci-review ul.penci-review-number {
+	margin-bottom: 10px; }
+
+ul.penci-review-number li .penci-review-text:before, ul.penci-review-number li .penci-review-text:after {
+	content: '';
+	display: table; }
+
+.penci-review-row:before, .penci-review-row:after {
+	content: '';
+	display: table;
+	clear: both; }
+
+.penci-review-point {
+	font-size: 13px;
+	font-size: 1.3rem; }
+.penci-review-point:before, .penci-review-point:after {
+	content: '';
+	display: table;
+	clear: both; }
+
+.penci-userreview-author,
+.penci-review-text {
+	font-weight: 700;
+	color: #111111; }
+
+.penci-review-point {
+	font-size: inherit;
+	display: inline-block; }
+
+.penci-review-container.penci-review-point {
+	display: block; }
+
+.penci-usewr-review {
+	border-top: 1px solid #ececec; }
+
+.penci-review-score {
+	float: right;
+	font-size: inherit;
+	top: 5px;
+	position: relative; }
+.penci-review-score .fa {
+	font-size: 14px;
+	font-size: 1.4rem;
+	margin-right: 3px; }
+.penci-review-score .fa:last-child {
+	margin-right: 0; }
+
+.penci-review-process {
+	display: block;
+	height: 13px;
+	background-color: #e6e6e6;
+	width: 100%;
+	margin-top: 5px; }
+.penci-review-process span {
+	display: block !important;
+	height: 100%;
+	width: 0;
+	background-color: #3f51b5; }
+
+.penci-review-row {
+	display: block;
+	margin-left: -12px;
+	margin-right: -12px;
+	vertical-align: top; }
+
+.penci-review-stuff {
+	float: left;
+	display: inline-block;
+	width: 66.666%;
+	padding: 0 12px; }
+
+.penci-review-average {
+	float: left;
+	display: inline-block;
+	padding: 0 12px;
+	width: 33.333%; }
+.penci-review-average.full-w {
+	width: 100%;
+	margin: 0 !important; }
+.penci-review-average .penci-review-process {
+	height: 3px;
+	width: 70%;
+	margin: 20px auto 10px;
+	background: rgba(255, 254, 254, 0.26); }
+.penci-review-average .penci-review-process span.penci-process-run {
+	height: inherit;
+	background-color: #fff; }
+
+.penci-review-stuff .penci-review-good {
+	width: 50%;
+	float: left;
+	display: inline-block;
+	padding: 0 12px; }
+
+.penci-review-stuff .penci-review-row.full-w .penci-review-good {
+	width: 100%; }
+
+.penci-review-stuff .penci-review-good h5 {
+	font-size: 16px;
+	font-size: 1.6rem;
+	margin-top: 0;
+	margin-bottom: 15px; }
+
+.penci-review .penci-review-good ul {
+	padding: 0 0 0 0;
+	margin: 0; }
+.penci-review .penci-review-good ul li {
+	list-style: none;
+	padding-left: 18px;
+	margin-bottom: 7px;
+	margin-left: 0;
+	font-size: 14px;
+	font-size: 1.4rem; }
+.penci-review .penci-review-good ul li:last-child {
+	margin-bottom: 0; }
+.penci-review .penci-review-good ul li:before {
+	content: "\f058";
+	color: #22b162;
+	position: absolute;
+	left: 0;
+	top: 5px;
+	font-family: FontAwesome;
+	font-size: 14px;
+	line-height: 1;
+	background: none !important; }
+
+.penci-review .penci-review-bad ul li:before {
+	content: "\f056";
+	color: #e03030; }
+
+.penci-review-score-total {
+	background: #3f51b5;
+	color: #fff;
+	text-align: center;
+	padding: 22px 10px 18px;
+	display: block;
+	width: 100%; }
+.penci-review-score-total.only-score {
+	padding: 30px 10px; }
+
+.penci-review-style_3 .penci-review-score-total {
+	padding: 16px 10px 13px; }
+.penci-review-style_3 .penci-review-score-total.only-score {
+	padding: 30px 10px; }
+
+.penci-review-score-num {
+	font-size: 48px;
+	font-size: 4.8rem;
+	font-family: "Oswald", sans-serif;
+	line-height: 1;
+	font-weight: 400; }
+.penci-review-style_3 .penci-review-score-num {
+	font-size: 36px;
+	font-size: 3.6rem; }
+
+.penci-review-score-num-star {
+	font-size: 16px;
+	font-size: 1.6rem;
+	padding-top: 8px;
+	padding-bottom: 2px;
+	line-height: 1; }
+.penci-review-score-num-star i {
+	margin-right: 3px; }
+.penci-review-score-num-star i:last-of-type {
+	margin-right: 0; }
+
+.penci-review-score-total span {
+	font-size: 12px;
+	font-size: 1.2rem;
+	text-transform: uppercase; }
+
+.penci-piechart {
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
+	position: absolute;
+	display: inline-block;
+	vertical-align: top;
+	left: 10px;
+	top: 10px;
+	text-align: center;
+	width: 40px;
+	height: 40px;
+	z-index: 15; }
+.penci-piechart canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 2; }
+.penci-piechart.penci-piechart-small {
+	width: 34px;
+	height: 34px; }
+.penci-piechart.penci-piechart-big {
+	width: 60px;
+	height: 60px; }
+
+.penci-block-vc .penci-piechart {
+	right: 10px;
+	left: auto; }
+
+.penci-block-vc .icon_pos_right + .penci-piechart {
+	right: 56px; }
+
+.penci-block-vc .icon_pos_right.lager-size-icon + .penci-piechart {
+	right: 62px; }
+
+.penci-block-vc .icon_pos_right.medium-size-icon + .penci-piechart {
+	right: 54px; }
+
+.penci-block-vc .icon_pos_right.small-size-icon + .penci-piechart {
+	right: 50px; }
+
+.penci-chart-text {
+	width: 40px;
+	height: 40px;
+	font-size: 14px;
+	font-size: 1.4rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	line-height: 40px;
+	font-family: "Mukta Vaani", sans-serif;
+	font-weight: 600;
+	color: #ffffff; }
+
+.penci-piechart-small .penci-chart-text {
+	width: 34px;
+	height: 34px;
+	font-size: 12px;
+	line-height: 34px; }
+
+.penci-piechart-big .penci-chart-text {
+	width: 60px;
+	height: 60px;
+	font-size: 24px;
+	line-height: 60px; }
+
+.penci-hide-text-votes {
+	display: none; }
+
+#respond p.comment-form-comment + p.comment-form-url {
+	width: 100%;
+	margin: 0; }
+
+#respond p.comment-form-comment + p.comment-form-url input {
+	max-width: 100%; }
+
+.penci-scores-rateYo li {
+	list-style: none;
+	width: 32%;
+	margin: 0 2% 19px 0;
+	padding: 0;
+	float: left;
+	line-height: 1.5;
+	display: inline-block; }
+.penci-scores-rateYo li:nth-child(3n + 3) {
+	margin-left: 0;
+	margin-right: 0; }
+.penci-scores-rateYo li:nth-child(3n + 1) {
+	clear: both; }
+
+.penci-scores-rateYo .penci-review-title-criteria,
+.penci-scores-rateYo .penci-review-star-criteria {
+	vertical-align: top; }
+
+.penci-scores-rateYo .penci-reivew-star-rateYo {
+	padding-left: 0; }
+
+.penci-preview-rating {
+	position: relative;
+	float: left;
+	margin-right: 8px;
+	font-size: 13px;
+	text-indent: 0;
+	letter-spacing: 2px;
+	white-space: nowrap;
+	word-wrap: normal;
+	z-index: 15; }
+
+.penci-preview-rating-absolute {
+	position: absolute;
+	top: 10px;
+	left: 10px; }
+
+.penci-block-vc .penci-preview-rating-absolute {
+	right: 10px;
+	left: auto; }
+
+.penci-preview-rating .penci-prvrate-bg {
+	color: #b9b9b9; }
+.penci-preview-rating .penci-prvrate-bg:before {
+	content: "\f006" "\f006" "\f006" "\f006" "\f006";
+	font-family: "FontAwesome";
+	display: block; }
+
+.penci-prvrate-active {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 0;
+	overflow: hidden;
+	color: #FFCA00; }
+
+.penci-prvrate-active-inner {
+	text-align: left; }
+.penci-prvrate-active-inner:before {
+	content: "\f005" "\f005" "\f005" "\f005" "\f005";
+	font-family: "FontAwesome";
+	display: block; }
+
+.penci-mul-comments-wrapper .penci-usewr-review {
+	border-top: 0; }
+
+.penci-post-reviews .post-comments .post-title-box {
+	border-top: 0; }
+
+.penci-review-container .post-comments .post-title-box {
+	border-top: 0;
+	padding-top: 0; }
+
+.penci-review-spinner {
+	font-size: 20px;
+	display: none;
+	vertical-align: top;
+	margin-left: 10px;
+	margin-right: 10px;
+	color: #3f51b5; }
+.penci-review-spinner.active {
+	display: inline-block; }
+
+.penci-ur-like-dislike .penci-review-spinner {
+	line-height: 24px; }
+
+.penci-user-review .thecomment {
+	margin-bottom: 30px; }
+
+.penci-user-review ul.penci-user-review-criteria {
+	margin-bottom: 0; }
+.penci-user-review ul.penci-user-review-criteria li {
+	list-style: none;
+	margin-bottom: 5px;
+	margin-left: 0; }
+.penci-user-review ul.penci-user-review-criteria li:last-child {
+	margin-bottom: 10px; }
+
+.penci-user-reviews .penci-user-review:last-child .thecomment {
+	margin-bottom: 0; }
+
+.penci-review-thumb {
+	float: left;
+	width: 120px;
+	margin-right: 20px; }
+
+.penci-user-review-criteria {
+	margin-top: 15px; }
+.penci-user-review-criteria .penci-review-star-criteria {
+	float: right;
+	text-align: right;
+	position: relative;
+	top: 3px; }
+.penci-user-review-criteria .penci-preview-rating {
+	font-size: 15px;
+	position: relative;
+	top: -2px; }
+
+.penci-userreview-comment + .penci-user-review-criteria {
+	margin-top: 0; }
+
+.penci-review-mess {
+	display: none;
+	margin-top: 20px;
+	border: 2px solid #398f14;
+	padding: 3px 10px; }
+.penci-review-mess.error {
+	border-color: #f7e700; }
+
+.penci-user-review-action {
+	margin-top: 14px;
+	overflow: hidden; }
+
+.penci-u-review-sharing {
+	float: left; }
+
+.penci-ur-like-dislike {
+	float: right;
+	text-align: right; }
+
+.penci-ur-like-dislike .penci-share-number {
+	margin-left: 7px; }
+
+.penci-ur-like-dislike .penci-ur-like {
+	background: #3f51b5;
+	color: #fff;
+	margin-right: 10px; }
+
+.penci-ur-like-dislike .penci-review-judge-mess {
+	font-size: 12px;
+	margin-top: 5px; }
+
+.penci-ur-like-dislike .penci-ur-dislike {
+	background: #f44133;
+	color: #fff; }
+
+.penci-ur-like-dislike a {
+	line-height: 24px;
+	padding: 0 12px;
+	transition: all 0.3s;
+	display: inline-block;
+	border-radius: 2px; }
+
+.penci-ur-like-dislike a:hover {
+	opacity: 0.8; }
+
+.penci-u-review-sharing .penci-ur-social {
+	font-size: 14px;
+	color: #313131;
+	margin-right: 10px;
+	line-height: 24px; }
+.penci-u-review-sharing .penci-ur-social:hover {
+	color: #3f51b5; }
+
+.penci-userreview-numeric-score {
+	margin-top: 10px; }
+.penci-userreview-numeric-score span {
+	display: inline-block;
+	font-size: 28px;
+	line-height: 1em; }
+.penci-userreview-numeric-score i {
+	display: inline-block;
+	font-size: 16px;
+	line-height: 1em;
+	font-style: normal; }
+
+/** shortcode **/
+.penci-recent-rv {
+	margin-bottom: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #ececec; }
+.penci-recent-rv:last-child {
+	margin-bottom: 0;
+	border-bottom: 0; }
+
+.penci-recent-rv-header:before, .penci-recent-rv-header:after {
+	content: '';
+	clear: both;
+	display: table; }
+
+.penci-recent-rv-score.penci-review-score {
+	float: left;
+	top: 5px; }
+
+.penci-recent-rv-score.penci-review-score .jq-ry-container {
+	padding-left: 0; }
+
+.penci-recent-rv-author h5 {
+	font-size: 18px;
+	margin: -3px 0 3px;
+	font-weight: 600;
+	color: #111111;
+	display: inline-block;
+	vertical-align: top; }
+
+.penci-recent-rv-img {
+	float: left;
+	width: 80px;
+	margin-right: 20px; }
+
+.penci-recent-rv-title,
+.penci-recent-rv-excrept {
+	clear: both; }
+
+.penci-recent-rv-title {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 1.3;
+	margin-top: 10px;
+	margin-bottom: 0; }
+
+.penci-recent-rv-excrept {
+	font-size: 14px;
+	line-height: 1.71;
+	margin-bottom: 3px;
+	margin-top: 8px; }
+
+.penci-review-metas {
+	overflow: hidden; }
+
+.penci-review-metas .penci-review-meta {
+	width: 50%;
+	float: left;
+	line-height: 1.4;
+	margin-top: 5px; }
+.penci-review-metas .penci-review-meta:nth-child(2n+1) {
+	clear: both; }
+.penci-review-metas .penci-review-meta strong {
+	font-weight: bold;
+	color: #111; }
+
+.penci-review-metas a.penci-review-btnbuy.button {
+	clear: both;
+	float: left;
+	margin-top: 10px;
+	line-height: 28px;
+	font-size: 13px;
+	font-weight: 500; }
+.penci-review-metas a.penci-review-btnbuy.button:hover {
+	text-decoration: none; }
+
+.penci-review-schemas .penci-review-schema {
+	line-height: 1.4;
+	margin-top: 5px; }
+.penci-review-schemas .penci-review-schema strong {
+	font-weight: bold;
+	color: #111; }
+
+.penci-review-metas .penci-review-meta i {
+	margin-right: 5px;
+	color: #111111; }
+
+.penci-userreview-metas {
+	margin-top: 5px; }
+.penci-userreview-metas span {
+	margin-right: 10px;
+	font-size: 13px; }
+.penci-userreview-metas span:last-child {
+	margin-right: 0; }
+.penci-userreview-metas span strong {
+	font-weight: bold; }
+.penci-userreview-metas span i {
+	margin-right: 5px; }
+.penci-userreview-metas span i.fa-star {
+	color: #FFCA00; }
+.penci-userreview-metas span i.dashicons-awards {
+	color: #e65a29;
+	font-size: 16px;
+	transform: translateY(3px);
+	-webkit-transform: translateY(3px);
+	height: auto; }
+.penci-userreview-metas span i.fa-thumbs-o-up {
+	color: #3f51b5; }
+
+@media (min-width: 768px) {
+	.penci-review-point > .penci-review-row {
+		display: flex; }
+	.penci-review-average {
+		display: flex;
+		align-items: center;
+		justify-content: center; } }
+
+@media only screen and (max-width: 767px) {
+	.penci-scores-rateYo li {
+		width: 100%;
+		margin-right: 0;
+		margin-left: 0; }
+	.penci-review-stuff, .penci-review-average,
+	.penci-review-stuff .penci-review-good {
+		width: 100%; }
+	.penci-review-score-total,
+	.penci-review-stuff .penci-review-bad {
+		margin-top: 20px; }
+	.penci-review-container.penci-review-count h4 {
+		font-size: 20px; }
+	.penci-review-thumb {
+		display: none; }
+	.penci-review-metas .penci-review-meta {
+		width: 100%; } }

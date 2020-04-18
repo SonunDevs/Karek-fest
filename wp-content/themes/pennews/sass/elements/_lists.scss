@@ -1,0 +1,85 @@
+ul, ol {
+	margin: 0 0 0;
+	padding: 0;
+
+
+	li {
+		margin-left: 21px;
+		position: relative;
+		line-height: 26px;
+	}
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 26px;
+}
+
+dt {
+	font-weight: 700;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+.entry-content {
+	ul {
+		list-style: square;
+	}
+
+	ol {
+		list-style: decimal;
+	}
+}
+
+.penci_list_shortcode {
+	li {
+		position: relative;
+		list-style: none !important;
+		padding-left: 20px;
+		&:before {
+			color: #3f51b5;
+			content: "\f00c";
+			width: 20px;
+			margin-left: -20px;
+			display: inline-block;
+			font: normal normal normal 14px/1 FontAwesome;
+			font-size: inherit;
+			text-rendering: auto;
+			-webkit-font-smoothing: antialiased;
+			-moz-osx-font-smoothing: grayscale;
+			transform: none;
+		}
+	}
+	&.penci_list-checklist li:before {
+		content: "\f00c";
+	}
+	&.penci_list-starlist li:before {
+		content: "\f005";
+	}
+	&.penci_list-editlist li:before {
+		content: "\f044";
+	}
+	&.penci_list-thumbuplist li:before {
+		content: "\f164";
+	}
+	&.penci_list-thumbdownlist li:before {
+		content: "\f165";
+	}
+	&.penci_list-pluslist li:before {
+		content: "\f0fe";
+	}
+	&.penci_list-minuslist li:before {
+		content: "\f146";
+	}
+	&.penci_list-asterisklist li:before {
+		content: "\f069";
+	}
+	&.penci_list-folderlist li:before {
+		content: "\f07b";
+	}
+	&.penci_list-heartlist li:before {
+		content: "\f004";
+	}
+}

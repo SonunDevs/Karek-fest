@@ -1,0 +1,420 @@
+.penci-pagination:not( .penci-ajax-more )  {
+	clear: both;
+	overflow: hidden;
+	text-align: center;
+	padding: 20px 0 20px;
+	width: 100%;
+	@include font-size( 1.4 );
+	font-weight: 600;
+
+	.nav-links {
+		display: inline-block;
+		margin:-5px -5px 0;
+		vertical-align: top;
+
+		.penci-pag-center &{
+			text-align: center;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.penci-pag-left &{
+			float: left;
+		}
+
+		.penci-pag-right &{
+			float: right;
+		}
+	}
+
+	&.penci-pag-center .nav-links {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	&.penci-pag-left .nav-links {
+		float: left;
+	}
+
+	&.penci-pag-right .nav-links {
+		float: right;
+	}
+
+	a,span {
+		margin-left: 5px;
+		margin-right: 5px;
+		margin-top: 5px;
+		float: left;
+		display: inline-block;
+		background: transparent;
+		border: solid 1px $color__border;
+		color: $color__dark;
+		min-width: 32px;
+		height: 32px;
+		line-height: 32px;
+		transition: all 0.3s;
+
+
+
+	}
+
+	span.current,a:hover {
+		background: $color__blue;
+		border-color: $color__blue;
+		color: $color__white;
+	}
+}
+
+/*************** Load more ***************/
+.penci-single-loadmore {
+	display: none;
+	text-align: center;
+	width: 100%;
+	margin-top: 20px;
+	margin-right: auto;
+	margin-left: auto;
+	line-height: 38px;
+	padding: 0 15px 0;
+	font-weight: 600;
+	position: relative;
+
+	&.loading-posts {
+		display: block;
+		cursor: auto;
+
+		i {
+			animation-name: pencirotate;
+			-o-animation-name: pencirotate;
+			-ms-animation-name: pencirotate;
+			-webkit-animation-name: pencirotate;
+			-moz-animation-name: pencirotate;
+			animation-duration: 0.8s;
+			-o-animation-duration: 0.8s;
+			-ms-animation-duration: 0.8s;
+			-webkit-animation-duration: 0.8s;
+			-moz-animation-duration: 0.8s;
+			animation-iteration-count: infinite;
+			-o-animation-iteration-count: infinite;
+			-ms-animation-iteration-count: infinite;
+			-webkit-animation-iteration-count: infinite;
+			-moz-animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			-o-animation-timing-function: linear;
+			-ms-animation-timing-function: linear;
+			-webkit-animation-timing-function: linear;
+			-moz-animation-timing-function: linear;
+		}
+	}
+
+}
+
+@-o-keyframes pencirotate {
+	from {  -o-transform: rotate(360deg);  } to {  -o-transform: rotate(0deg);  }
+}
+
+@-webkit-keyframes pencirotate {
+	from {  -webkit-transform: rotate(360deg);  } to {  -webkit-transform: rotate(0deg);  }
+}
+
+.penci-ajax-more {
+	clear: both;
+	overflow: hidden;
+
+	&.penci-ajax-more-disabled {
+		display: none;
+	}
+
+
+	.penci-ajax-more-button,
+	.penci-portfolio-more-button,
+	.penci-block-ajax-more-button {
+		display: block;
+		width: 100%;
+		margin: 15px auto 20px;
+		text-align: center;
+		font-weight: 700;
+		position: relative;
+		font-size: 13px;
+
+		i{
+			margin-left: 5px;
+		}
+
+		.ajax-more-text {
+			color: inherit;
+			font-family: inherit;
+			font-weight: inherit;
+		}
+		&:hover {
+			background-color: $color__blue;
+			border-color: $color__blue;
+			color: $color__white;
+		}
+		&.loading-posts {
+			opacity: 0.65;
+			cursor: auto;
+			pointer-events: none;
+
+			&:hover {
+				background: $color__black;
+			}
+
+			i {
+				color: inherit;
+
+			}
+
+			span.ajaxdot:after {
+				content: "...";
+				font-size: inherit;
+				color: inherit;
+				font-family: inherit;
+				font-weight: inherit;
+			}
+
+			i {
+				animation-name: pencirotate;
+				-o-animation-name: pencirotate;
+				-ms-animation-name: pencirotate;
+				-webkit-animation-name: pencirotate;
+				-moz-animation-name: pencirotate;
+				animation-duration: 0.8s;
+				-o-animation-duration: 0.8s;
+				-ms-animation-duration: 0.8s;
+				-webkit-animation-duration: 0.8s;
+				-moz-animation-duration: 0.8s;
+				animation-iteration-count: infinite;
+				-o-animation-iteration-count: infinite;
+				-ms-animation-iteration-count: infinite;
+				-webkit-animation-iteration-count: infinite;
+				-moz-animation-iteration-count: infinite;
+				animation-timing-function: linear;
+				-o-animation-timing-function: linear;
+				-ms-animation-timing-function: linear;
+				-webkit-animation-timing-function: linear;
+				-moz-animation-timing-function: linear;
+			}
+		}
+	}
+
+	.penci-portfolio-more-button {
+		margin-bottom: 0;
+	}
+
+	a.penci-portfolio-more-button,
+	a.penci-block-ajax-more-button,
+	.penci-portfolio-more-button,
+	.penci-block-ajax-more-button{
+		margin-top: 0;
+		max-width: 330px;
+		line-height: 30px;
+		height: 32px;
+		padding: 0 11px;
+		box-sizing: border-box;
+
+	}
+
+	.penci-ajax-more-button {
+		border: 1px solid $color__dark;
+		border-radius: 0;
+		background: $color__dark;
+		color: $color__white;
+		line-height: 36px;
+		padding: 2px 15px 0;
+		text-align: center;
+		transition: all 0.25s;
+		@include font-size(1.4);
+		text-transform: uppercase;
+		cursor: pointer;
+		max-width: 330px;
+
+		&:hover {
+			color: $color__white;
+			background-color: $color__blue;
+			border-color: $color__blue;
+		}
+	}
+
+	&.penci-pag-center .penci-ajax-more-button,
+	&.penci-pag-center .penci-portfolio-more-button,
+	&.penci-pag-center .penci-block-ajax-more-button {
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+	}
+
+	&.penci-pag-left .penci-ajax-more-button,
+	&.penci-pag-left .penci-portfolio-more-button,
+	&.penci-pag-left .penci-block-ajax-more-button {
+		float: left;
+	}
+
+	&.penci-pag-right .penci-ajax-more-button,
+	&.penci-pag-right .penci-portfolio-more-button,
+	&.penci-pag-right .penci-block-ajax-more-button{
+		float: right;
+	}
+
+	&.disable_bg_load_more {
+		.penci-ajax-more-button,
+		.penci-portfolio-more-button,
+		.penci-block-ajax-more-button{
+			width: auto;
+			padding: 0;
+			height: auto;
+			line-height: 1;
+			background: transparent !important;
+			color: inherit;
+			border: 0;
+			margin-bottom: 17px;
+
+			&:hover{
+				color: $color__blue;
+				border-color: transparent !important;
+				background: transparent !important;
+			}
+			&.loading-posts {
+				border-color: transparent !important;
+				background: transparent !important;
+			}
+		}
+	}
+}
+
+.widget-area .penci-ajax-more .penci-block-ajax-more-button {
+	width: 100%;
+}
+
+.penci-post-pagination{
+	width: 100%;
+	display: flex;
+	border-bottom: 1px solid $color__border;
+	margin: 30px 0 0;
+	overflow: hidden;
+	padding: 0 0 23px;
+
+	.penci_media_object {
+		margin-bottom: 0;
+		display: block;
+	}
+
+	.prev-post {
+		float: left;
+		flex: 1;
+		width: 50%;
+
+	}
+	.next-post {
+		float: right;
+		text-align: right;
+		width: 100%;
+		margin-left: auto;
+	}
+
+	.prev-post + .next-post {
+		margin-left: 0;
+		padding-left: 20px;
+		width: 50%;
+	}
+
+	.next-post-inner,
+	.prev-post-inner {
+		display: block;
+		overflow: hidden;
+		flex: none;
+	}
+
+	.prev-post-title {
+		margin-top: 0;
+	}
+
+	span {
+		color: $color__meta;
+		display: inline-block;
+		@include font-size( 1 );
+		font-weight: bold;
+		line-height: 1;
+		text-transform: uppercase;
+
+		i {
+			margin-right: 6px;
+		}
+		i.fa-angle-right {
+			margin: 0 0 0 6px;
+		}
+	}
+
+	h5 {
+		@include font-size( 1.8 );
+		font-weight: 600;
+		line-height: 1.33;
+ 		color: inherit;
+		margin: 0;
+		padding: 0 15px 0 0;
+		position: relative;
+	}
+	h5.next-title {
+		padding: 0 0 0 15px;
+	}
+	a {
+		color: $color__dark;
+
+		&:hover {
+			color: $color__blue;
+		}
+	}
+}
+.pagi-text {
+	margin-top: 6px;
+}
+.post-nav-thumb {
+	width: 56px;
+	float: left;
+}
+.next-post .post-nav-thumb{
+	float: right;
+}
+
+@media screen and ( max-width: 768px ) {
+	.penci-post-pagination {
+		display: block;
+
+		.prev-post,
+		.next-post {
+			width: 100%;
+			padding: 0;
+			text-align: center;
+		}
+		.prev-post + .next-post {
+			padding-top: 20px;
+			margin-top: 20px;
+			padding-left: 0;
+			width: 100%;
+			border-top: 1px solid $color__border;
+		}
+		h5,h5.next-title {
+			padding-left: 0;
+			padding-right: 0
+		}
+		span i.fa-angle-left {
+			margin-left: 6px;
+		}
+		span i.fa-angle-right {
+			margin-right: 6px;
+		}
+	}
+
+	.penci-ajax-more {
+		.penci-block-ajax-more-button {
+			width: 100%;
+			margin-left: auto !important;
+			margin-right: auto !important;
+		}
+	}
+
+	.post-nav-thumb {
+		display: none;
+	}
+}

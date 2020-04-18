@@ -1,0 +1,241 @@
+.penci-block_16 {
+	.penci-block_content__items {
+		margin-left: -10.5px;
+		margin-right: -10.5px;
+		overflow: hidden;
+
+		&:first-child {
+			.penci-post-item {
+				&:nth-child( 3n+1 ) {
+					clear: none;
+				}
+
+				&:nth-child( 3n+2 ) {
+					clear: both;
+				}
+			}
+		}
+	}
+	.penci-post-item {
+		width: (100% / 3);
+		float: left;
+		padding-left: 10.5px;
+		padding-right: 10.5px;
+		position: relative;
+
+		&:nth-child( 3n+1 ) {
+			clear: both;
+		}
+
+		.penci__post-title {
+			@include font-size(1.6);
+			line-height: 1.25;
+			margin-top: 11px;
+			margin-bottom: 0;
+		}
+
+		.penci_post-meta {
+			margin-top: 6px;
+		}
+	}
+
+	.penci-big-item {
+		width: 100%;
+		margin-bottom: 20px;
+
+		.penci-pmore-link {
+			display: none;
+		}
+
+		.penci-image-holder {
+			&:before {
+				padding-top: 50%;
+			}
+		}
+
+		.penci__post-title {
+			@include font-size(2.4);
+			margin-bottom: 5px;
+			line-height: 1.25;
+		}
+
+
+		&.big-post-text-above {
+
+			.penci_post_content {
+				position: absolute;
+				bottom: 0;
+				z-index: 30;
+				width: 100%;
+				padding: 14px 20px;
+			}
+
+			.penci_post-meta,
+			.penci__post-title {
+				color: $color__white;
+
+				a {
+					color: inherit;
+				}
+			}
+		}
+	}
+
+	&.penci-imgtype-vertical .penci-big-item .penci-image-holder:before {
+		padding-top: 120%;
+	}
+
+	&.penci-imgtype-square .penci-big-item .penci-image-holder:before {
+		padding-top: 100%;
+	}
+}
+.penci-container-width-1080 .penci-content-main.penci-col-4 .penci-block_16, 
+.penci-container-width-1400 .penci-content-main.penci-col-4 .penci-block_16,
+.wpb_wrapper > .penci-block_16.penci-vc-column-1,
+.widget-area .penci-block_16 {
+
+	.penci-block_content__items {
+		margin-left: -5px;
+		margin-right: -5px;
+		overflow: hidden;
+
+		.penci-medium-item {
+			&:nth-child( 2n + 1 ) {
+				clear: both;
+			}
+
+			&:nth-child( 3n+1 ) {
+				clear: none;
+			}
+
+		}
+
+		&:first-child {
+			.penci-medium-item {
+				&:nth-child( 3n+2 ),
+				&:nth-child( 3n+2 ),
+				&:nth-child( 2n+1 ) {
+					clear: none;
+				}
+
+				&:nth-child( 2n + 2 ) {
+					clear: both;
+				}
+
+			}
+		}
+	}
+	.penci-medium-item {
+		width: 50%;
+	}
+
+
+	.penci-post-item {
+		padding-left: 5px;
+		padding-right: 5px;
+	}
+
+	&.penci-imgtype-landscape .penci-big-item  .penci-image-holder:before {
+		padding-top: 66.6667%;
+	}
+
+	.penci-post-item .penci__post-title,
+	.penci-big-item .penci__post-title {
+		font-size: 16px !important;
+	}
+
+	.penci-big-item.big-post-text-above .penci_post_content {
+		padding: 0 15px 10px;
+	}
+}
+.penci-hbg-content .penci-block_16 .penci-block_content__items:first-child .penci-medium-item:nth-child(3n+2),
+.penci-hbg-content .penci-block_16 .penci-block_content__items:first-child .penci-medium-item:nth-child(3n+2),
+.penci-hbg-content .penci-block_16 .penci-block_content__items:first-child .penci-medium-item:nth-child(2n+1) {
+	clear: none;
+}
+.penci-hbg-content .penci-block_16 .penci-medium-item{
+	width: 50%;
+}
+
+@media screen and ( max-width: 768px ) {
+	.penci-block_16 {
+		.penci-post-item .penci__post-title {
+			font-size: 14px;
+		}
+
+		.penci-big-item.big-post-text-above .penci_post_content {
+			padding: 0 15px 10px;
+		}
+
+		.penci-big-item .penci__post-title {
+			font-size: 20px;
+			margin-bottom: 0;
+		}
+	}
+
+
+}
+
+@media screen and (max-width: 600px) {
+	.penci-block_16 {
+		.penci-block_content__items {
+			margin-left: -5px;
+			margin-right: -5px;
+			overflow: hidden;
+
+			.penci-medium-item {
+				&:nth-child( 2n + 1 ) {
+					clear: both;
+				}
+
+				&:nth-child( 3n+1 ) {
+					clear: none;
+				}
+
+			}
+
+			&:first-child {
+				.penci-medium-item {
+					&:nth-child( 3n+2 ),
+					&:nth-child( 3n+2 ),
+					&:nth-child( 2n+1 ) {
+						clear: none;
+					}
+
+					&:nth-child( 2n + 2 ) {
+						clear: both;
+					}
+
+				}
+			}
+		}
+		.penci-medium-item {
+			width: 50%;
+		}
+
+
+		.penci-post-item {
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		&.penci-imgtype-landscape .penci-big-item  .penci-image-holder:before {
+			padding-top: 66.6667%;
+		}
+
+
+		.penci-post-item .penci__post-title,
+		.penci-big-item .penci__post-title {
+			font-size: 16px !important;
+		}
+
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.penci-block_16 {
+		.penci-big-item .penci_post-meta{
+			display: none;
+		}
+	}
+}

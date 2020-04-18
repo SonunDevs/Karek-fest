@@ -1,0 +1,14 @@
+.penci-owl-featured-area.style-5 {
+	.penci-image-holder::before {
+		padding-top: 133%;
+	}
+	.penci_post-meta {
+		margin-top: 3px;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.penci-owl-featured-area.style-5 .penci-image-holder::before {
+		padding-top: 66.6667%;
+	}
+}

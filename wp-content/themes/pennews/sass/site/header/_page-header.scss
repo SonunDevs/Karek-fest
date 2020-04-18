@@ -1,0 +1,77 @@
+.penci-page-header {
+	background:#dfdfdf;
+	color:#111;
+	overflow: hidden;
+	padding-top: 80px;
+	padding-bottom: 80px;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	text-align: center;
+
+	.penci-page-header-title {
+		position: relative;
+	    text-transform: uppercase;
+	    font-size: 30px;
+	    font-weight: 600;
+	    color: #111;
+	    line-height: 1;
+	    padding: 0 0 14px;
+	    margin: 0 0 23px;
+
+	    &:before {
+		    content: "";
+		    position: absolute;
+		    border-top: 2px solid;
+		    width: 40px;
+		    bottom: 0;
+		    left: 0;
+		    color: inherit;
+		    opacity: 0.2;
+		}
+	}
+
+	&.penci-phhide-bread {
+		.penci-page-header-title {
+			margin-bottom: 0 !important;
+		}
+	}
+
+	&.penci-phhide-line {
+		.penci-page-header-title {
+			padding-bottom: 0 !important;
+		}
+	}
+
+	.penci_breadcrumbs{
+		opacity:  0.8;
+
+		a, span , i {
+			color: inherit;
+			font-size: inherit;
+		}
+	}
+
+	&.penci-pheader-left {
+		text-align: left;
+	}
+
+	&.penci-pheader-center {
+		text-align: center;
+
+		.penci-page-header-title:before {
+		   left: 50%;
+		   margin-left: -20px;
+		}
+	}
+
+	&.penci-pheader-right {
+		text-align: right;
+
+		.penci-page-header-title:before {
+		   left: auto;
+		  right: 0;
+		}
+	}
+
+}

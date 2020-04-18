@@ -1,0 +1,77 @@
+.site-main .frontend-item-container {
+	margin-bottom: 20px;
+}
+.site-main .frontend-item-container label {
+	font-weight: normal;
+	margin-bottom: 13px;
+}
+.site-main .frontend-form-container .element-media-file,
+.site-main .frontend-form-container .element-media {
+	border: solid 1px #dedede;
+}
+.site-main .frontend-item-container .select2.select2-container .select2-selection.select-with-search-container,
+.site-main .frontend-item-container input[type="text"],
+.site-main .frontend-item-container input[type="email"],
+.site-main .frontend-item-container input[type="url"],
+.site-main .frontend-item-container textarea,
+.site-main .frontend-item-container select {
+	border: solid 1px #dedede;
+	width: 100%;
+	box-shadow: none;
+	background-color: transparent;
+}
+
+.site-main .frontend-item-container .select2-container--default .select2-selection--single .select2-selection__arrow,
+.site-main .select2-container .select2-selection--single{
+	height: 34px;
+}
+
+.site-main .frontend-item-container .select2-container--default .select2-selection--single .select2-selection__rendered{
+	line-height: 32px;
+}
+
+.site-main .frontend-item-container input[type="text"],
+.site-main .frontend-item-container input[type="email"],
+.site-main .frontend-item-container input[type="url"],
+.site-main .frontend-item-container textarea,
+.site-main .frontend-item-container select {
+	padding: 7px 10px;
+}
+.site-main .frontend-item-container textarea {
+	padding: 10px;
+	min-height: 90px;
+}
+.site-main .wp-ref .wp-switch-editor,
+.wp-ref .wp-media-buttons .insert-media,
+.site-main .wp-ref .mce-toolbar .mce-btn button,
+.site-main .wp-ref .qt-dfw {
+	text-transform: none;
+}
+.site-main .element-media-controls a,
+.entry-content .element-media-controls a {
+	color: #111;
+
+	&:hover{
+		color: #3f51b5;
+	}
+}
+.site-main .element-media-controls .element-media-select {
+	margin-right: 10px;
+}
+.site-main .frontend-form-container .element-media-file{
+	background-color: transparent;
+}
+.site-main .frontend-form-container .element-media{
+	background-color: transparent;
+	padding: 5px 10px;
+}
+.site-main .frontend-form-container input[type="checkbox"]{
+	margin-top: -10px;
+	display: block;
+}
+.frontend-form-container .submit-button {
+	margin-right: 6px;
+}
+.site-main .post-list-interface .post-list-container h2.post-list-tab-nav a.post-list-tab-nav-item {
+	height: 38px;
+}

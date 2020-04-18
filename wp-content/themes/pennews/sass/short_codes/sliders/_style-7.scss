@@ -1,0 +1,132 @@
+.penci-owl-featured-area.style-7 {
+	box-sizing: border-box;
+
+	.penci-slider-wrapper-item {
+		width: 900px;
+		overflow: hidden;
+	}
+	.item__big-thumb {
+		width: 600px;
+		height: 403px;
+		border-right: 3px solid transparent;
+
+		.penci-image-holder:before {
+			padding-top: 100%;
+		}
+		.penci_post-meta {
+			margin-top: 3px;
+		}
+	}
+
+	.penci-item-mag-item-2_3 {
+		width: 300px;
+		float: left;
+	}
+
+	.item__medium-thumb {
+		width: 100%;
+		height: 200px;
+
+		.penci-slider__text {
+			 padding: 15px 15px 10px;
+		 }
+
+		h3 {
+			line-height: 1.25;
+			@include font-size(1.6);
+		}
+
+		.penci-slider__meta {
+			display: none;
+		}
+
+		&.penci-item-2 {
+			margin-bottom: 3px;
+		}
+	}
+
+	.penci-item-mag {
+		overflow: hidden;
+
+	}
+}
+
+
+@media screen and ( max-width: 900px ) {
+	.penci-owl-featured-area.style-7 {
+		.penci-slider-wrapper-item {
+			width: 100%;
+		}
+		.item__big-thumb {
+			width: 67%;
+			height: auto;
+
+			.penci-image-holder:before {
+				padding-top: 66.6667%;
+			}
+		}
+
+		.penci-item-mag-item-2_3 {
+			width: 33%;
+		}
+
+		.item__medium-thumb {
+			height: auto;
+		}
+	}
+}
+@media screen and ( max-width: 768px ) {
+	.penci-owl-featured-area.style-7 {
+		.item__big-thumb {
+			width: 100%;
+			border: 0;
+			border-bottom: 4px solid transparent;
+
+		}
+
+		.penci-item-mag-item-2_3 {
+			width: 100%;
+
+			.item__medium-thumb {
+				width: 50%;
+				float: left;
+			}
+
+			.penci-item-2 {
+				border: 0;
+				margin-bottom: 0;
+				border-right: 2px solid transparent;
+			}
+
+			.penci-item-3 {
+				border: 0;
+				border-left: 2px solid transparent;
+			}
+		}
+
+		.penci_post-meta,
+		.penci_slider__title {
+			text-align: center;
+		}
+
+		.penci-slider__cat {
+			display:  none;
+		}
+	}
+}
+
+@media screen and ( max-width: 480px ) {
+	.penci-owl-featured-area.style-7 {
+
+		.item__big-thumb .penci_slider__title {
+			font-size: 17px;
+		}
+		.item__medium-thumb .penci_slider__title {
+			font-size: 14px;
+		}
+
+		.penci_post-meta {
+			display:  none;
+		}
+	}
+}

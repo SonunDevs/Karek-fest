@@ -1,0 +1,117 @@
+.penci_countdown {
+	&:before,
+	&:after{
+		content: '';
+		display: table;
+		clear: both;
+	}
+
+	&.penci-style-center {
+		text-align: center;
+	}
+	&.penci-style-right {
+		text-align: right;
+	}
+	&.penci-border-solid .penci-countdown-amount{
+		border-style: solid;
+	}&.penci-border-dashed .penci-countdown-amount{
+		border-style: dashed;
+	}&.penci-border-dotted .penci-countdown-amount{
+		border-style: dotted;
+	}&.penci-border-double .penci-countdown-amount{
+		border-style: double;
+	}
+}
+
+
+.penci-countdown-rtl {
+	direction: rtl;
+}
+.penci-countdown-holding span {
+	color: #888;
+}
+.penci-countdown-row {
+	clear: both;
+	width: 100%;
+	padding: 0;
+	display: block;
+	margin: -30px auto 0;
+}
+.penci-countdown-show1 .penci-countdown-section {
+	width: 100%;
+}
+.penci-countdown-show2 .penci-countdown-section {
+	width: 50%;
+}
+.penci-countdown-show3 .penci-countdown-section {
+	width: 33.3333%;
+}
+.penci-countdown-show4 .penci-countdown-section {
+	width: 25%;
+}
+.penci-countdown-show5 .penci-countdown-section {
+	width: 20%;
+}
+.penci-countdown-show6 .penci-countdown-section {
+	width: 16.6666667%;
+}
+.penci-countdown-show7 .penci-countdown-section {
+	width: 14.2857143%;
+}
+.penci-countdown-section {
+	display: block;
+	float: left;
+	font-size: 75%;
+	padding: 30px 15px 0;
+}
+.penci-countdown-amount {
+	font-size: 90px;
+	color: $color__dark;
+	font-family: $font__muktavaani;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box;
+	min-width: 1.15em;
+	max-width: 100%;
+	min-height: 1.15em;
+	line-height: 1.15em;
+	display: inline-block;
+}
+.penci_countdown.penci-style-1 .penci-countdown-period {
+	display: block;
+	vertical-align: top;
+}
+
+.penci-countdown-period {
+	display: inline-block;
+	padding: 0 4px;
+	font-size: 24px;
+	color: $color__dark;
+	line-height: 1;
+	margin-top: 5px;
+}
+
+.penci-countdown-descr {
+	display: block;
+	width: 100%;
+}
+
+@media screen and ( max-width: 768px ) {
+	.penci-countdown-show5 .penci-countdown-section,
+	.penci-countdown-show6 .penci-countdown-section,
+	.penci-countdown-show7 .penci-countdown-section {
+		width: 33.33333%;
+	}
+}
+
+@media screen and ( max-width: 768px ) {
+	.penci-countdown-show1 .penci-countdown-section,
+	.penci-countdown-show2 .penci-countdown-section,
+	.penci-countdown-show3 .penci-countdown-section,
+	.penci-countdown-show4 .penci-countdown-section,
+	.penci-countdown-show5 .penci-countdown-section,
+	.penci-countdown-show6 .penci-countdown-section ,
+	.penci-countdown-show7 .penci-countdown-section {
+		width: 50%;
+	}
+}

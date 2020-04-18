@@ -1,0 +1,114 @@
+/* = Latest Tweets
+-----------------------------------------------------*/
+
+.penci-tweets-widget-content ul li {
+	margin: 0 !important;
+	padding: 0 !important;
+	border: none !important;
+}
+
+.penci-slider.penci-tweets-slider ul.slides li {
+	&:before, &:after {
+		content: none !important;
+		display: none !important;
+	}
+}
+
+.penci-tweets-widget-content {
+	.icon-tweets {
+		display: block;
+		text-align: center;
+		margin-bottom: 5px;
+		font-size: 32px;
+		color: $color__blue;
+		margin-top: -10px;
+	}
+	.tweet-text {
+		color: #313131;
+		margin-bottom: 6px;
+		text-align: center;
+
+		.penci_dark_layout &{
+			color: #fff;
+		}
+	}
+	.tweet-intents {
+		text-align: center;
+		overflow: hidden;
+		a {
+			color: $color__blue;
+			font-size: 13px;
+			font-style: italic;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		span {
+			&:after {
+				content: "/";
+				margin: 0 5px;
+				font-size: 11px;
+				color: #313131;
+				opacity: 0.4;
+			}
+			&:last-child:after {
+				content: none;
+				display: none;
+			}
+		}
+	}
+	.tweet-intents-inner {
+		display: inline-block;
+		vertical-align: top;
+		position: relative;
+	}
+	.tweet-date {
+		line-height: 1.8;
+		white-space: nowrap;
+		text-align: center;
+		margin-bottom: 6px;
+		opacity: 0.7;
+		font-size: 14px;
+	}
+}
+
+.penci-owl-carousel-slider.penci-tweets-slider .owl-dots {
+	position: static;
+	margin-top: 14px !important;
+	.owl-dot {
+		margin: 0 4px;
+		span {
+			width: 10px;
+			height: 10px;
+			box-shadow: none;
+			-webkit-box-shadow: none;
+			border: 1px solid #ececec;
+		}
+		&.active span, &:hover span {
+			border-color: $color__blue;
+			background: $color__blue;
+		}
+	}
+}
+
+.penci-tweets-widget-content {
+	&.pc_alignleft {
+		.icon-tweets,
+		.tweet-text,
+		.tweet-date,
+		.tweet-intents,
+		.penci-owl-carousel-slider .owl-dots {
+			text-align: left;
+		}
+	}
+	&.pc_alignright {
+		.icon-tweets,
+		.tweet-text,
+		.tweet-date,
+		.tweet-intents,
+		.penci-owl-carousel-slider .owl-dots {
+			text-align: right;
+		}
+	}
+}

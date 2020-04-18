@@ -1,0 +1,24 @@
+.penci-form-booking {
+	.penci-row {
+		margin-bottom: 20px;
+	}
+	.wpcf7-date,
+	.wpcf7-quiz,
+	.wpcf7-number,
+	.wpcf7-select,
+	.wpcf7-text,
+	.wpcf7-textarea {
+		width: 100%;
+		max-width: 100%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		margin-bottom: 0;
+		background-color: #fff;
+
+	}
+
+	.wpcf7-form-control-wrap  select {
+		padding: 10px 15px 9px;
+	}
+}

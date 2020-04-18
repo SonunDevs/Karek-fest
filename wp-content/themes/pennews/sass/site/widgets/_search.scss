@@ -1,0 +1,90 @@
+.widget {
+	.search-form {
+		position: relative;
+
+		.search-field {
+			width: 100%;
+
+			.site-footer & {
+				background: transparent;
+			}
+		}
+
+		.search-submit {
+			position: absolute;
+			right: 0;
+			top: 0;
+			line-height: 40px;
+			background: transparent;
+			border: 0;
+			color: $color__text-input;
+
+			.site-footer & {
+				color: #888888;
+
+				&:hover {
+					color: $color__white;
+				}
+			}
+
+		}
+	}
+
+	.woocommerce-product-search {
+		position: relative;
+
+		.search-field {
+			width: 100%;
+
+			.site-footer & {
+				background: transparent;
+			}
+		}
+
+		button[type="submit"] {
+			position: absolute;
+			right: 0;
+			top: 0;
+			line-height: 40px;
+			background: transparent;
+			border: 0;
+			color: $color__text-input;
+			text-indent: -9999px;
+
+			.site-footer & {
+				color: #888888;
+
+				&:hover {
+					color: $color__white;
+				}
+			}
+
+		}
+	}
+
+	#bbp-search-form {
+		position: relative;
+
+		#bbp_search {
+			width: 100%;
+			background: transparent url(images/searchsubmit.png) no-repeat 94% 11px;
+		}
+
+		#bbp_search_submit {
+			display: none;
+
+		}
+	}
+}
+
+.penci_dis_padding_bw .widget {
+	.penci-block-heading > .search-form {
+		margin-top: 0;
+	}
+}
+
+.widget_search {
+	.widget-title {
+		border-bottom: 0;
+	}
+}

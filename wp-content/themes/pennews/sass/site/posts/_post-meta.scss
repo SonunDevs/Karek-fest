@@ -1,0 +1,61 @@
+.penci-archive .penci-archive__content .entry-meta,
+.penci-owl-featured-area.style-15 .penci_post-meta,
+.penci-inline-related-posts .penci_post-meta,
+.penci__general-meta .penci_post-meta,
+.penci-block_video.style-1 .penci_post-meta,
+.penci-block_video.style-7 .penci_post-meta,
+.penci-grid_4 .penci_post-meta,
+.penci-block_30 .penci_post-meta,
+.penci-block_33 .penci_post-meta,
+.penci-block_38 .entry-meta,
+.penci-entry-meta {
+	@include font-size( 1.2 );
+
+	a, span {
+		font-family: inherit;
+		font-size: inherit;
+	}
+
+	a, span:not( .penci-chart-text ), i {
+		color: inherit;
+	}
+
+	a:hover {
+		color: $color__blue;
+	}
+
+	i {
+		margin-right: 3px;
+		font-size: 12px !important;
+
+		&.la-comments {
+			font-size: 13px !important;
+		}
+	}
+}
+
+.penci-archive .penci-archive__content .entry-meta,
+.penci-owl-featured-area.style-15 .penci_post-meta,
+.penci-inline-related-posts .penci_post-meta,
+.penci-block_video.style-1 .penci_post-meta,
+.penci-block_30 .penci_post-meta,
+.penci-block_33 .penci_post-meta,
+.penci-block_38 .entry-meta,
+.penci__general-meta .penci_post-meta,
+.penci-entry-meta {
+	color: #999999;
+}
+
+.penci-entry-meta {
+	line-height: 1.5;
+
+	.entry-meta-item {
+		padding-left: 10px;
+		display: inline-block;
+
+		&:first-child {
+			padding-left: 1px;
+		}
+	}
+}
+

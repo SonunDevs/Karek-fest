@@ -1,0 +1,78 @@
+.penci-progress-bar {
+	.penci-probar__title {
+		font-size: 30px;
+		position: relative;
+		padding-bottom: 13px;
+		margin-bottom: 24px;
+
+		&:before {
+			content: '';
+			border-bottom: 2px solid;
+			width: 60px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	.penci-probar__desc {
+		margin-bottom: 20px;
+	}
+
+	.penci-probar__items {
+		margin: 0;
+		padding: 0;
+
+		li {
+			list-style:  none;
+			margin-left: 0;
+			margin-bottom: 40px;
+
+			&:last-child {
+				margin-bottom: 0 !important;
+			}
+		}
+
+		.penci-probar__text {
+			line-height: 1.3;
+		}
+
+		.penci-probar__point {
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		.penci-probar__score {
+			float: right;
+			text-align: right;
+		}
+
+		.penci-review-process {
+			margin-top: 10px;
+		}
+	}
+}
+
+.penci-probar__animated {
+	transition: width 1s linear;
+	-moz-transition: width 1s linear;
+	-webkit-transition: width 1s linear;
+	-o-transition: width 1s linear;
+	-webkit-animation: progress-bar-stripes 2s linear infinite;
+	-moz-animation: progress-bar-stripes 2s linear infinite;
+	-ms-animation: progress-bar-stripes 2s linear infinite;
+	-o-animation: progress-bar-stripes 2s linear infinite;
+	animation: progress-bar-stripes 2s linear infinite;
+}
+
+.penci-probar__striped {
+	background-image: -webkit-gradient(linear,0 100%,100% 0,color-stop(.25,rgba(255,255,255,.15)),color-stop(.25,transparent),color-stop(.5,transparent),color-stop(.5,rgba(255,255,255,.15)),color-stop(.75,rgba(255,255,255,.15)),color-stop(.75,transparent),to(transparent));
+	background-image: -webkit-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-image: -moz-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-image: -o-linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	background-image: linear-gradient(45deg,rgba(255,255,255,.15) 25%,transparent 25%,transparent 50%,rgba(255,255,255,.15) 50%,rgba(255,255,255,.15) 75%,transparent 75%,transparent);
+	-webkit-background-size: 40px 40px;
+	-moz-background-size: 40px 40px;
+	-o-background-size: 40px 40px;
+	background-size: 40px 40px;
+}

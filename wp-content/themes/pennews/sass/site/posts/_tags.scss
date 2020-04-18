@@ -1,0 +1,58 @@
+.penci-tags-links {
+	display: inline-block;
+	margin: 10px -2.5px 5px;
+	width: 100%;
+}
+
+.penci-source-via-wrap .penci-source-via-label,
+.tags-links-wrap .tags-links-label,
+.penci-source-via-wrap a,
+.penci-tags-links a {
+	float: left;
+	display: inline-block;
+	min-height: 24px;
+	line-height: 24px;
+	font-size: 10px;
+	font-size: 1rem;
+	font-weight: 700;
+	text-align: left;
+	transition: all 0.3s;
+	margin: 0 2.5px 5px;
+	text-transform: uppercase;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.penci-source-via-wrap a,
+.penci-tags-links a {
+	color: #888888;
+	background: #ececec;
+}
+
+.penci-source-via-wrap .penci-source-via-label,
+.tags-links-wrap .tags-links-label,
+.penci-source-via-wrap a:hover,
+.penci-tags-links a:hover {
+	color: #ffffff;
+	background-color: #313131;
+}
+
+.penci-source-via-tags-wrap {
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.tags-links-wrap,
+.penci-source-via-wrap,
+.penci-source-via-wrap {
+	margin-top: 0;
+	margin-bottom: 0;
+	clear: both;
+	overflow: hidden;
+}
+
+.tags-links-wrap .penci-tags-links {
+	margin-top: 0;
+	margin-bottom: 0;
+	width: auto;
+}

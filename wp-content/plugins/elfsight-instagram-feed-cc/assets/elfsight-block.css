@@ -1,0 +1,11 @@
+/*
+    Elfsight Instagram Feed
+    Version: 3.8.2
+    Release date: Thu Aug 15 2019
+
+    https://elfsight.com
+
+    Copyright (c) 2019 Elfsight, LLC. ALL RIGHTS RESERVED
+*/
+
+.elfsight-block-widget-container{position:relative;min-height:50px}.elfsight-block-widget-placeholder{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;position:absolute;top:0;left:0;right:0;bottom:0;visibility:visible;opacity:1;background:#fff;transition:visibility .3s,opacity .3s;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}.elfsight-block-widget-initialized .elfsight-block-widget-placeholder{visibility:hidden;opacity:0}.elfsight-block-widget-placeholder span{margin-left:12px}.elfsight-block-form{text-align:center;margin:0 auto;padding:20px 40px;box-sizing:border-box;font-size:13px;line-height:1.4em;color:#444;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif}.elfsight-block-form-header{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:center;justify-content:center;background:#fff;font-size:16px;padding:16px}.elfsight-block-form-header span{margin-left:12px}.elfsight-block-form-text{font-size:14px}.elfsight-block-form-button{margin:16px auto}.elfsight-block-panel-group{display:-ms-flexbox;display:flex;-ms-flex-align:center;align-items:center;-ms-flex-pack:justify;justify-content:space-between}

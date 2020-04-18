@@ -1,0 +1,221 @@
+.penci-testimonails {
+	text-align: center;
+
+	&:after {
+		content: '';
+		display: table;
+		clear: both;
+		width: 100%;
+	}
+
+
+	.penci-owl-carousel-slider {
+		margin-bottom: 20px;
+
+		.owl-dots {
+			position: static;
+			height: 10px;
+			margin-top: 20px;
+		}
+	}
+
+	.penci-testi-avatar {
+		width: 70px;
+		height: 70px;
+		border-radius: 50%;
+		overflow: hidden;
+		margin: 45px auto 20px;
+		position: relative;
+		background: #f5f5f5;
+		display: block;
+		vertical-align: top;
+		background-repeat: no-repeat;
+		background-position: center center;
+		background-size: cover;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+	}
+
+	.penci-testi-blockquote {
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.penci-testi-name {
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 3px;
+	}
+
+	.penci-testi-company {
+		color: #525458;
+	}
+
+	&.penci-testi-s1 {
+
+		.penci-owl-carousel-slider {
+			.penci-testimonail {
+				opacity: 0.4;
+				transition: opacity 0.3s;
+			}
+
+			.owl-item.active.center .penci-testimonail {
+				opacity: 1;
+
+				.penci-testi-blockquote {
+					background: #fff;
+					border-color: $color__blue;
+
+
+					&:after {
+						border-top-color:#fff;
+					}
+				}
+			}
+		}
+
+
+		&.penci-testimonails-col .penci-testimonail {
+			.penci-testi-blockquote {
+				background: #fff;
+				border-color: $color__blue;
+
+
+				&:after {
+					border-top-color:#fff;
+				}
+			}
+		}
+
+		.penci-testi-blockquote {
+			padding: 30px 50px;
+			margin-bottom: 14px;
+			position: relative;
+			color: #666666;
+			border-top: 3px solid transparent;
+			transition: all 0.3s;
+
+			.penci-testi-bq-inner {
+				position: relative;
+				width: 100%;
+
+			}
+
+			.penci-testi-bq-icon {
+				height: 26px;
+				color: inherit;
+				opacity: 0.2;
+				display: block;
+				margin-bottom: 18px;
+
+				&:before {
+					content: "“";
+					font-family: "Playfair Display", serif;
+					font-size: 100px;
+					color: inherit;
+					font-style: normal;
+					font-weight: normal;
+					line-height: 26px;
+					position: absolute;
+					left: 50%;
+					top: 17px;
+					transform: translateX(-50%);
+				}
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -14px;
+				left: 50%;
+				width: 24px;
+				height: 14px;
+				margin-left: -12px;
+				border-left: 12px solid transparent;
+				border-right: 12px solid transparent;
+				border-top: 14px solid transparent;
+			}
+		}
+	}
+
+	&.penci-testi-s2{
+
+		.penci-testi-line {
+			color:#111;
+			height: 5px;
+			width: 60px;
+			margin-left: auto;
+			margin-right: auto;
+			position: relative;
+
+			&:before,
+			&:after{
+				content: '';
+				border-top: 1px solid;
+				height: 1px;
+				position: absolute;
+			}
+
+
+			&:before{
+				width: 100%;
+				top: 0;
+				left: 0;
+			}
+
+			&:after{
+				width: 66%;
+				bottom: 0;
+				left: 50%;
+				margin-left: -33%;
+			}
+		}
+
+		.penci-testi-avatar {
+			margin-bottom: 30px;
+		}
+
+		.penci-testi-blockquote {
+			margin-top: 10px;
+			margin-bottom: 40px;
+		}
+	}
+
+	&.penci-testi-s3{
+		.penci-testi-avatar {
+			margin-top: 20px;
+			margin-bottom: 30px;
+		}
+
+		.penci-testi-blockquote {
+			margin-bottom: 20px;
+		}
+
+		.penci-testi-rating {
+			font-size: 14px;
+			color: #f5a816;
+
+			i{
+				display: inline-block;
+				vertical-align: top;
+				color: inherit;
+				padding-right: 5px;
+
+				&:last-child {
+					padding-right: 0;
+				}
+			}
+		}
+	}
+
+	&.penci-testimonails-col {
+		.penci-testimonial-inner {
+			margin-top: -20px;
+		}
+		.penci-testimonail {
+			margin-top: 20px;
+		}
+	}
+}

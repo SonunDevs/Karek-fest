@@ -1,0 +1,136 @@
+.penci-owl-featured-area.style-25 {
+
+	h3 {
+		@include font-size( 1.8 );
+	}
+
+	.penci-slider__text {
+		padding: 10px 15px 10px;
+	}
+
+	.penci-item-row {
+		width: 33.33333333%;
+		float: left;
+	}
+	.penci-item-mag {
+		width: 100%;
+	}
+	.penci-big-thumb .penci-image-holder:before {
+		padding-top: 100%;
+	}
+	.penci-small-thumb .penci-image-holder:before {
+		padding-top: 50%;
+	}
+}
+
+@media screen and ( max-width:1200px ) and ( min-width:961px ) {
+	.penci-container-width-1400.penci-vc_sidebar-left,
+	.penci-container-width-1400.penci-vc_sidebar-right {
+		.penci-owl-featured-area.style-25 {
+			.icon-post-format,
+			.penci-slider__cat,
+			.penci_post-meta {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1080px ) and ( min-width: 961px ) {
+	.penci-owl-featured-area.style-25 {
+		.penci-slider__cat,
+		.penci_post-meta {
+			display:  none;
+		}
+
+		h3 {
+			@include font-size(1.8);
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.penci-owl-featured-area.style-25 {
+		h3 {
+			@include font-size(1.8);
+		}
+	}
+}
+
+@media screen and (max-width: 960px) {
+	.penci-owl-featured-area.style-25 {
+		.penci-item-row {
+			width: 50%;
+		}
+		.penci-item-row3{
+			width: 100%;
+
+			.penci-item-mag {
+				width: 50%;
+			}
+
+			.penci-big-thumb .penci-image-holder:before {
+				padding-top: 50%;
+			}
+		}
+		h3 {
+			font-size:  18px;
+		}
+
+		.penci-slider__cat {
+			display:  none;
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.penci-owl-featured-area.style-25 {
+		.penci-big-thumb .penci-image-holder:before{
+			padding-top: 100%;
+		}
+		.penci-small-thumb .penci-image-holder:before ,
+		.penci-item-row3 .penci-big-thumb .penci-image-holder:before {
+			padding-top: 50%;
+		}
+
+		.penci_slider__title {
+			font-size:  16px;
+		}
+
+		.icon-post-format,
+		.penci_post-meta {
+			display:  none;
+		}
+	}
+
+	.penci-container-width-1400.penci-vc_sidebar-left,
+	.penci-container-width-1400.penci-vc_sidebar-right {
+		.penci-owl-featured-area.style-25 {
+			.penci_slider__title {
+				font-size:  16px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.penci-owl-featured-area.style-25 {
+		.penci_slider__title {
+			font-size:  13px;
+			text-align: center;
+		}
+
+		.penci-slider__text {
+			padding: 0 5px 10px !important;
+		}
+	}
+
+	.penci-container-width-1400.penci-vc_sidebar-left,
+	.penci-container-width-1400.penci-vc_sidebar-right {
+		.penci-owl-featured-area.style-25 {
+			.penci_slider__title {
+				font-size:  13px;
+			}
+		}
+	}
+}

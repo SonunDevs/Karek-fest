@@ -1,0 +1,324 @@
+.login__form {
+	text-align: center;
+	margin: 94px auto;
+	h3 {
+		font-size: 30px;
+		font-weight: 600;
+		padding-bottom: 25px;
+		color:$color__dark;
+	}
+	
+	.login__form__login-username,
+	.login__form__login-password,
+	.login__form__login-submit {
+		input {
+			width: 370px;
+			padding: 5px 20px;
+			border-radius: 0;
+			margin-bottom: 5px;
+		}
+
+		.page-template-login & {
+			margin-bottom: 25px;
+		}
+
+	}
+
+	.login__form__login-submit {
+		margin: 16px;
+		input {
+			border: none;
+			padding: 15px;
+			text-transform: uppercase;
+			font-size: 14px;
+			font-weight: 500;
+
+			.page-template-login & {
+				padding-top: 10px;
+				padding-bottom: 10px;
+			}
+		}
+	}
+
+	.login__form__forgot-password {
+		position: relative;
+		bottom: 8px;
+		color: $color__text-screen;
+	}
+
+	.login__form__remember {
+		#rememberme {
+			position: relative;
+			top: 2px;
+			margin-right: 10px;
+		}
+	}
+}
+
+.penci-popup-login-register {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	z-index: 9999999;
+	opacity: 0;
+	visibility: hidden;
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	overflow: auto;
+	transition: all 0.3s cubic-bezier(0.4, 0, 1, 1);
+	animation-duration: 1000ms;
+	animation-delay: 0s;
+	animation-fill-mode: both;
+	background-color: rgba(0, 0, 0, 0.8);
+	background-repeat: no-repeat;
+	background-position: top;
+	background-size: cover;
+
+
+	p {
+		margin-bottom: 10px;
+	}
+
+	&.active {
+		visibility: visible;
+		animation-name: ulp-fadeIn;
+	}
+
+	p.login-username label,
+	p.login-password label,
+	.penci-login-container > br {
+		display: none;
+	}
+
+
+
+	h4 {
+		margin-top: 0;
+		font-size: 30px;
+		font-weight: 700;
+		padding-bottom: 25px;
+		color: $color__dark;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: $font__oswald;
+	}
+
+	.penci-login-container {
+		background: $color__white;
+		color: #666666;
+		padding: 50px;
+		max-width: 470px;
+		margin: auto;
+		top: 100px;
+		cursor: default;
+		animation-duration: 0.5s;
+		animation-delay: 0.3s;
+		animation-fill-mode: both;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+	}
+
+	&.active {
+		visibility: visible;
+		animation-name: ulp-fadeIn;
+		opacity: 1;
+
+		.penci-login-container {
+			animation-name: popUpfadeInDown;
+		}
+	}
+
+}
+
+.penci-register-container,
+.penci-login-container {
+	position: relative;
+	overflow: hidden;
+	max-width: 470px;
+	margin: auto;
+	cursor: default;
+
+	&> br {
+		display: none;
+	}
+	p, a {
+		font-size: 15px;
+		font-weight: 400;
+	}
+
+	a{
+		color: $color__blue;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	input{
+		background: transparent;
+	}
+}
+
+.penci-login-container {
+
+	.close-popup {
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		right: 0;
+		top: 0;
+		line-height: 30px;
+		text-align: center;
+		font-size: 14px;
+		background: $color__blue;
+		color: $color__white;
+		cursor: pointer;
+		display: none;
+	}
+
+	.message {
+		display: block;
+		margin-top: 10px;
+		padding: 8px 20px;
+		text-align: left;
+		clear: both;
+	}
+
+	.message-error {
+		color: rgb(169, 68, 66);
+		background: rgb(242, 222, 222);
+	}
+
+	.message-success {
+		color: #3c763d;
+		background: #dff0d8;
+	}
+
+	.penci-loading-container {
+		opacity: .6;
+	}
+
+	.penci-login{
+		input[type="text"],
+		input[type=password],
+		input[type="submit"],
+		input[type="email"]
+		{
+			width: 100%;
+			padding: 0 15px;
+			border-radius: 0;
+			margin-bottom: 7px;
+			border: solid 1px $color__border;
+			color:#999999;
+			font-size: 14px;
+			line-height: 38px;
+		}
+
+
+		input[type="submit"] {
+			background-color: $color__dark;
+			font-weight: 500;
+			text-transform: uppercase;
+			text-align:center;
+			color:$color__white;
+			border: 0;
+			font-size: 14px;
+			font-style: normal;
+			font-stretch: normal;
+			line-height: 38px;
+			padding: 0 15px;
+			transition: all 0.3s;
+			margin: 0;
+
+			&:hover {
+				background-color: $color__blue;
+			}
+		}
+	}
+
+	.register-popup a,
+	.login-popup a{
+		margin-left: 6px;
+	}
+}
+
+.penci-login-container .penci-login.close-popup,
+.penci-register-container{
+	input[type="text"],
+	input[type=password],
+	input[type="submit"],
+	input[type="email"]
+	{
+		width: 100%;
+		padding: 0 15px;
+		border-radius: 0;
+		margin-bottom: 7px;
+		border: solid 1px $color__border;
+		color:#999999;
+		font-size: 14px;
+		line-height: 38px;
+	}
+
+
+	input[type="submit"] {
+		background-color: $color__dark;
+		font-weight: 500;
+		text-transform: uppercase;
+		text-align:center;
+		color:$color__white;
+		border: 0;
+		font-size: 14px;
+		font-style: normal;
+		font-stretch: normal;
+		line-height: 38px;
+		padding: 0 15px;
+		transition: all 0.3s;
+		margin: 0;
+
+		&:hover {
+			background-color: $color__blue;
+		}
+	}
+}
+
+
+.penci-popup-register {
+	.penci-login-container {
+		padding: 20px 50px 0;
+	}
+	.register-input {
+		margin-bottom: 22px;
+	}
+
+	.login.login-popup {
+		border-top: 1px solid $color__border;
+		margin-top: 33px;
+		padding-top: 30px;
+	}
+	.first-last {
+		overflow: hidden;
+
+		.register-input {
+			width: 170px;
+			float: left;
+
+			&:last-child {
+				float: right;
+			}
+		}
+	}
+}
+
+
+body.penci-popup-active{
+	#tp_style_selector{
+		visibility: hidden;
+	}
+	#penci-popup-login {
+		cursor: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVBAMAAABbObilAAAAMFBMVEVMaXH////////////////////////////////////////////////////////////6w4mEAAAAD3RSTlMAlAX+BKLcA5+b6hJ7foD4ZP1OAAAAkUlEQVR4XkWPoQ3CUBQAL4SktoKAbCUjgAKLJZ2ABYosngTJCHSD6joUI6BZgqSoB/+Shqde7sS9x3OGk81fdO+texMtRVTia+TsQtHEUJLdohJfgNNPJHyEJPZTsWLoxShqsWITazEwqePAn69Sw2TUxk1+euPis3EwaXy8RMHSZBIlRcKKnC5hRctjMf57/wJbBlAIs9k1BAAAAABJRU5ErkJggg==),progress;
+	}
+}

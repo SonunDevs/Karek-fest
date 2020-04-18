@@ -1,0 +1,151 @@
+.penci-social-buttons {
+	display: block;
+	margin:5px 0;
+	text-align: left;
+
+	&.penci-social-share-center {
+		text-align: center;
+	}
+
+	&.penci-social-share-footer{
+		border: 1px solid $color__border;
+		padding: 6px 20px;
+	}
+
+	.penci-social-share-text {
+		text-transform: uppercase;
+		font-weight: 700;
+		margin-right: 20px;
+		font-size: 14px;
+		color: #111;
+	}
+
+	.penci-social-item {
+		display: inline-block;
+		margin: 5px 9px 5px 0;
+		@include font-size( 1.4 );
+		font-weight: normal;
+		line-height: 32px;
+		text-align: left;
+		color: #ffffff;
+		text-transform: none;
+		height: 32px;
+		border: 0;
+		background-color: #0d47a1;
+		padding: 0 12px;
+		transition: opacity 0.3s;
+		border-radius: 2px;
+		vertical-align: middle;
+
+		&:last-child {
+			margin-right: 0;
+		}
+
+		.penci-share-number {
+			margin-left: 7px;
+		}
+
+		&.share-handler,
+		&.like {
+			border: 1px solid $color__border;
+			color: #111;
+			background-color: $color__white;
+		}
+
+		&.like.liked {
+			border-color: $color__blue;
+			background: $color__blue;
+			color: #fff;
+		}
+
+		&.twitter {
+			background-color: #40c4ff;
+		}
+
+		&.google_plus {
+			background-color: #eb4026;
+		}
+
+		&.instagram {
+			background-color: #417096;
+		}
+
+		&.pinterest {
+			background-color: #C92228;
+		}
+
+		&.email {
+			background-color: #a7a7a7;
+		}
+
+		&.linkedin {
+			background-color: #0077B5;
+		}
+
+		&.tumblr {
+			background-color: #34465d;
+		}
+
+		&.reddit {
+			background-color: #ff4500;
+		}
+
+		&.stumbleupon {
+			background-color: #ee4813;
+		}
+
+		&.whatsapp {
+			background-color: #00c853;
+		}
+
+		&.telegram {
+			background-color: #179cde;
+		}
+
+		&.line {
+			background-color:  #00c300;
+			color: #00c300;
+			padding: 0;
+			width: 32px;
+			height: 32px;
+			position: relative;
+
+			&:before{
+				content: '';
+				position: absolute;
+				width: 25px;
+				height: 25px;
+				top: 5px;
+				left: 3px;
+				background: #fff;
+			}
+
+
+			span{
+				width: 32px;
+				height: 32px;
+				display: block;
+				position: relative;
+			}
+
+
+			svg{
+				height: 36px;
+				position: absolute;
+				top: -2px;
+			}
+		}
+
+		&.viber {
+			padding: 5px;
+		}
+
+		&.viber svg {
+		width: 20px;
+		}
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+}

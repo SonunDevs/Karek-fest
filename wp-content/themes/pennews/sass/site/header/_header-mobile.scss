@@ -1,0 +1,141 @@
+.penci-header-mobile {
+	position: relative;
+	height: 54px;
+	display: none;
+	max-width: 100%;
+	width: 100%;
+	z-index: 100001;
+
+	.penci-header-mobile_container {
+		background-color: $color__white;
+		height: 54px;
+		max-width: 100%;
+		width: 100%;
+		z-index: inherit;
+	}
+
+
+	.site-branding {
+		max-width: 100%;
+		padding: 2px 0;
+		position: relative;
+		margin-left: 65px;
+		margin-right: 65px;
+		text-align: center;
+		height: 54px;
+		overflow: hidden;
+
+		img{
+			max-height: 48px;
+			width: auto;
+			max-width: 100%;
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			-webkit-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.custom-logo-link {
+		display: inline-block;
+	}
+
+	.site-title {
+		margin: 0;
+		padding:0;
+		font-size: 40px;
+		line-height: 50px;
+	}
+
+	.site-branding .site-title{
+
+	}
+
+	.header__social-search {
+		position: absolute;
+		top:0;
+	}
+
+	.header__social-search {
+		right:0;
+		width: 100%;
+		z-index: 999;
+	}
+
+	.search-click {
+		width:100%;
+		height: 100%;
+		min-height: 54px;
+	}
+
+	.header__search {
+		width:54px;
+		height: 54px;
+		position: absolute;
+		top:0;
+		right: 0;
+	}
+
+	.show-search {
+		min-height: 54px;
+
+		.search-field {
+			padding: 13px 54px 13px 20px;
+		}
+	}
+}
+
+.menu-toggle-desk,
+.menu-toggle {
+	position: absolute;
+	top:0;
+	left: 0;
+	line-height: 54px;
+	text-align: center;
+	color: #313131;
+	font-size: 24px;
+	cursor: pointer;
+	transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+	-moz-transition: color 0.3s;
+	padding: 0 10px;
+	width:54px;
+	height: 54px;
+	z-index: 10;
+	background: transparent;
+	border: 0;
+
+	&:hover {
+		color: #313131;
+		background: transparent;
+	}
+}
+.menu-toggle-desk .menu-toggle,
+.penci_dark_layout .menu-toggle {
+	background: transparent;
+	color: #313131;
+}
+
+.menu-mobile-sticky {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+	margin-right: auto;
+	margin-left: auto;
+	width: 100%;
+	z-index: 9999;
+	position: fixed !important;
+	background-color: #ffffff;
+	background-color: rgba(255, 255, 255, 0.95);
+	top: 0;
+
+}
+
+.admin-bar .menu-mobile-sticky {
+	top: 32px;
+}
+
+.mobile-sticky-wrapper {
+	display: none !important;
+}
+

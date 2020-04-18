@@ -1,0 +1,65 @@
+@mixin transform($property) {
+    -webkit-transform: $property;
+        -ms-transform: $property;
+            transform: $property;
+  }
+  @mixin border-radius($radius) {
+	border-radius: $radius;
+	-webkit-border-radius: $radius;
+	-ms-border-radius: $radius;
+}
+
+//usage: @include shift([property],[duration],[easing]);
+@mixin transition($property: all, $duration: .4s, $ease: ease){
+	transition: $property $duration $ease;
+	-webkit-transition: $property $duration $ease;
+	-moz-transition: $property $duration $ease;
+	-ms-transition: $property $duration $ease;
+}
+
+@mixin background-content($repeat: no-repeat, $size: cover, $position: center center) {
+	background-repeat: $repeat;
+	background-size: $size;
+	background-position: $position;
+}
+
+@mixin background-color($color) {
+	background-color: $color;
+}
+
+@mixin width($width) {
+	width: $width;
+}
+
+@mixin equal-size($width, $height: $width) {
+	width: $width;
+	height: $height;
+}
+
+@mixin equal-size-lineHeight($width, $height: $width, $Lheight: $width) {
+	width: $width;
+	height: $height;
+	line-height: $Lheight;
+}
+
+@mixin flex-position($display, $contet, $items) {
+	display: $display;
+	justify-content: $contet;
+	align-items: $items;
+}
+
+@mixin position($position) {
+	position: $position;
+}
+@mixin absolute($position: absolute, $left:0, $top: 0) {
+   position: $position;
+   left: $left;
+   top: $top;
+}
+
+@mixin center-position($top: $top, $left: $top) {
+	top: $top;
+	left: $top;
+	transform: translate(-#{$top}, -#{$top});
+}
+

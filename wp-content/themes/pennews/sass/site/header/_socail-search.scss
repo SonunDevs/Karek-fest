@@ -1,0 +1,375 @@
+.header__social-search {
+	float: right;
+	height: 100%;
+
+	.header__search {
+		float: right;
+		height: 100%;
+		position: relative;
+
+	}
+}
+
+.penci-menuhbg-wapper,
+.header__social-media {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	min-height: 60px;
+}
+
+.header__social-media {
+	text-align: right;
+	justify-content: flex-end;
+
+	.social_title {
+		display: none;
+	}
+
+	a {
+		display: inline-block;
+		@include font-size(1.6);
+		color: $color__dark;
+		vertical-align: middle;
+		padding-right: 10px;
+
+		&:last-child {
+			margin-right: 10px;
+		}
+
+		&:hover {
+			color: $color__blue;
+		}
+	}
+}
+
+.header__search_dis_bg  + .header__social-media a:last-child{
+	margin-right: 5px;
+}
+
+.search-click {
+	width: 60px;
+	height: 100%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	min-height: 60px;
+	cursor: pointer;
+	transition: none;
+
+	i {
+		@include font-size(1.6);
+	}
+}
+
+.header__search:not( .header__search_dis_bg ) .search-click {
+	background: $color__blue;
+	color: $color__white;
+
+	&.search-click-active .fa-search:before {
+		content: "\f00d";
+	}
+	&:hover,
+	&:active,
+	&.search-click-forcus {
+		color: $color__white;
+	}
+}
+
+.header__search_dis_bg .search-click {
+	background: transparent;
+	color: $color__dark;
+	width: auto;
+	padding-left: 5px;
+
+	&:hover {
+		color: $color__blue;
+	}
+}
+
+.show-search__content_wapper {
+	width: 1400px;
+}
+
+
+.header--1 .show-search__content_wapper {
+	width: 100%;
+}
+.site-header.header--1 .show-search__content_wapper,
+.site-header .penci-container-1080 .show-search__content_wapper {
+	max-width: 1110px;
+	width: 100%;
+}
+
+.site-header.header--1 .penci-container-fluid .show-search__content_wapper,
+.site-header  .penci-container-fluid .show-search__content_wapper {
+	max-width: 1400px;
+	width: 100%;
+}
+
+.site-header.header--1 .penci-container-1170 .show-search__content_wapper,
+.site-header  .penci-container-1170 .show-search__content_wapper {
+	max-width: 1400px;
+	width: 100%;
+}
+
+.show-search {
+	width: 300px;
+	position: absolute;
+	right: 0;
+	top: 100%;
+	text-align: left;
+	z-index: 3;
+	overflow: hidden;
+	display: none;
+	line-height: 1.3;
+
+	.show-search__content_wapper {
+		margin: 0 auto;
+	}
+
+	.show-search__content {
+		width: 300px;
+		max-width: 100%;
+		position: relative;
+		float: right;
+	}
+
+
+
+	a.close-search {
+		position: absolute;
+		right: 0;
+		top: 0;
+		z-index: 5;
+		cursor: pointer;
+	}
+
+	.show-search__content {
+		background: $color__white;
+		border: 1px solid $color__border;
+		border-top: 0 !important;
+		box-shadow: 0 2px 6px rgba(0, 0, 0, .2);
+
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: -1px;
+			right: -1px;
+			height: 3px;
+			background: $color__blue;
+		}
+	}
+
+	.search-form {
+		margin: 20px;
+		font-size: 12px;
+		line-height: 1;
+	}
+
+	.search-field {
+		transition: all 0.5s;
+		height: 32px;
+		width: 100%;
+		z-index: 3;
+		color: #313131;
+		padding: 3px 25px 3px 9px !important;
+		line-height: 17px;
+		box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		background: none;
+		font-weight: normal;
+		letter-spacing: 0;
+		font-size: 12px;
+		-webkit-appearance: textfield;
+		border: 1px solid $color__border;
+
+
+	}
+
+	.search-submit {
+		background: transparent;
+		border: 0;
+		position: absolute;
+		right: 30px;
+		top: 20px;
+		line-height: 32px;
+		height: 32px;
+		padding: 0;
+		color: $color__dark;
+
+		&:hover {
+			color: $color__blue;
+		}
+	}
+
+	.fa-search.ajax-search-loading {
+		-webkit-animation: fa-spin 0.8s infinite linear;
+		animation: fa-spin 0.8s infinite linear;
+
+		&:before {
+			content: "\f021";
+		}
+	}
+}
+
+.close-search.ajax-search-loading .fa-close {
+	animation: fa-spin 2s infinite linear;
+
+	&:before {
+		content: "\f021";
+	}
+}
+
+.cart-icon {
+
+	.cart-contents_wraper{
+		position: relative;
+	}
+	.items-number {
+		position: absolute;
+		z-index: 1;
+		width: 14px;
+		height: 14px;
+		display: inline-block;
+		border-radius: 50%;
+		-webkit-border-radius: 50%;
+		-moz-border-radius: 50%;
+		top: -6px;
+		right: -4px;
+		background: $color__blue;
+		color: $color__white;
+		text-align: center;
+		white-space: nowrap;
+		line-height: 14px;
+		font-size: 8px;
+		transition: all 0.3s;
+		-webkit-transition: all 0.3s;
+		-moz-transition: all 0.3s;
+	}
+}
+
+.penci-post-list {
+	overflow: hidden;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.penci-ajax-search-results {
+	position: relative;
+
+	.ajax-loading:before {
+		background: #fff;
+	}
+
+	.search-404 {
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+}
+
+.penci-ajax-search-results-wrapper {
+	position: relative;
+	display: none;
+	padding: 20px 0 0;
+	color: #999999;
+	border-top: 1px solid $color__border;
+
+	&.search-results-hide {
+		display: none !important;
+	}
+
+	.penci__post-title {
+		@include font-size(1.3);
+		line-height: 18px;
+		margin-bottom: 5px;
+		position: relative;
+
+		a {
+			color: $color__dark;
+
+			&:hover {
+				color: $color__blue;
+			}
+		}
+
+	}
+
+	.penci-image-holder {
+		width: 80px;
+	}
+
+	.penci_media_object .penci_mobj__img {
+		margin-right: 15px;
+	}
+
+	.penci_media_object.penci_mobj-image-right .penci_mobj__img {
+		margin-right: 0;
+		margin-left: 15px;
+	}
+
+	.penci__general-meta .penci_post-meta {
+		color: #999999;
+		@include font-size(1.1);
+	}
+
+	.penci-post-item {
+		width: 100%;
+		overflow: hidden;
+		margin-bottom: 0;
+	}
+
+	&.ajax-search-loaded,
+	&.ajax-loading {
+		display: block;
+	}
+
+	&.ajax-loading + .penci-load-thecube {
+		display: block;
+	}
+
+}
+
+.penci-viewall-results {
+	border-top: 1px solid $color__border;
+	padding: 6px 0 6px 0;
+	@include font-size( 1.3 );
+	color: #222;
+	clear: both;
+	text-align: center;
+
+	a {
+		color: $color__dark;
+
+		&:hover {
+			color:$color__blue;
+		}
+	}
+
+	.icon-post-format.small-size-icon {
+		width: 22px;
+		height: 22px;
+		line-height: 20px;
+		margin: -12px 0 0 -12px;
+		font-size: 9px;
+		border-width: 1px;
+	}
+}
+
+.penci_dark_layout  {
+	.show-search {
+		.search-field,
+		.search-submit {
+			color: $color__white;
+		}
+	}
+	.penci-viewall-results a,
+	.penci-ajax-search-results-wrapper .penci__post-title a{
+		color:$color__white;
+	}
+}

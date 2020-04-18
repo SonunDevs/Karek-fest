@@ -1,0 +1,109 @@
+.penci-vernav-enable .penci-menu-hbg{
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+	-webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.15);
+}
+.penci-vernav-toggle {
+	position: fixed;
+	width: 50px;
+	height: 50px;
+	display: none;
+	line-height: 40px;
+	background: none;
+	top: 0;
+	left: 0;
+	z-index: 99997;
+	transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	overflow: hidden;
+}
+.penci-vernav-poright .penci-vernav-toggle {
+	right: 0;
+	left: auto;
+}
+.penci-vernav-poleft.penci-menuhbg-open .penci-vernav-toggle{
+	left: 340px;
+}
+.penci-vernav-poright.penci-menuhbg-open .penci-vernav-toggle{
+	right: 340px;
+}
+body.admin-bar .penci-vernav-toggle{
+	top: 32px;
+}
+
+.penci-vernav-toggle:after{
+	width: 0;
+	height: 0;
+	border-top: 50px solid #3f51b5;
+	border-right: 50px solid transparent;
+	content: "";
+	display: block;
+}
+.penci-vernav-poright .penci-vernav-toggle:before{
+	border-left: 50px solid transparent;
+}
+.penci-vernav-toggle i{
+	position: absolute;
+	z-index: 10;
+	font-size: 14px;
+	top: 7px;
+	left: 9px;
+	font-weight: normal;
+	line-height: 1;
+	color: #fff;
+}
+
+.penci-vernav-poright .penci-vernav-toggle i {
+	left: auto;
+	right: 9px;
+}
+
+.admin-bar .penci-vernav-show{
+	padding-top: 32px;
+}
+.penci-menu-hbg.penci-vernav-show{
+	z-index: 99997;
+}
+
+@media only screen and (min-width: 1201px) {
+	.penci-vernav-enable .penci-menu-hbg-left + .penci-wrapper-boxed{
+		padding-left: 340px;
+	}
+	.penci-vernav-enable .penci-menu-hbg-right + .penci-wrapper-boxed {
+		padding-right: 340px;
+	}
+	.penci-vernav-enable .is-sticky .site-header{
+		width: calc(100% - 340px);
+	}
+	.penci-vernav-enable .penci-menu-hbg{
+		transform: none !important;
+		-webkit-transform: none !important;
+		-moz-transform: none !important;
+	}
+}
+@media only screen and (max-width: 1200px){
+	.penci-vernav-toggle {
+		display: inline-block;
+	}
+}
+@media only screen and (max-width: 1700px) and (min-width: 1240px) {
+	.penci-vernav-enable.two-sidebar .site-main .penci-container .widget-area,
+	.penci-vernav-enable .penci-vc_two-sidebar.penci-container .widget-area,
+	.penci-vernav-enable .penci-vc_two-sidebar.penci-container-fluid .widget-area {
+		width: 285px;
+	}
+}
+@media only screen and (max-width: 1700px) and (min-width: 1551px) {
+	.penci-vernav-enable.two-sidebar .site-main .penci-container .penci-wide-content,
+	.penci-vernav-enable .penci-vc_two-sidebar.penci-container .penci-wide-content,
+	.penci-vernav-enable .penci-vc_two-sidebar.penci-container-fluid .penci-wide-content {
+		max-width: calc( 100% - 570px);
+	}
+}
+
+@media only screen and (max-width: 1550px) and (min-width: 1240px) {
+	.penci-vernav-enable.two-sidebar .site-main .widget-area-2,
+	.penci-vernav-enable .penci-vc_two-sidebar .widget-area-2 {
+		display: none;
+	}
+}

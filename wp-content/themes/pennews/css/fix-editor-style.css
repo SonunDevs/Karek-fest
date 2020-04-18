@@ -1,0 +1,4 @@
+html .mceContentBody:before,
+html .mceContentBody:after {
+	content: none !important;
+}

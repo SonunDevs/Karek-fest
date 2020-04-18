@@ -1,0 +1,180 @@
+.penci-block_31 {
+	.block31_items {
+		overflow: hidden;
+	}
+	.penci-post-item {
+		margin-bottom: 25px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		&:not( .block31_big_item ) {
+			.penci-post-cat {
+				position: inherit;
+			}
+		}
+	}
+
+	.penci_media_object {
+		margin-bottom: 0;
+	}
+
+	.penci_post_thumb {
+		max-width: 270px;
+	}
+	.penci__post-title {
+		@include font-size(1.8);
+		font-weight: 600;
+		line-height: 1.25;
+		margin-top: 3px;
+		margin-bottom: 0;
+		clear: both;
+	}
+
+	.penci_post-meta {
+		margin-top: 5px;
+	}
+
+	.penci-post-cat {
+		overflow: hidden;
+	}
+
+	.penci-post-excerpt {
+		margin-top: 9px;
+		@include font-size(1.4);
+		line-height: 1.71;
+		color: $color__text-main;
+	}
+
+	.block31_big_item {
+		width: 100%;
+
+		.penci_post_thumb {
+			max-width: 100%;
+		}
+
+		.penci-image-holder:before {
+			padding-top: 50%;
+		}
+
+
+
+		.penci__post-title {
+			@include font-size(2.4);
+			margin-top: 14px;
+			margin-bottom: 0;
+		}
+
+		.penci_post-meta {
+			margin-top: 3px;
+		}
+
+		.penci-post-excerpt {
+			margin-top: 9px;
+		}
+	}
+
+	&.penci-imgtype-vertical .block31_big_item .penci-image-holder:before {
+		padding-top: 120%;
+	}
+
+	&.penci-imgtype-square .block31_big_item .penci-image-holder:before {
+		padding-top: 100%;
+	}
+
+	.penci-pagination {
+		padding-top: 0;
+	}
+
+	.penci-block_content__items.penci-animated_ajax {
+		margin-top: 30px;
+	}
+}
+
+.penci-container-width-1400 .penci-content-main.penci-col-4 .penci-block_31,
+.penci-container-width-1080 .penci-content-main.penci-col-4 .penci-block_31,
+.wpb_wrapper > .penci-block_31.penci-vc-column-1,
+.widget-area .penci-block_31 {
+	.penci_media_object {
+			display:block;
+	}
+
+	.penci_post_thumb {
+		max-width:100%;
+	}
+
+	.penci-post-cat {
+		display:none;
+	}
+
+	.block31_big_item .penci-image-holder:before {
+		padding-top: 66.6667%;
+	}
+
+	.block31_medium_item .penci__post-title {
+		margin-top: 11px;
+	}
+
+	.penci-post-item {
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+}
+
+@media screen and (max-width: 650px) {
+	.penci-block_31 {
+
+		.penci__post-title {
+			font-size: 16px !important;
+		}
+
+		.block31_big_item .penci__post-title {
+			font-size: 18px !important;
+		}
+
+		.block31_medium_item .penci_post_thumb {
+			max-width: 200px;
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.penci-block_31 {
+		.penci_media_object {
+			display:block;
+		}
+
+		.block31_medium_item .penci_post_thumb ,
+		.penci_post_thumb {
+			max-width:100%;
+		}
+
+		.penci-post-cat {
+			display:none;
+		}
+
+		.block31_big_item .penci-image-holder:before {
+			padding-top: 66.6667%;
+		}
+
+		.penci-post-item {
+			margin-bottom: 20px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.penci__post-title,
+		.block31_big_item .penci__post-title {
+			font-size: 16px !important;
+			margin-top: 10px;
+		}
+
+	}
+}
